@@ -19,6 +19,10 @@ public class camareController : MonoBehaviour
     {
         yaw += Input.GetAxis("Mouse X") * mouseSens;
         pitch -= Input.GetAxis("Mouse Y") * mouseSens;
+        
+        yaw += Input.GetAxis("HorizontalCamera") * mouseSens;
+        pitch -= Input.GetAxis("VerticalCamera") * mouseSens;
+
         pitch = Mathf.Clamp(pitch, pitchMM.x, pitchMM.y);
 
         Vector3 targetRot = new Vector3(pitch, yaw);

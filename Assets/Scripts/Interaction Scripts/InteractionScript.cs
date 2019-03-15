@@ -115,13 +115,13 @@ public class InteractionScript : MonoBehaviour
         // this the interaction with the object
         if (InteractionObjectPromptActive)
             {
-                if (Input.GetKeyDown("e"))
+                if (Input.GetButton("Interaction1"))
                 hit.transform.gameObject.SetActive(false);
             }
         // this is the interaction with the item
         if (QuestItemPromptObjectActive)
         {
-            if (Input.GetKeyDown("e"))
+            if (Input.GetButton("Interaction1"))
             {
             activeItem = hit.collider.gameObject.name;
             
@@ -148,7 +148,7 @@ public class InteractionScript : MonoBehaviour
 
         if (QuestPersonPromptObjectActive)
         {   
-            if(Input.GetKeyDown("e"))
+            if(Input.GetButton("Interaction1"))
             {
                 FindObjectOfType<NPC>().TriggerDialouge();
             }

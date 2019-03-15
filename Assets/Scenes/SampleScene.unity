@@ -1182,7 +1182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a78d52031ef747c43bce5beb9a344a15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSens: 1
+  mouseSens: 3
   target: {fileID: 387088195}
   offset: 2
   pitchMM: {x: -40, y: 85}
