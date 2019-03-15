@@ -17,6 +17,8 @@ public class InteractionScript : MonoBehaviour
     private GameObject QuestPersonPromptObject;
     public bool QuestItemPromptObjectActive;
     public bool QuestPersonPromptObjectActive;
+    //public InventoryScript InventoryScript;
+    private string activeItem;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,10 +26,11 @@ public class InteractionScript : MonoBehaviour
         InteractionObjectPromptObject = InteractionObjectPrompt;
         QuestItemPromptObject = QuestItemPromptPrefab;
         QuestPersonPromptObject = QuestPersonPromptPrefab;
+        //activeItem = null;
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
          RaycastHit hit;
         // Does the ray intersect any objects excluding the player layer
@@ -60,12 +63,8 @@ public class InteractionScript : MonoBehaviour
                InteractionObjectPromptActive = false;
               // Debug.Log("Not InteractionObject"); 
             }
-            // this the interaction with the object
-            if (InteractionObjectPromptActive)
-            {
-                if (Input.GetKeyDown("e"))
-                Destroy(hit.transform.gameObject);
-            }
+            
+            
             // checking if the raycast detects a quest item, istantiating the prompt and toggling the active state of the prompt based on if the player is aiming at it or not
         if (hit.collider.tag=="QuestItem")
         {
@@ -113,6 +112,40 @@ public class InteractionScript : MonoBehaviour
             QuestPersonPromptObjectActive = false;
            // Debug.Log("Not Quest Person"); 
         }
+        // this the interaction with the object
+        if (InteractionObjectPromptActive)
+            {
+                if (Input.GetKeyDown("e"))
+                hit.transform.gameObject.SetActive(false);
+            }
+        // this is the interaction with the item
+        if (QuestItemPromptObjectActive)
+        {
+            if (Input.GetKeyDown("e"))
+            {
+            activeItem = hit.collider.gameObject.name;
+            
+            if (InventoryScript.InventoryObject1 == null)
+            {
+                InventoryScript.InventoryObject1=  activeItem;
+            } 
+            else
+            {
+                if (InventoryScript.InventoryObject2 == null)
+                {
+                InventoryScript.InventoryObject2= activeItem;
+                }
+            }
+            
+            Debug.Log("Inventory Slot 1 has :" +InventoryScript.inventoryObject1);
+            Debug.Log("Inventory Slot 2 has :" +InventoryScript.inventoryObject2);   
+            
+            hit.transform.gameObject.SetActive(false);
+           
+      
+            }
+        }
+        
         }
         // disabling every prompt if the raycast doesnt detect anything
         else
@@ -125,6 +158,8 @@ public class InteractionScript : MonoBehaviour
             QuestPersonPromptObject.SetActive(false);
             QuestItemPromptObjectActive = false;
             //Debug.Log("disabled");
-        }       
+        }    
+
+        
     }
 }
