@@ -145,6 +145,16 @@ public class InteractionScript : MonoBehaviour
       
             }
         }
+
+        if (QuestPersonPromptObjectActive)
+        {   
+            if(Input.GetKeyDown("e"))
+            {
+                FindObjectOfType<NPC>().TriggerDialouge();
+            }
+            
+           
+        }
         
         }
         // disabling every prompt if the raycast doesnt detect anything
