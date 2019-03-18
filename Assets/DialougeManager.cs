@@ -10,6 +10,17 @@ public class DialougeManager : MonoBehaviour
     public GameObject UI;
 
     private Queue<string> sentences;
+
+    public float convType;
+    public GameObject choices;
+
+    public Text opt1Text;
+    public Text opt2Text;
+    public Text opt3Text;
+    public Text opt4Text;
+
+    public int choiceMade;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +39,11 @@ public class DialougeManager : MonoBehaviour
             sentences.Enqueue(sentence);
         }
 
+        opt1Text.text = dialouge.choices[0];
+        opt2Text.text = dialouge.choices[1];
+        opt3Text.text = dialouge.choices[2];
+        opt4Text.text = dialouge.choices[3];
+
         DisplayNextSentence();
     }
 
@@ -45,7 +61,34 @@ public class DialougeManager : MonoBehaviour
 
     void EndDialouge()
     {
-        UI.SetActive(false);
-        Debug.Log("End of conversation");
+        if (convType == 1)
+        {
+            UI.SetActive(false);
+            Debug.Log("End of conversation");
+        }
+        else if (convType == 2)
+        {
+            choices.SetActive(true);
+        }
+    }
+    
+    public void choice1()
+    {
+        choiceMade = 1;
+    }
+
+    public void choice2()
+    {
+        choiceMade = 2;
+    }
+
+    public void choice3()
+    {
+        choiceMade = 3;
+    }
+
+    public void choice4()
+    {
+        choiceMade = 4;
     }
 }
