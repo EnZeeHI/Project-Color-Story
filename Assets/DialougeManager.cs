@@ -7,6 +7,7 @@ public class DialougeManager : MonoBehaviour
 {
     public Text nameText;
     public Text dialougeText;
+    public GameObject UI;
 
     private Queue<string> sentences;
     // Start is called before the first frame update
@@ -44,6 +45,7 @@ public class DialougeManager : MonoBehaviour
 
     void EndDialouge()
     {
+        UI.SetActive(false);
         Debug.Log("End of conversation");
     }
 }

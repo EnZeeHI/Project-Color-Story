@@ -13,21 +13,28 @@ public class camareController : MonoBehaviour
     public float offset;
 
     public Vector2 pitchMM = new Vector2(-40, 85);
+
+    public GameObject UI;
     
     // Update is called once per frame
     void LateUpdate()
     {
-        yaw += Input.GetAxis("Mouse X") * mouseSens;
-        pitch -= Input.GetAxis("Mouse Y") * mouseSens;
-        
-        yaw += Input.GetAxis("HorizontalCamera") * mouseSens;
-        pitch -= Input.GetAxis("VerticalCamera") * mouseSens;
+        if (UI.activeInHierarchy == false)
+        {
 
-        pitch = Mathf.Clamp(pitch, pitchMM.x, pitchMM.y);
 
-        Vector3 targetRot = new Vector3(pitch, yaw);
-        transform.eulerAngles = targetRot;
+            yaw += Input.GetAxis("Mouse X") * mouseSens;
+            pitch -= Input.GetAxis("Mouse Y") * mouseSens;
 
-        transform.position = target.position - transform.forward * offset;
+            yaw += Input.GetAxis("HorizontalCamera") * mouseSens;
+            pitch -= Input.GetAxis("VerticalCamera") * mouseSens;
+
+            pitch = Mathf.Clamp(pitch, pitchMM.x, pitchMM.y);
+
+            Vector3 targetRot = new Vector3(pitch, yaw);
+            transform.eulerAngles = targetRot;
+
+            transform.position = target.position - transform.forward * offset;
+        }
     }
 }
