@@ -9,4 +9,7 @@ public class Dialouge
 
     [TextArea(2, 12)]
     public string[] sentences;
+
+    [TextArea(2,6)]
+    public string[] choices;
 }

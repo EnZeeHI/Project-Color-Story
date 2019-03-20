@@ -17,6 +17,11 @@ public class InteractionScript : MonoBehaviour
     private GameObject QuestPersonPromptObject;
     public bool QuestItemPromptObjectActive;
     public bool QuestPersonPromptObjectActive;
+
+    //hello aras this is my fucking about with the text
+    public GameObject UI;
+
+
     //public InventoryScript InventoryScript;
     private string activeItem;
     // Start is called before the first frame update
@@ -115,13 +120,13 @@ public class InteractionScript : MonoBehaviour
         // this the interaction with the object
         if (InteractionObjectPromptActive)
             {
-                if (Input.GetKeyDown("e"))
+                if (Input.GetButton("Interaction1"))
                 hit.transform.gameObject.SetActive(false);
             }
         // this is the interaction with the item
         if (QuestItemPromptObjectActive)
         {
-            if (Input.GetKeyDown("e"))
+            if (Input.GetButton("Interaction1"))
             {
             activeItem = hit.collider.gameObject.name;
             
@@ -148,8 +153,9 @@ public class InteractionScript : MonoBehaviour
 
         if (QuestPersonPromptObjectActive)
         {   
-            if(Input.GetKeyDown("e"))
+            if(Input.GetButton("Interaction1"))
             {
+                    UI.SetActive(true);
                 FindObjectOfType<NPC>().TriggerDialouge();
             }
             

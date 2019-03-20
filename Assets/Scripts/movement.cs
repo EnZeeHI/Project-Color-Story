@@ -17,6 +17,8 @@ public class movement : MonoBehaviour
 
     Transform cameraT;
 
+    public GameObject UI;
+
     
     // Start is called before the first frame update
     void Start()
@@ -27,25 +29,28 @@ public class movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float forward = Input.GetAxis("Vertical"), horizontal = Input.GetAxis("Horizontal");
-
-        //Vector3 move = new Vector3(horizontal * horizontalSpeed, gravity, forward * forwardSpeed);
-
-        //controller.Move(move * Time.deltaTime);
-
-        Vector2 input = new Vector2(horizontal, forward);
-        Vector2 inputDir = input.normalized;
-
-        if (inputDir != Vector2.zero)
+        if (UI.activeInHierarchy == false)
         {
-            float targetRotation = Mathf.Atan2(inputDir.x, inputDir.y) * Mathf.Rad2Deg + cameraT.eulerAngles.y;
-            transform.eulerAngles = Vector3.up * Mathf.SmoothDampAngle(transform.eulerAngles.y,targetRotation, ref turnVelocity, turnSpeed);
+            float forward = Input.GetAxis("Vertical"), horizontal = Input.GetAxis("Horizontal");
+
+            //Debug.Log(forward);
+            //Vector3 move = new Vector3(horizontal * horizontalSpeed, gravity, forward * forwardSpeed);
+
+            //controller.Move(move * Time.deltaTime);
+
+            Vector2 input = new Vector2(horizontal, forward);
+            Vector2 inputDir = input.normalized;
+
+            if (inputDir != Vector2.zero)
+            {
+                float targetRotation = Mathf.Atan2(inputDir.x, inputDir.y) * Mathf.Rad2Deg + cameraT.eulerAngles.y;
+                transform.eulerAngles = Vector3.up * Mathf.SmoothDampAngle(transform.eulerAngles.y, targetRotation, ref turnVelocity, turnSpeed);
+            }
+
+            float targetSpeed = forwardSpeed * inputDir.magnitude;
+            currentSpeed = Mathf.SmoothDamp(currentSpeed, targetSpeed, ref speedVelocity, speedTime);
+
+            transform.Translate(transform.forward * currentSpeed * Time.deltaTime, Space.World);
         }
-
-        float targetSpeed = forwardSpeed * inputDir.magnitude;
-        currentSpeed = Mathf.SmoothDamp(currentSpeed, targetSpeed, ref speedVelocity, speedTime);
-
-        transform.Translate(transform.forward * currentSpeed * Time.deltaTime, Space.World);
-
     }
 }
