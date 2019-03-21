@@ -21,6 +21,10 @@ public class DialougeManager : MonoBehaviour
 
     public int choiceMade;
 
+
+    // added code for color change
+    public bool personIsHappy;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -65,6 +69,7 @@ public class DialougeManager : MonoBehaviour
         {
             UI.SetActive(false);
             Debug.Log("End of conversation");
+            personIsHappy = true;
         }
         else if (convType == 2)
         {
