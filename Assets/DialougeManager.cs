@@ -69,26 +69,27 @@ public class DialougeManager : MonoBehaviour
         else if (convType == 2)
         {
             choices.SetActive(true);
+            sentences.Clear();
         }
     }
     
-    public void choice1()
-    {
-        choiceMade = 1;
-    }
+    //public void choice1()
+    //{
+    //    choiceMade = 1;
+    //}
 
-    public void choice2()
-    {
-        choiceMade = 2;
-    }
+   // public void choice2()
+    //{
+    //    choiceMade = 2;
+    //}
 
-    public void choice3()
-    {
-        choiceMade = 3;
-    }
+    //public void choice3()
+    //{
+    //    choiceMade = 3;
+    //}
 
-    public void choice4()
-    {
-        choiceMade = 4;
-    }
+    //public void choice4()
+    //{
+    //    choiceMade = 4;
+    //}
 }
