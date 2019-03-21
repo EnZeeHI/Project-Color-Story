@@ -17,6 +17,8 @@ public class InteractionScript : MonoBehaviour
     private GameObject QuestPersonPromptObject;
     public bool QuestItemPromptObjectActive;
     public bool QuestPersonPromptObjectActive;
+    public bool activateItem;
+    public Camera camera;
 
     //hello aras this is my fucking about with the text
     public GameObject UI;
@@ -39,7 +41,7 @@ public class InteractionScript : MonoBehaviour
     {
          RaycastHit hit;
         // Does the ray intersect any objects excluding the player layer
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 3))
+        if (Physics.Raycast(transform.position, camera.transform.TransformDirection(Vector3.forward), out hit, 3))
         {
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
         // checking if the raycast is detecting the Quest Object, Instantiating a prompt once, and seting it active/unactive based on if the player aims at the object or not 
@@ -155,6 +157,10 @@ public class InteractionScript : MonoBehaviour
         {   
             if(Input.GetButton("Interaction1"))
             {
+                if (hit.transform.GetComponent<ItemCheck>() != null)
+                {
+                   UseItem(hit.transform.GetComponent<ItemCheck>().ItemToCheck) ;
+                }
                     UI.SetActive(true);
                 FindObjectOfType<NPC>().TriggerDialouge();
             }
@@ -177,5 +183,25 @@ public class InteractionScript : MonoBehaviour
         }    
 
         
+    }
+    void UseItem(string item)
+    {
+        if(InventoryScript.InventoryObject1 == item)
+        {
+            InventoryScript.InventoryObject1 = string.Empty;
+            activateItem = true;
+            Debug.Log("Pizza Time!!");
+        }
+        else if (InventoryScript.InventoryObject2 == item)
+        {
+            InventoryScript.InventoryObject2 = string.Empty;
+            activateItem = true;
+            Debug.Log("Pizza Time!!");
+        }
+        else 
+        {
+            activateItem = false;
+            Debug.Log(" no Pizza Time :(");
+        }
     }
 }
