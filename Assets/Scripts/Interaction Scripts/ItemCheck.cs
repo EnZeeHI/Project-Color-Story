@@ -2,17 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PersonInteractionScript : MonoBehaviour
+public class ItemCheck : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public string ItemToCheck;
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+ 
 }

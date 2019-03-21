@@ -21,6 +21,10 @@ public class DialougeManager : MonoBehaviour
 
     public int choiceMade;
 
+
+    // added code for color change
+    public bool personIsHappy;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -61,6 +65,7 @@ public class DialougeManager : MonoBehaviour
 
     void EndDialouge()
     {
+        
         if (convType == 1)
         {
             UI.SetActive(false);
@@ -69,26 +74,29 @@ public class DialougeManager : MonoBehaviour
         else if (convType == 2)
         {
             choices.SetActive(true);
+            sentences.Clear();
+            
         }
+        personIsHappy = true;
     }
     
-    public void choice1()
-    {
-        choiceMade = 1;
-    }
+    //public void choice1()
+    //{
+    //    choiceMade = 1;
+    //}
 
-    public void choice2()
-    {
-        choiceMade = 2;
-    }
+   // public void choice2()
+    //{
+    //    choiceMade = 2;
+    //}
 
-    public void choice3()
-    {
-        choiceMade = 3;
-    }
+    //public void choice3()
+    //{
+    //    choiceMade = 3;
+    //}
 
-    public void choice4()
-    {
-        choiceMade = 4;
-    }
+    //public void choice4()
+    //{
+    //    choiceMade = 4;
+    //}
 }

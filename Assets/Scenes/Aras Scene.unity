@@ -718,7 +718,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1608261945}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -0.02, y: 1.761, z: -10.82}
+  m_LocalPosition: {x: 1.734, y: 1.761, z: -10.82}
   m_LocalScale: {x: 0.5, y: 1, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -791,12 +791,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1608261945}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cfddbcbe5c51ba438a9b3f179c13492, type: 3}
+  m_Script: {fileID: 11500000, guid: 88718f064ac050242aca4dbd65b7973e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   InteractionObjectPrompt: {fileID: 127116014777577725, guid: 91071fd63f5f9ef4485fd6b81d03db2f,
     type: 3}
-  offset: {x: 0, y: 2, z: 0}
+  offset: {x: 0, y: 1, z: 0}
   InteractionObjectPromptActive: 0
   QuestItemPromptPrefab: {fileID: 6574959072839332904, guid: 2fcadb94bd265c84c91100b0a22567bf,
     type: 3}
@@ -804,6 +804,8 @@ MonoBehaviour:
     type: 3}
   QuestItemPromptObjectActive: 0
   QuestPersonPromptObjectActive: 0
+  activateItem: 0
+  UI: {fileID: 0}
 --- !u!1 &1610323867
 GameObject:
   m_ObjectHideFlags: 0
