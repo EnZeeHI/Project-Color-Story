@@ -1,0 +1,171 @@
+fileFormatVersion: 2
+guid: 4355787c50182894c93ea0a35d3fe4d9
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Box001
+    100002: Box002
+    100004: Box003
+    100006: Box004
+    100008: Dining_Kitchen
+    100010: //RootNode
+    100012: Hallway
+    100014: Hallway + Bath
+    100016: Livingroom
+    100018: Pillar
+    100020: Roof
+    100022: Roof001
+    100024: Room_Kid
+    100026: Room_Parent
+    100028: Veranda
+    100030: Veranda 1
+    100032: Window
+    400000: Box001
+    400002: Box002
+    400004: Box003
+    400006: Box004
+    400008: Dining_Kitchen
+    400010: //RootNode
+    400012: Hallway
+    400014: Hallway + Bath
+    400016: Livingroom
+    400018: Pillar
+    400020: Roof
+    400022: Roof001
+    400024: Room_Kid
+    400026: Room_Parent
+    400028: Veranda
+    400030: Veranda 1
+    400032: Window
+    2100000: No Name
+    2300000: Box001
+    2300002: Box002
+    2300004: Box003
+    2300006: Box004
+    2300008: Dining_Kitchen
+    2300010: Hallway
+    2300012: Hallway + Bath
+    2300014: Livingroom
+    2300016: Pillar
+    2300018: Roof
+    2300020: Roof001
+    2300022: Room_Kid
+    2300024: Room_Parent
+    2300026: Veranda
+    2300028: Veranda 1
+    2300030: Window
+    3300000: Box001
+    3300002: Box002
+    3300004: Box003
+    3300006: Box004
+    3300008: Dining_Kitchen
+    3300010: Hallway
+    3300012: Hallway + Bath
+    3300014: Livingroom
+    3300016: Pillar
+    3300018: Roof
+    3300020: Roof001
+    3300022: Room_Kid
+    3300024: Room_Parent
+    3300026: Veranda
+    3300028: Veranda 1
+    3300030: Window
+    4300000: Veranda
+    4300002: Veranda
+    4300004: Livingroom
+    4300006: Dining_Kitchen
+    4300008: Hallway
+    4300010: Hallway + Bath
+    4300012: Room_Kid
+    4300014: Room_Parent
+    4300016: Box001
+    4300018: Box002
+    4300020: Box003
+    4300022: Box004
+    4300024: Roof
+    4300026: Roof001
+    4300028: Pillar
+    4300030: Window
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
