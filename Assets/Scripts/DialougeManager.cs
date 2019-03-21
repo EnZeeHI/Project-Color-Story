@@ -65,17 +65,19 @@ public class DialougeManager : MonoBehaviour
 
     void EndDialouge()
     {
+        
         if (convType == 1)
         {
             UI.SetActive(false);
             Debug.Log("End of conversation");
-            personIsHappy = true;
         }
         else if (convType == 2)
         {
             choices.SetActive(true);
             sentences.Clear();
+            
         }
+        personIsHappy = true;
     }
     
     //public void choice1()

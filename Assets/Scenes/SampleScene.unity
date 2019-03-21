@@ -3169,7 +3169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hueShiftValue: 0
   saturationValue: 0
-  isThePersonHappy: 0
+  isThePersonHappy: 1
 --- !u!114 &534669910
 MonoBehaviour:
   m_ObjectHideFlags: 0
