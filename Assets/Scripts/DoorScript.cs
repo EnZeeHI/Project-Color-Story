@@ -29,7 +29,7 @@ public class DoorScript : MonoBehaviour
                 doorOpen = false;
                 openTheDoor =false;
             }
-            else if (openTheDoor && doorClosed)
+            if (openTheDoor && doorClosed)
             {
                 transform.position = doorOpenVector;
                 doorClosed = false;
