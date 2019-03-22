@@ -132,6 +132,21 @@ public class InteractionScript : MonoBehaviour
                             hit.transform.gameObject.GetComponent<DoorScript>().openTheDoor = true;
                         }
                     }
+
+                    if (hit.transform.GetComponent<ConversationCheck>() != null)
+                    {
+                        Debug.Log("aaa");
+                        if (GameObject.Find("choiceManager").GetComponent<TextLog>().line > 1)
+                        {
+                            hit.transform.gameObject.GetComponent<DoorScript>().openTheDoor = true;
+                            Debug.Log("open");
+                        }
+                        else
+                        {
+                            Debug.Log("nani");
+                        }
+                        //Debug.Log()
+                    }
                     else
                     {
                         hit.transform.gameObject.GetComponent<DoorScript>().openTheDoor = true;
