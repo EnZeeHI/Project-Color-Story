@@ -147,9 +147,10 @@ public class InteractionScript : MonoBehaviour
                         }
                         //Debug.Log()
                     }
-                    else
+                    if (hit.transform.GetComponent<ItemCheck>()== null && hit.transform.GetComponent<ConversationCheck>()== null)
                     {
                         hit.transform.gameObject.GetComponent<DoorScript>().openTheDoor = true;
+                        Debug.Log("oof");
                     }
                     
                     //hit.transform.gameObject.GetComponent<DoorScript>().openTheDoor = false;
