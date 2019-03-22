@@ -5,7 +5,7 @@ using UnityEngine;
 public class DoorScript : MonoBehaviour
 {
     public bool openTheDoor;
-    public bool objectiveComplete;
+    public bool objectiveComplete
     Vector3 doorOpenVector;
     Vector3 doorClosedVector;
     bool doorOpen = false;
@@ -19,7 +19,7 @@ public class DoorScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
         if(objectiveComplete = true)
         if (openTheDoor)
         {
