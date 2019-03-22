@@ -123,7 +123,9 @@ public class InteractionScript : MonoBehaviour
         if (InteractionObjectPromptActive)
             {
                 if (Input.GetButton("Interaction1"))
-                hit.transform.gameObject.SetActive(false);
+                hit.transform.gameObject.GetComponent<DoorScript>().openTheDoor = true;
+                //hit.transform.gameObject.GetComponent<DoorScript>().openTheDoor = false;
+
             }
         // this is the interaction with the item
         if (QuestItemPromptObjectActive)
