@@ -164,7 +164,7 @@ public class InteractionScript : MonoBehaviour
                    UseItem(hit.transform.GetComponent<ItemCheck>().ItemToCheck) ;
                 }
                     UI.SetActive(true);
-                FindObjectOfType<NPC>().TriggerDialouge();
+                hit.transform.GetComponent<NPC>().TriggerDialouge();
             }
             
            
