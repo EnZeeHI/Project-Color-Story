@@ -138,7 +138,7 @@ public class InteractionScript : MonoBehaviour
                         Debug.Log("aaa");
                         if (GameObject.Find("choiceManager").GetComponent<TextLog>().line > 1)
                         {
-                            hit.transform.gameObject.GetComponent<DoorScript>().openTheDoor = true;
+                            transform.position = transform.position + new Vector3(5,0,0);
                             Debug.Log("open");
                         }
                         else
