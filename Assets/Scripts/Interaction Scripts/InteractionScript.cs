@@ -43,7 +43,7 @@ public class InteractionScript : MonoBehaviour
         // Does the ray intersect any objects excluding the player layer
         if (Physics.Raycast(transform.position, camera.transform.TransformDirection(Vector3.forward), out hit, 3))
         {
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
+            Debug.DrawRay(transform.position, camera.transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
         // checking if the raycast is detecting the Quest Object, Instantiating a prompt once, and seting it active/unactive based on if the player aims at the object or not 
             if (hit.collider.tag == "QuestObject"  )
             {
@@ -123,9 +123,22 @@ public class InteractionScript : MonoBehaviour
         if (InteractionObjectPromptActive)
             {
                 if (Input.GetButton("Interaction1"))
-                hit.transform.gameObject.GetComponent<DoorScript>().openTheDoor = true;
-                //hit.transform.gameObject.GetComponent<DoorScript>().openTheDoor = false;
-
+                {
+                    if (hit.transform.GetComponent<ItemCheck>() != null)
+                    {
+                        UseItem(hit.transform.GetComponent<ItemCheck>().ItemToCheck) ;
+                        if (activateItem)
+                        {
+                            hit.transform.gameObject.GetComponent<DoorScript>().openTheDoor = true;
+                        }
+                    }
+                    else
+                    {
+                        hit.transform.gameObject.GetComponent<DoorScript>().openTheDoor = true;
+                    }
+                    
+                    //hit.transform.gameObject.GetComponent<DoorScript>().openTheDoor = false;
+                }
             }
         // this is the interaction with the item
         if (QuestItemPromptObjectActive)

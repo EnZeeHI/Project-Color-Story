@@ -5,7 +5,7 @@ using UnityEngine;
 public class DoorScript : MonoBehaviour
 {
     public bool openTheDoor;
-    public bool objectiveComplete;
+    public bool objectiveComplete ;
     Vector3 doorOpenVector;
     Vector3 doorClosedVector;
     bool doorOpen = false;
@@ -21,6 +21,7 @@ public class DoorScript : MonoBehaviour
     {
 
         if(objectiveComplete = true)
+        {
         if (openTheDoor)
         {
             doorOpenVector = transform.position + new Vector3 (0,0,2);
@@ -40,6 +41,7 @@ public class DoorScript : MonoBehaviour
                 openTheDoor =false;
             }
             
+        }
         }
     }
 }
