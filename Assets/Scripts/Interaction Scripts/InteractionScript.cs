@@ -9,6 +9,7 @@ public class InteractionScript : MonoBehaviour
     public GameObject InteractionObjectPrompt;
     private GameObject InteractionObjectPromptObject;
     public Vector3 offset = new Vector3(0,1,0);
+    public Vector3 raycastOffset  = new Vector3(0,0.9f,0);
     private bool isCreated;
     public bool InteractionObjectPromptActive;
     public GameObject QuestItemPromptPrefab;
@@ -41,9 +42,9 @@ public class InteractionScript : MonoBehaviour
     {
          RaycastHit hit;
         // Does the ray intersect any objects excluding the player layer
-        if (Physics.Raycast(transform.position, camera.transform.TransformDirection(Vector3.forward), out hit, 3))
+        if (Physics.Raycast(transform.position + raycastOffset, camera.transform.TransformDirection(Vector3.forward), out hit, 3))
         {
-            Debug.DrawRay(transform.position, camera.transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
+            Debug.DrawRay(transform.position + raycastOffset, camera.transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
         // checking if the raycast is detecting the Quest Object, Instantiating a prompt once, and seting it active/unactive based on if the player aims at the object or not 
             if (hit.collider.tag == "QuestObject"  )
             {
@@ -122,7 +123,7 @@ public class InteractionScript : MonoBehaviour
         // this the interaction with the object
         if (InteractionObjectPromptActive)
             {
-                if (Input.GetButton("Interaction1"))
+                if (Input.GetButtonDown("Interaction1"))
                 {
                     if (hit.transform.GetComponent<ItemCheck>() != null)
                     {
@@ -203,7 +204,7 @@ public class InteractionScript : MonoBehaviour
         // disabling every prompt if the raycast doesnt detect anything
         else
         {   
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
+            Debug.DrawRay(transform.position + raycastOffset, camera.transform.TransformDirection(Vector3.forward) * 1000, Color.white);
             InteractionObjectPromptObject.SetActive(false);
             InteractionObjectPromptActive = false;
             QuestItemPromptObject.SetActive(false);

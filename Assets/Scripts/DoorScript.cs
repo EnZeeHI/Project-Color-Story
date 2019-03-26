@@ -8,12 +8,13 @@ public class DoorScript : MonoBehaviour
     public bool objectiveComplete ;
     Vector3 doorOpenVector;
     Vector3 doorClosedVector;
-    bool doorOpen = false;
+    public bool doorOpen = false;
     bool doorClosed = true;
+    public Animator doorOpenAnimation;
     // Start is called before the first frame update
     void Start()
     {
-        
+        doorOpenAnimation = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -24,21 +25,23 @@ public class DoorScript : MonoBehaviour
         {
         if (openTheDoor)
         {
-            doorOpenVector = transform.position + new Vector3 (0,0,2);
-            doorClosedVector =  transform.position + new Vector3 (0,0,-2);
+            //doorOpenVector = transform.position + new Vector3 (0,0,2);
+            //doorClosedVector =  transform.position + new Vector3 (0,0,-2);
             if (openTheDoor && doorOpen)
             {
-                transform.position = doorClosedVector;
+                //transform.position = doorClosedVector;
                 doorClosed = true;
                 doorOpen = false;
                 openTheDoor =false;
+                doorOpenAnimation.SetBool("DoorOpen", false);
             }
             else if (openTheDoor && doorClosed)
             {
-                transform.position = doorOpenVector;
+                //transform.position = doorOpenVector;
                 doorClosed = false;
                 doorOpen  = true;
                 openTheDoor =false;
+                doorOpenAnimation.SetBool("DoorOpen", true);
             }
             
         }
