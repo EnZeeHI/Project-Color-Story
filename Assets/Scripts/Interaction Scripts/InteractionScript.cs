@@ -49,14 +49,14 @@ public class InteractionScript : MonoBehaviour
             if (hit.collider.tag == "QuestObject"  )
             {
                 
-                if ( hit.transform.childCount <1)
+                if ( hit.transform.Find("InteractionObjectPrompt(Clone)") == null)
                 {   
                     InteractionObjectPromptObject = Instantiate(InteractionObjectPrompt, hit.collider.transform.position+ offset, hit.collider.transform.rotation );
                     InteractionObjectPromptObject.transform.parent = hit.transform;
                     isCreated = true;                    
                 }
                
-               if(hit.transform.childCount ==1)
+               if(hit.transform.Find("InteractionObjectPrompt(Clone)"))
                {
                   InteractionObjectPromptObject =  hit.transform.Find("InteractionObjectPrompt(Clone)").gameObject;
                }
@@ -76,13 +76,13 @@ public class InteractionScript : MonoBehaviour
             // checking if the raycast detects a quest item, istantiating the prompt and toggling the active state of the prompt based on if the player is aiming at it or not
         if (hit.collider.tag=="QuestItem")
         {
-            if ( hit.transform.childCount <1)
+            if ( hit.transform.Find("QuestItemPromptPrefab(Clone)") == null)
             {   
                 QuestItemPromptObject = Instantiate(QuestItemPromptPrefab, hit.collider.transform.position+ offset, hit.collider.transform.rotation );
                 QuestItemPromptObject.transform.parent = hit.transform;
                 isCreated = true;              
             }
-            if(hit.transform.childCount ==1)
+            if(hit.transform.Find("QuestItemPromptPrefab(Clone)") == null)
             {
                 QuestItemPromptObject =  hit.transform.Find("QuestItemPromptPrefab(Clone)").gameObject;
             }
@@ -100,13 +100,13 @@ public class InteractionScript : MonoBehaviour
         // same as before but for a quest person 
         if (hit.collider.tag=="QuestPerson")
         {
-            if ( hit.transform.childCount <1)
+            if ( hit.transform.Find("QuestPersonPromptPrefab(Clone)") == null)
             {   
                 QuestPersonPromptObject = Instantiate(QuestPersonPromptPrefab, hit.collider.transform.position+ offset, hit.collider.transform.rotation );
                 QuestPersonPromptObject.transform.parent = hit.transform;
                 isCreated = true;              
             }
-            if(hit.transform.childCount ==1)
+            if( hit.transform.Find("QuestPersonPromptPrefab(Clone)"))
             {
                 QuestPersonPromptObject =  hit.transform.Find("QuestPersonPromptPrefab(Clone)").gameObject;
             }
