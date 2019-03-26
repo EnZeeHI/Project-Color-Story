@@ -1,83 +1,23 @@
 fileFormatVersion: 2
-guid: 58b0ae919bf5c1346aadb8310c2ed168
+guid: ecc9ca686265a444080947209f67e811
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: calcas.001
-    100002: camisola.003
-    100004: Circle
-    100006: Circle.001
-    100008: Circle.003
-    100010: corpot.000
-    100012: corpot.001
-    100014: //RootNode
-    100016: olhos.001
-    100018: pestanas.001
-    100020: Plane
-    100022: Plane.006
-    100024: sapatos.001
-    400000: calcas.001
-    400002: camisola.003
-    400004: Circle
-    400006: Circle.001
-    400008: Circle.003
-    400010: corpot.000
-    400012: corpot.001
-    400014: //RootNode
-    400016: olhos.001
-    400018: pestanas.001
-    400020: Plane
-    400022: Plane.006
-    400024: sapatos.001
-    2100000: Material
-    2100002: Material.032
-    2100004: Material.020
-    2100006: Material.008
-    2100008: Material.021
-    2100010: Material.009
-    2100012: Material.031
-    2100014: Material.001
-    2100016: Material.007
-    2100018: Material.005
-    2100020: Material.004
-    2100022: Material.003
-    2100024: Material.002
-    2300000: calcas.001
-    2300002: camisola.003
-    2300004: Circle
-    2300006: Circle.001
-    2300008: Circle.003
-    2300010: corpot.000
-    2300012: corpot.001
-    2300014: olhos.001
-    2300016: pestanas.001
-    2300018: Plane
-    2300020: Plane.006
-    2300022: sapatos.001
-    3300000: calcas.001
-    3300002: camisola.003
-    3300004: Circle
-    3300006: Circle.001
-    3300008: Circle.003
-    3300010: corpot.000
-    3300012: corpot.001
-    3300014: olhos.001
-    3300016: pestanas.001
-    3300018: Plane
-    3300020: Plane.006
-    3300022: sapatos.001
-    4300000: Circle
-    4300002: Plane.006
-    4300004: Circle.003
-    4300006: camisola.003
-    4300008: calcas.001
-    4300010: corpot.001
-    4300012: corpot.000
-    4300014: Plane
-    4300016: Circle.001
-    4300018: olhos.001
-    4300020: pestanas.001
-    4300022: sapatos.001
+    100000: //RootNode
+    400000: //RootNode
+    2100000: Material.003
+    2100002: Material.002
+    2100004: Material.009
+    2100006: Material.006
+    2100008: Material.010
+    2100010: Material.031
+    2100012: Material.007
+    2100014: Material.005
+    2100016: Material.004
+    2100018: Material.011
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: sapatos.001
   externalObjects: {}
   materials:
     importMaterials: 1

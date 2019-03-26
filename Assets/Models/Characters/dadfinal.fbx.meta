@@ -1,60 +1,25 @@
 fileFormatVersion: 2
-guid: 2c227e94d13e39d44a79f007eb4c869e
+guid: 2e7dd4648f9b35346b03a89f88b6018e
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: calcas.001
-    100002: camisola.003
-    100004: Circle.001
-    100006: corpot.001
-    100008: //RootNode
-    100010: olhos.001
-    100012: pestanas.001
-    100014: sapatos.001
-    100016: Sphere
-    400000: calcas.001
-    400002: camisola.003
-    400004: Circle.001
-    400006: corpot.001
-    400008: //RootNode
-    400010: olhos.001
-    400012: pestanas.001
-    400014: sapatos.001
-    400016: Sphere
-    2100000: Material.009
-    2100002: Material.031
-    2100004: Material.011
-    2100006: Material.006
-    2100008: Material.010
-    2100010: Material.007
-    2100012: Material.005
-    2100014: Material.004
-    2100016: Material.003
-    2100018: Material.002
-    2300000: calcas.001
-    2300002: camisola.003
-    2300004: Circle.001
-    2300006: corpot.001
-    2300008: olhos.001
-    2300010: pestanas.001
-    2300012: sapatos.001
-    2300014: Sphere
-    3300000: calcas.001
-    3300002: camisola.003
-    3300004: Circle.001
-    3300006: corpot.001
-    3300008: olhos.001
-    3300010: pestanas.001
-    3300012: sapatos.001
-    3300014: Sphere
-    4300000: calcas.001
-    4300002: corpot.001
-    4300004: Sphere
-    4300006: camisola.003
-    4300008: Circle.001
-    4300010: olhos.001
-    4300012: pestanas.001
-    4300014: sapatos.001
+    100000: //RootNode
+    400000: //RootNode
+    2100000: Material.003
+    2100002: Material.002
+    2100004: Material.009
+    2100006: Material.008
+    2100008: Material.021
+    2100010: Material.020
+    2100012: Material.001
+    2100014: Material.031
+    2100016: Material.007
+    2100018: Material.005
+    2100020: Material.004
+    2100022: Material.032
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: sapatos.001
   externalObjects: {}
   materials:
     importMaterials: 1
