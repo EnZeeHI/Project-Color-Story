@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 2e7dd4648f9b35346b03a89f88b6018e
+guid: 62fe8563965a4744795eb0dd6837e08b
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: Material.003
-    2100002: Material.002
-    2100004: Material.009
-    2100006: Material.008
-    2100008: Material.021
-    2100010: Material.020
-    2100012: Material.001
-    2100014: Material.031
-    2100016: Material.007
-    2100018: Material.005
-    2100020: Material.004
-    2100022: Material.032
+    2100000: Material.008
+    2100002: Material.021
+    2100004: Material.003
+    2100006: Material.002
+    2100008: Material.004
+    2100010: Material.005
+    2100012: Material.007
+    2100014: Material.032
+    2100016: Material.001
+    2100018: Material.031
+    2100020: Material.009
+    2100022: Material.020
     2300000: //RootNode
     3300000: //RootNode
-    4300000: sapatos.001
+    4300000: DAD
   externalObjects: {}
   materials:
     importMaterials: 1
