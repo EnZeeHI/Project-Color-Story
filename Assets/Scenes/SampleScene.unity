@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3650,6 +3650,7 @@ MonoBehaviour:
   opt3Text: {fileID: 1912471559}
   opt4Text: {fileID: 1624752010}
   choiceMade: 0
+  convNameHere: 
   personIsHappy: 0
 --- !u!4 &633568490
 Transform:
@@ -5462,6 +5463,7 @@ MonoBehaviour:
   opt4Text: {fileID: 1624752010}
   line: 0
   choiceMade: 0
+  convName: 
   convText: []
   bruv201: []
   bruv202: []
@@ -7651,6 +7653,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialouge:
     name: Dad
+    convName: DadConv1
     sentences:
     - Oh hey, you're up early!
     - I'm currently making breakfeast.
@@ -7874,6 +7877,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialouge:
     name: Mom
+    convName: 
     sentences:
     - Hey dear, thanks for the food.
     - I hope you have fun today at school
