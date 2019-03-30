@@ -23,18 +23,19 @@ public class PostProcessingScript : MonoBehaviour
         questPerson = GameObject.Find("QuestPerson");
     }
     void Update()
+    {   
+       p_colorGrading.saturation.Override(saturationValue);
+       
+    }
+    public void SaturationChange(float value)
     {
-        p_colorGrading.hueShift.Override(hueShiftValue);
-        // if (hueShiftValue < 1000)
-        // {
-        //    hueShiftValue = hueShiftValue + 1; 
-        //    saturationValue = saturationValue +1;
-        // }
-        isThePersonHappy = FindObjectOfType<DialougeManager>().personIsHappy;
-        if (isThePersonHappy)
+        if (saturationValue <= value)
         {
-            hueShiftValue = hueShiftValue + 1; 
+            saturationValue = saturationValue+1;
+            Debug.Log(saturationValue);
         }
+            
+        
     }
     
 }

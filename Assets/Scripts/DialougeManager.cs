@@ -24,6 +24,7 @@ public class DialougeManager : MonoBehaviour
     public string convNameHere;
 
 
+
     // added code for color change
     public bool personIsHappy;
 
@@ -35,6 +36,8 @@ public class DialougeManager : MonoBehaviour
     void Start()
     {
         sentences = new Queue<string>();
+
+        
     }
 
     public void StartDialouge (Dialouge dialouge)
@@ -87,7 +90,7 @@ public class DialougeManager : MonoBehaviour
             sentences.Clear();
             
         }
-        personIsHappy = true;
+        
     }
     
    

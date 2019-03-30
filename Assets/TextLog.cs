@@ -10,6 +10,7 @@ public class TextLog : MonoBehaviour
     public GameObject UI;
     public GameObject continueButton1;
     public GameObject continueButton2;
+    public PostProcessingScript PPScript;
 
     public float convType;
     public GameObject choices;
@@ -72,6 +73,8 @@ public class TextLog : MonoBehaviour
         bruv204[2] = "Are you excited?";
 
         bruv2Type = 2;
+
+        PPScript = GameObject.Find("Main Camera").GetComponent<PostProcessingScript>();
     }
 
     // Update is called once per frame
@@ -81,6 +84,14 @@ public class TextLog : MonoBehaviour
         //Debug.Log(line);
         Debug.Log(convName);
         
+        
+    }
+    void FixedUpdate()
+    {
+        if (line == 1)
+        {
+            PPScript.SaturationChange(0);
+        }
     }
     
     public void setText ()
