@@ -22,6 +22,12 @@ public class TextLog : MonoBehaviour
     public int line = 0;
     public int choiceMade;
 
+    public int dadConv1Choice1;
+    public int dadConv1Choice2;
+    public int dadConv1Choice3;
+    public int dadConv1Choice4;
+
+
     public string convName;
 
     public string[] convText;
@@ -93,7 +99,9 @@ public class TextLog : MonoBehaviour
                 choicesOptions[2] = "...";
                 choicesOptions[3] = "How could I ever be excited about school";
 
-            }
+                dadConv1Choice1 = choiceMade;
+
+}
             else if (line == 2)
             {
                 convText[0] = "Your mom is still in bed";
@@ -105,6 +113,8 @@ public class TextLog : MonoBehaviour
                 choicesOptions[1] = "I really need to get to school";
                 choicesOptions[2] = "...";
                 choicesOptions[3] = "I'll see if I have time";
+
+                dadConv1Choice2 = choiceMade;
             }
             else if (line == 3)
             {
@@ -112,6 +122,8 @@ public class TextLog : MonoBehaviour
                 convText[1] = "She's really excited for you, you know";
                 convText[2] = "Have fun in school today";
                 convType = 1;
+
+                dadConv1Choice3 = choiceMade;
             }
         }
     }
@@ -233,6 +245,10 @@ public class TextLog : MonoBehaviour
             UI.SetActive(false);
             Debug.Log("End of conversation");
             line = 0;
+
+            Debug.Log(dadConv1Choice1);
+            Debug.Log(dadConv1Choice2);
+            Debug.Log(dadConv1Choice3);
         }
         else if (convType == 2)
         {
