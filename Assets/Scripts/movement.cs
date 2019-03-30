@@ -14,6 +14,7 @@ public class movement : MonoBehaviour
 
     public float speedTime = 0.1f;
     float speedVelocity;
+    public Animator animator;
 
     Transform cameraT;
 
@@ -24,6 +25,7 @@ public class movement : MonoBehaviour
     void Start()
     {
         cameraT = Camera.main.transform;
+        animator = transform.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -32,6 +34,15 @@ public class movement : MonoBehaviour
         if (UI.activeInHierarchy == false)
         {
             float forward = Input.GetAxis("Vertical"), horizontal = Input.GetAxis("Horizontal");
+            if (Input.GetAxis("Vertical") !=0 ||Input.GetAxis("Horizontal") != 0)
+            {
+                
+                animator.SetBool("IsWalking", true);
+            }
+            else
+            {
+                animator.SetBool("IsWalking", false);
+            }
 
             //Debug.Log(forward);
             //Vector3 move = new Vector3(horizontal * horizontalSpeed, gravity, forward * forwardSpeed);
@@ -51,6 +62,7 @@ public class movement : MonoBehaviour
             currentSpeed = Mathf.SmoothDamp(currentSpeed, targetSpeed, ref speedVelocity, speedTime);
 
             transform.Translate(transform.forward * currentSpeed * Time.deltaTime, Space.World);
+
         }
     }
 }
