@@ -22,6 +22,8 @@ public class TextLog : MonoBehaviour
     public int line = 0;
     public int choiceMade;
 
+    public string convName;
+
     public string[] convText;
 
     public string[] bruv201;
@@ -69,51 +71,55 @@ public class TextLog : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(convText[1]);
-        Debug.Log(line);
+        //Debug.Log(convText[1]);
+        //Debug.Log(line);
+        Debug.Log(convName);
         
     }
     
     public void setText ()
     {
-        if (line == 1)
+        if (convName == "DadConv1")
         {
-            convText[0] = "First day of school huh";
-            convText[1] = "And it's also your final year";
-            convText[2] = "Are you excited?";
-            convType = 2;
+            if (line == 1)
+            {
+                convText[0] = "First day of school huh";
+                convText[1] = "And it's also your final year";
+                convText[2] = "Are you excited?";
+                convType = 2;
 
-            choicesOptions[0] = "A little bit";
-            choicesOptions[1] = "Not really";
-            choicesOptions[2] = "...";
-            choicesOptions[3] = "How could I ever be excited about school";
+                choicesOptions[0] = "A little bit";
+                choicesOptions[1] = "Not really";
+                choicesOptions[2] = "...";
+                choicesOptions[3] = "How could I ever be excited about school";
 
-        }
-        else if (line == 2)
-        {
-            convText[0] = "Your mom is still in bed";
-            convText[1] = "She's feeling a bit iffy today";
-            convText[2] = "Could you bring her some food?";
-            convType = 2;
+            }
+            else if (line == 2)
+            {
+                convText[0] = "Your mom is still in bed";
+                convText[1] = "She's feeling a bit iffy today";
+                convText[2] = "Could you bring her some food?";
+                convType = 2;
 
-            choicesOptions[0] = "I guess I could";
-            choicesOptions[1] = "I really need to get to school";
-            choicesOptions[2] = "...";
-            choicesOptions[3] = "I'll see if I have time";
-        }
-        else if (line == 3)
-        {
-            convText[0] = "I think your mom would be happy to talk to you before you leave";
-            convText[1] = "She's really excited for you, you know";
-            convText[2] = "Have fun in school today";
-            convType = 1;
-        }
-        else if (line == 4)
-        {
-
+                choicesOptions[0] = "I guess I could";
+                choicesOptions[1] = "I really need to get to school";
+                choicesOptions[2] = "...";
+                choicesOptions[3] = "I'll see if I have time";
+            }
+            else if (line == 3)
+            {
+                convText[0] = "I think your mom would be happy to talk to you before you leave";
+                convText[1] = "She's really excited for you, you know";
+                convText[2] = "Have fun in school today";
+                convType = 1;
+            }
         }
     }
 
+    public void whatConv(string convNameHere)
+    {
+        convName = convNameHere; 
+    }
     public void choice1 ()
     {
         choiceMade = 1;
@@ -222,8 +228,11 @@ public class TextLog : MonoBehaviour
     {
         if (convType == 1)
         {
+            continueButton1.SetActive(true);
+            continueButton2.SetActive(false);
             UI.SetActive(false);
             Debug.Log("End of conversation");
+            line = 0;
         }
         else if (convType == 2)
         {

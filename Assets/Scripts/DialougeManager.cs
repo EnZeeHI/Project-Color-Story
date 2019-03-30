@@ -21,10 +21,16 @@ public class DialougeManager : MonoBehaviour
 
     public int choiceMade;
 
+    public string convNameHere;
+
 
     // added code for color change
     public bool personIsHappy;
 
+    private void Update()
+    {
+        Debug.Log(sentences.Count);
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -47,6 +53,10 @@ public class DialougeManager : MonoBehaviour
         opt2Text.text = dialouge.choices[1];
         opt3Text.text = dialouge.choices[2];
         opt4Text.text = dialouge.choices[3];
+
+        convNameHere = dialouge.convName;
+
+        FindObjectOfType<TextLog>().whatConv(convNameHere);
 
         DisplayNextSentence();
     }
