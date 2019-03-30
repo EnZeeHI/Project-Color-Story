@@ -34,7 +34,7 @@ public class DoorScript : MonoBehaviour
                 doorOpen = false;
                 openTheDoor =false;
                 doorOpenAnimation.SetBool("DoorOpen", false);
-                transform.GetComponent<BoxCollider>().isTrigger = true;
+                transform.GetComponent<BoxCollider>().isTrigger = false;
             }
             else if (openTheDoor && doorClosed)
             {
@@ -43,7 +43,7 @@ public class DoorScript : MonoBehaviour
                 doorOpen  = true;
                 openTheDoor =false;
                 doorOpenAnimation.SetBool("DoorOpen", true);
-                transform.GetComponent<BoxCollider>().isTrigger = false;
+                transform.GetComponent<BoxCollider>().isTrigger = true;
             }
             
         }
