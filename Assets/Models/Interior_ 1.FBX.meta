@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b135d242e124e1449b8dff9048cd82cc
+guid: 6a8f9b7e257a9794d812f662f83ba052
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -92,20 +92,22 @@ ModelImporter:
     4300006: Window003
     4300008: Window004
     4300010: Window005
-    4300012: Ground X
+    4300012: Kitchen X
     4300014: Ground X
-    4300016: Ground X
+    4300016: roomPar X
     4300018: Ground X
-    4300020: Ground X
+    4300020: roomPatBat X
     4300022: Ground X
-    4300024: Ground X
+    4300024: roomBat X
     4300026: Ground X
-    4300028: Kitchen X
-    4300030: roomPar X
-    4300032: roomPatBat X
-    4300034: roomBat X
-    4300036: roomDyl
-    4300038: roomLiv
+    4300028: roomDyl
+    4300030: Ground X
+    4300032: roomLiv
+    4300034: Ground X
+    4300036: Ground X
+    4300038: Ground X
+    7400000: Take 001
+    9500000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -157,8 +159,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    previousCalculatedGlobalScale: 0.0254
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -182,7 +184,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
