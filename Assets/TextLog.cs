@@ -29,6 +29,8 @@ public class TextLog : MonoBehaviour
     public int dadConv1Choice3;
     public int dadConv1Choice4;
 
+    public bool dadConvDone;
+
 
     public string convName;
 
@@ -181,6 +183,7 @@ public class TextLog : MonoBehaviour
                 convType = 1;
 
                 dadConv1Choice3 = choiceMade;
+                dadConvDone = true;
             }
         }
     }
