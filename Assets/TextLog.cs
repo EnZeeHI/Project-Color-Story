@@ -100,19 +100,64 @@ public class TextLog : MonoBehaviour
         {
             if (line == 1)
             {
-                convText[0] = "First day of school huh";
-                convText[1] = "And it's also your final year";
-                convText[2] = "Are you excited?";
-                convType = 2;
-
-                choicesOptions[0] = "A little bit";
-                choicesOptions[1] = "Not really";
-                choicesOptions[2] = "...";
-                choicesOptions[3] = "How could I ever be excited about school";
-
                 dadConv1Choice1 = choiceMade;
 
-}
+                if (dadConv1Choice1 == 1)
+                {
+                    convText[0] = "Ham and Cheese it is!";
+                    convText[1] = "First day of school huh";
+                    convText[2] = "Are you excited?";
+                    convType = 2;
+
+                    choicesOptions[0] = "A little bit";
+                    choicesOptions[1] = "Not really";
+                    choicesOptions[2] = "...";
+                    choicesOptions[3] = "How could I ever be excited about school";
+                }
+
+                if (dadConv1Choice1 == 2)
+                {
+                    convText[0] = "Raspberry jam is for nerds but okay";
+                    convText[1] = "First day of school huh";
+                    convText[2] = "Are you excited?";
+                    convType = 2;
+
+                    choicesOptions[0] = "A little bit";
+                    choicesOptions[1] = "Not really";
+                    choicesOptions[2] = "...";
+                    choicesOptions[3] = "How could I ever be excited about school";
+                }
+
+                if (dadConv1Choice1 == 3)
+                {
+                    convText[0] = "Fucking reply you twat";
+                    convText[1] = "First day of school huh";
+                    convText[2] = "Are you excited?";
+                    convType = 2;
+
+                    choicesOptions[0] = "A little bit";
+                    choicesOptions[1] = "Not really";
+                    choicesOptions[2] = "...";
+                    choicesOptions[3] = "How could I ever be excited about school";
+                }
+
+                if (dadConv1Choice1 == 4)
+                {
+                    convText[0] = "kay peanut butter it is";
+                    convText[1] = "First day of school huh";
+                    convText[2] = "Are you excited?";
+                    convType = 2;
+
+                    choicesOptions[0] = "A little bit";
+                    choicesOptions[1] = "Not really";
+                    choicesOptions[2] = "...";
+                    choicesOptions[3] = "How could I ever be excited about school";
+                }
+
+
+
+
+            }
             else if (line == 2)
             {
                 convText[0] = "Your mom is still in bed";

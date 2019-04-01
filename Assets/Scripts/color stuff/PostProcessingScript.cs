@@ -32,7 +32,7 @@ public class PostProcessingScript : MonoBehaviour
         if (saturationValue <= value)
         {
             saturationValue = saturationValue+1;
-            Debug.Log(saturationValue);
+            //Debug.Log(saturationValue);
         }
             
         
