@@ -14,6 +14,7 @@ public class TextLog : MonoBehaviour
 
     public float convType;
     public GameObject choices;
+    public GameObject reactionBox;
 
     public Text opt1Text;
     public Text opt2Text;
@@ -133,7 +134,7 @@ public class TextLog : MonoBehaviour
                     convText[0] = "Fucking reply you twat";
                     convText[1] = "First day of school huh";
                     convText[2] = "Are you excited?";
-                    convType = 2;
+                    convType = 3;
 
                     choicesOptions[0] = "A little bit";
                     choicesOptions[1] = "Not really";
@@ -205,6 +206,7 @@ public class TextLog : MonoBehaviour
         continueConv();
 
         choices.SetActive(false);
+        reactionBox.SetActive(false);
     }
 
     public void choice2()
@@ -222,6 +224,7 @@ public class TextLog : MonoBehaviour
         continueConv();
 
         choices.SetActive(false);
+        reactionBox.SetActive(false);
     }
 
     public void choice3()
@@ -239,6 +242,7 @@ public class TextLog : MonoBehaviour
         continueConv();
 
         choices.SetActive(false);
+        reactionBox.SetActive(false);
     }
 
     public void choice4()
@@ -258,6 +262,22 @@ public class TextLog : MonoBehaviour
         continueConv();
 
         choices.SetActive(false);
+        reactionBox.SetActive(false);
+    }
+
+    public void reaction ()
+    {
+        line += 1;
+
+        sentences.Clear();
+
+        continueButton1.SetActive(false);
+        continueButton2.SetActive(true);
+
+        continueConv();
+
+        choices.SetActive(false);
+        reactionBox.SetActive(false);
     }
 
     public void continueConv ()
@@ -309,6 +329,10 @@ public class TextLog : MonoBehaviour
         else if (convType == 2)
         {
             choices.SetActive(true);
+        }
+        else if (convType == 3)
+        {
+            reactionBox.SetActive(true);
         }
     }
 }
