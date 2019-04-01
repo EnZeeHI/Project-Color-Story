@@ -30,7 +30,7 @@ public class DialougeManager : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(sentences.Count);
+        //Debug.Log(sentences.Count);
     }
     // Start is called before the first frame update
     void Start()

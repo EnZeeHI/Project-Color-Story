@@ -137,14 +137,15 @@ public class InteractionScript : MonoBehaviour
                     if (hit.transform.GetComponent<ConversationCheck>() != null)
                     {
                         Debug.Log("aaa");
-                        if (GameObject.Find("choiceManager").GetComponent<TextLog>().line > 1)
+                        if (GameObject.Find("choiceManager").GetComponent<TextLog>().dadConvDone)
                         {
                             transform.position = transform.position + new Vector3(5,0,0);
                             Debug.Log("open");
                         }
                         else
                         {
-                            Debug.Log("nani");
+                            Debug.Log("nani" + GameObject.Find("choiceManager").GetComponent<TextLog>().line);
+                            
                         }
                         //Debug.Log()
                     }
