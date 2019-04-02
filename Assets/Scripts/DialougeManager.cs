@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DialougeManager : MonoBehaviour
 {
@@ -22,6 +23,11 @@ public class DialougeManager : MonoBehaviour
     public int choiceMade;
 
     public string convNameHere;
+
+    public GameObject yesEndGame;
+    public GameObject noEndGame;
+    public GameObject fadeOut;
+    public GameObject continueButton;
 
 
 
@@ -90,8 +96,30 @@ public class DialougeManager : MonoBehaviour
             sentences.Clear();
             
         }
+        else if (convType == 4)
+        {
+            yesEndGame.SetActive(true);
+            noEndGame.SetActive(true);
+        }
+        
         
     }
-    
-   
+
+    public void dontEndGame()
+    {
+        yesEndGame.SetActive(false);
+        noEndGame.SetActive(false);
+        UI.SetActive(false);
+    }
+
+    public void endGame()
+    {
+        fadeOut.SetActive(true);
+        yesEndGame.SetActive(false);
+        noEndGame.SetActive(false);
+        continueButton.SetActive(false);
+        dialougeText.text = "End of day 13, End of Demo.";
+        //SceneManager.LoadScene("Credits Scene");
+    }
+
 }
