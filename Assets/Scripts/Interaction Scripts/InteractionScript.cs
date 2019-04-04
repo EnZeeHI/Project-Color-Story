@@ -9,7 +9,7 @@ public class InteractionScript : MonoBehaviour
     public GameObject InteractionObjectPrompt;
     private GameObject InteractionObjectPromptObject;
     public Vector3 offset = new Vector3(0,1,0);
-    public Vector3 raycastOffset  = new Vector3(0,0.9f,0);
+    public Vector3 raycastOffset  = new Vector3(0,2,0);
     private bool isCreated;
     public bool InteractionObjectPromptActive;
     public GameObject QuestItemPromptPrefab;
@@ -139,20 +139,27 @@ public class InteractionScript : MonoBehaviour
                         Debug.Log("aaa");
                         if (GameObject.Find("choiceManager").GetComponent<TextLog>().dadConvDone)
                         {
-                            transform.position = transform.position + new Vector3(5,0,0);
+                           hit.transform.gameObject.GetComponent<FrontDoorScript>().openDoor = true;
                             Debug.Log("open");
                         }
                         else
                         {
                             Debug.Log("nani" + GameObject.Find("choiceManager").GetComponent<TextLog>().line);
-                            
+                            hit.transform.GetComponent<FrontDoorScript>().openDoor = false;
                         }
                         //Debug.Log()
                     }
                     if (hit.transform.GetComponent<ItemCheck>()== null && hit.transform.GetComponent<ConversationCheck>()== null)
                     {
-                        hit.transform.gameObject.GetComponent<DoorScript>().openTheDoor = true;
-                        Debug.Log("oof");
+                        if (hit.transform.gameObject.GetComponent<DoorScript>())
+                        {
+                            hit.transform.gameObject.GetComponent<DoorScript>().openTheDoor = true;
+                            Debug.Log("oof");
+                        }
+                        if (hit.transform.gameObject.GetComponent<FrontDoorScript>())
+                        {
+                            hit.transform.gameObject.GetComponent<FrontDoorScript>().openDoor = true;
+                        }
                     }
                     
                     //hit.transform.gameObject.GetComponent<DoorScript>().openTheDoor = false;
