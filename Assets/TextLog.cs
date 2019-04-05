@@ -85,7 +85,7 @@ public class TextLog : MonoBehaviour
     {
         //Debug.Log(convText[1]);
         //Debug.Log(line);
-        Debug.Log(convName);
+        //Debug.Log(convName);
         
         
     }
