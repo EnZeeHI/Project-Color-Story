@@ -9,6 +9,9 @@ public class Dialouge
     public string convName;
 
     [TextArea(2, 12)]
+    public string reaction;
+
+    [TextArea(2, 12)]
     public string[] sentences;
 
     [TextArea(2,6)]

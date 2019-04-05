@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4189,6 +4189,8 @@ MonoBehaviour:
   noEndGame: {fileID: 239084462}
   fadeOut: {fileID: 1357349039}
   continueButton: {fileID: 1625607842}
+  reactionBox: {fileID: 304244671}
+  reactionText: {fileID: 1040178306}
   personIsHappy: 0
 --- !u!4 &633568490
 Transform:
@@ -6041,6 +6043,8 @@ MonoBehaviour:
   convType: 0
   choices: {fileID: 1755400045}
   reactionBox: {fileID: 304244671}
+  reactionText: {fileID: 1040178306}
+  reactionLetters: 
   opt1Text: {fileID: 2123417655}
   opt2Text: {fileID: 1468381018}
   opt3Text: {fileID: 1912471559}
@@ -8598,16 +8602,17 @@ MonoBehaviour:
   dialouge:
     name: Dad
     convName: DadConv1
+    reaction: Yeaaah... everything is okay, I need to ask you a favor though.
     sentences:
-    - Oh hey, you're up early!
-    - I'm currently making breakfeast.
-    - What would you want on your sandwich?
+    - Oh hey Dylan!
+    - You're home later then usual
+    - Everything ok at school?
     choices:
-    - Ham and cheese
-    - Raspberry Jam
-    - '...'
-    - Peanut Butter
-  convTypeThis: 2
+    - 
+    - 
+    - 
+    - 
+  convTypeThis: 3
 --- !u!1 &1466694466 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100030, guid: 1b93dd0d5728aff4f8faf01a647b3869,
@@ -8822,6 +8827,7 @@ MonoBehaviour:
   dialouge:
     name: Mom
     convName: MomConv1
+    reaction: 
     sentences:
     - Hey dear, thanks for the food.
     - I hope you have fun today at school
@@ -12912,6 +12918,7 @@ MonoBehaviour:
   dialouge:
     name: Bed
     convName: Bed
+    reaction: 
     sentences:
     - 'Are you sure you want to go bed?
 

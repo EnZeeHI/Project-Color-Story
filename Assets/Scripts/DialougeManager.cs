@@ -28,7 +28,8 @@ public class DialougeManager : MonoBehaviour
     public GameObject noEndGame;
     public GameObject fadeOut;
     public GameObject continueButton;
-
+    public GameObject reactionBox;
+    public Text reactionText;
 
 
     // added code for color change
@@ -63,6 +64,8 @@ public class DialougeManager : MonoBehaviour
         opt3Text.text = dialouge.choices[2];
         opt4Text.text = dialouge.choices[3];
 
+        reactionText.text = dialouge.reaction;
+
         convNameHere = dialouge.convName;
 
         FindObjectOfType<TextLog>().whatConv(convNameHere);
@@ -95,6 +98,10 @@ public class DialougeManager : MonoBehaviour
             choices.SetActive(true);
             sentences.Clear();
             
+        }
+        else if (convType == 3)
+        {
+            reactionBox.SetActive(true);
         }
         else if (convType == 4)
         {
