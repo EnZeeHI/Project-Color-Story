@@ -36,7 +36,7 @@ public class DoorScript : MonoBehaviour
                 doorOpenAnimation.SetBool("DoorOpen", false);
                 transform.GetComponent<BoxCollider>().isTrigger = false;
             }
-            else if (openTheDoor && doorClosed)
+            if (openTheDoor && doorClosed)
             {
                 //transform.position = doorOpenVector;
                 doorClosed = false;
