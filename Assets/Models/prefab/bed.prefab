@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3534912919655695688}
   - component: {fileID: 5997400588529435678}
   - component: {fileID: 147315267148412280}
+  - component: {fileID: 8369969819284889303}
   m_Layer: 0
   m_Name: Box001
   m_TagString: Untagged
@@ -77,6 +78,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &8369969819284889303
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18435175291929039}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300002, guid: ffa110f6197f1e745a259ffb88136586, type: 3}
 --- !u!1 &1156947048785903339
 GameObject:
   m_ObjectHideFlags: 0
@@ -88,6 +103,7 @@ GameObject:
   - component: {fileID: 6009473007876160021}
   - component: {fileID: 1424314950056651987}
   - component: {fileID: 7674321558574048411}
+  - component: {fileID: 2068786898093899369}
   m_Layer: 0
   m_Name: Plane002
   m_TagString: Untagged
@@ -154,6 +170,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &2068786898093899369
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156947048785903339}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300006, guid: ffa110f6197f1e745a259ffb88136586, type: 3}
 --- !u!1 &3500715565381692857
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,6 +195,7 @@ GameObject:
   - component: {fileID: 3357558962509095735}
   - component: {fileID: 4618289093017613480}
   - component: {fileID: 8540510517486758380}
+  - component: {fileID: 3520385859560712965}
   m_Layer: 0
   m_Name: ChamferBox002
   m_TagString: Untagged
@@ -231,6 +262,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &3520385859560712965
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3500715565381692857}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300004, guid: ffa110f6197f1e745a259ffb88136586, type: 3}
 --- !u!1 &6870209330828167431
 GameObject:
   m_ObjectHideFlags: 0
@@ -278,6 +323,7 @@ GameObject:
   - component: {fileID: 756045035733718763}
   - component: {fileID: 2967424381789350055}
   - component: {fileID: 3814824026997071366}
+  - component: {fileID: 8706526510344092965}
   m_Layer: 0
   m_Name: Box004
   m_TagString: Untagged
@@ -344,6 +390,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &8706526510344092965
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7088901310758754109}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300010, guid: ffa110f6197f1e745a259ffb88136586, type: 3}
 --- !u!1 &8290938932201032579
 GameObject:
   m_ObjectHideFlags: 0
@@ -355,6 +415,7 @@ GameObject:
   - component: {fileID: 5542963024787916752}
   - component: {fileID: 5059068773023479784}
   - component: {fileID: 2228716862250225511}
+  - component: {fileID: 8990029110267327232}
   m_Layer: 0
   m_Name: Box003
   m_TagString: Untagged
@@ -421,6 +482,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &8990029110267327232
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8290938932201032579}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300008, guid: ffa110f6197f1e745a259ffb88136586, type: 3}
 --- !u!1 &8897717135351624527
 GameObject:
   m_ObjectHideFlags: 0
@@ -432,6 +507,7 @@ GameObject:
   - component: {fileID: 2240564943588426042}
   - component: {fileID: 6144179581385036650}
   - component: {fileID: 8629437930617106944}
+  - component: {fileID: 1476322761658917530}
   m_Layer: 0
   m_Name: ChamferBox001
   m_TagString: Untagged
@@ -498,3 +574,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &1476322761658917530
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8897717135351624527}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: ffa110f6197f1e745a259ffb88136586, type: 3}
