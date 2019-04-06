@@ -23,7 +23,8 @@ public class InteractionScript : MonoBehaviour
 
     //hello aras this is my fucking about with the text
     public GameObject UI;
-
+    public GameObject itemToMove;
+    public GameObject objectInInventory;
 
     //public InventoryScript InventoryScript;
     private string activeItem;
@@ -125,7 +126,7 @@ public class InteractionScript : MonoBehaviour
             {
                 if (Input.GetButtonDown("Interaction1"))
                 {
-                    if (hit.transform.GetComponent<ItemCheck>() != null)
+                    if (hit.transform.GetComponent<ItemCheck>() != null && hit.transform.GetComponent<DoorScript>() != null)
                     {
                         UseItem(hit.transform.GetComponent<ItemCheck>().ItemToCheck) ;
                         if (activateItem)
@@ -161,6 +162,20 @@ public class InteractionScript : MonoBehaviour
                             hit.transform.gameObject.GetComponent<FrontDoorScript>().openDoor = true;
                         }
                     }
+
+                    if (GameObject.Find("ItemSlot") && hit.transform.GetComponent<ItemCheck>())
+                    {
+                        UseItem(hit.transform.GetComponent<ItemCheck>().ItemToCheck);
+                        if (activateItem)
+                        {
+                            itemToMove =  objectInInventory;
+                            Debug.Log(itemToMove);
+                            itemToMove.SetActive(true);
+                            itemToMove.transform.position = hit.transform.Find("ItemSlot").position;
+
+                        }
+                        
+                    }
                     
                     //hit.transform.gameObject.GetComponent<DoorScript>().openTheDoor = false;
                 }
@@ -171,6 +186,7 @@ public class InteractionScript : MonoBehaviour
             if (Input.GetButton("Interaction1"))
             {
             activeItem = hit.collider.gameObject.name;
+            objectInInventory = hit.collider.gameObject;
             
             if (InventoryScript.InventoryObject1 == null)
             {
@@ -187,7 +203,11 @@ public class InteractionScript : MonoBehaviour
             Debug.Log("Inventory Slot 1 has :" +InventoryScript.inventoryObject1);
             Debug.Log("Inventory Slot 2 has :" +InventoryScript.inventoryObject2);   
             
-            hit.transform.gameObject.SetActive(false);
+            if (hit.transform.gameObject != itemToMove)
+            
+            {
+                hit.transform.gameObject.SetActive(false);
+            }
            
       
             }
