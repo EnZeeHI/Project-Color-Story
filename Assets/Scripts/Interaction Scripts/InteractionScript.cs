@@ -20,6 +20,7 @@ public class InteractionScript : MonoBehaviour
     public bool QuestPersonPromptObjectActive;
     public bool activateItem;
     public Camera camera;
+    public GameObject image;
 
     //hello aras this is my fucking about with the text
     public GameObject UI;
@@ -160,6 +161,17 @@ public class InteractionScript : MonoBehaviour
                         if (hit.transform.gameObject.GetComponent<FrontDoorScript>())
                         {
                             hit.transform.gameObject.GetComponent<FrontDoorScript>().openDoor = true;
+                        }
+                        if (hit.transform.gameObject.name =="table (1)")
+                        {
+                            Debug.Log("im here");
+
+                            image.SetActive(true);
+                            //image.transform.Find("Image (1)").gameObject.SetActive(false);
+                           
+                            GameObject.Find("DialougeManager").GetComponent<DialougeManager>().activateHomeworkPrompt();
+                            
+                            
                         }
                     }
 

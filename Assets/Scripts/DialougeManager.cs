@@ -32,6 +32,15 @@ public class DialougeManager : MonoBehaviour
     public Text reactionText;
 
 
+    public GameObject yesHomework;
+    public GameObject noHomework;
+    public GameObject image;
+    public Text homeworkText;
+    public GameObject homeworkCanvas;
+    public GameObject homeworkPanel;
+
+
+
     // added code for color change
     public bool personIsHappy;
 
@@ -127,6 +136,33 @@ public class DialougeManager : MonoBehaviour
         continueButton.SetActive(false);
         dialougeText.text = "End of day 13, End of Demo.";
         //SceneManager.LoadScene("Credits Scene");
+    }
+    public void DoHomework()
+    {
+        //dialougeText.text = "Maybe I should do some homework";
+        yesHomework.SetActive(false);
+        noHomework.SetActive(false);
+        image.SetActive(true);
+        homeworkText.text = "";
+        homeworkPanel.SetActive(false);
+
+    }
+    public void dontDoHomework()
+    {
+        yesHomework.SetActive(false);
+        noHomework.SetActive(false);
+        image.SetActive(false);
+        homeworkCanvas.SetActive(false);
+        homeworkPanel.SetActive(false);
+    }
+    public void activateHomeworkPrompt()
+    {
+        homeworkText.text = "Maybe I should do some homework";
+        homeworkCanvas.SetActive(true);
+        //homeworkText.SetActive(true);
+         yesHomework.SetActive(true);
+        noHomework.SetActive(true);
+        homeworkPanel.SetActive(true);
     }
 
 }
