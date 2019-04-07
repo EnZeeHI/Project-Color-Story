@@ -37,7 +37,10 @@ public class TextLog : MonoBehaviour
     public int momConv1Choice1, momConv1Choice2, momConv1Choice3, momConv1Choice4;
 
     [HideInInspector]
-    public bool dadConvDone, momConvDone;
+    public int neighbourConv1Choice1, neighbourConv1Choice2, neighbourConv1Choice3, neighbourConv1Choice4;
+
+    [HideInInspector]
+    public bool dadConvDone, momConvDone, neighbourConvDone;
 
     [HideInInspector]
     public string convName;
@@ -375,6 +378,15 @@ public class TextLog : MonoBehaviour
                 convText[2] = "Thank you again for the tea, and sleep well tonight";
 
                 convType = 1;
+            }
+        }
+        else if (convName == "neighbourConv1")
+        {
+            if (line == 1)
+            {
+                convText[0] = "Aaaah sometimes you have days like that";
+                convText[1] = "So tell me chap, what happened?";
+                convText[2] = "Maybe this old man can give you some life advice";
             }
         }
     }
