@@ -15,6 +15,9 @@ public class movement : MonoBehaviour
     public float speedTime = 0.1f;
     float speedVelocity;
     public Animator animator;
+    public AudioSource insideFootsteps;
+    public AudioSource outsideFootsteps;
+
 
     Transform cameraT;
 
@@ -38,6 +41,11 @@ public class movement : MonoBehaviour
             {
                 
                 animator.SetBool("IsWalking", true);
+                if (gameObject.transform.position.y >0)
+                {
+                    
+                }
+
             }
             else
             {
