@@ -8693,6 +8693,10 @@ MonoBehaviour:
   turnSpeed: 0.2
   speedTime: 0.1
   animator: {fileID: 0}
+  insideFootsteps: {fileID: 619189322}
+  outsideFootsteps: {fileID: 619189323}
+  playAudio: 0
+  isPlaying: 0
   UI: {fileID: 63713632}
 --- !u!4 &619189321 stripped
 Transform:
@@ -8712,9 +8716,9 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b97ea1d764b4a2d44b9da4adf4f94858, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -8808,9 +8812,9 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 4e9b8de511db3d044bcbe60628518675, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
