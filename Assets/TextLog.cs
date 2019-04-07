@@ -12,39 +12,42 @@ public class TextLog : MonoBehaviour
     public GameObject continueButton2;
     public PostProcessingScript PPScript;
 
+    [HideInInspector]
     public float convType;
     public GameObject choices;
     public GameObject reactionBox;
     public Text reactionText;
+    [HideInInspector]
     public string reactionDyl;
 
     public Text opt1Text;
     public Text opt2Text;
     public Text opt3Text;
     public Text opt4Text;
-
+    
+    [HideInInspector]
     public int line = 0;
+    [HideInInspector]
     public int choiceMade;
 
-    public int dadConv1Choice1;
-    public int dadConv1Choice2;
-    public int dadConv1Choice3;
-    public int dadConv1Choice4;
+    [HideInInspector]
+    public int dadConv1Choice1, dadConv1Choice2, dadConv1Choice3, dadConv1Choice4;
+    
+    [HideInInspector]
+    public int momConv1Choice1, momConv1Choice2, momConv1Choice3, momConv1Choice4;
 
-    public bool dadConvDone;
+    [HideInInspector]
+    public bool dadConvDone, momConvDone;
 
-
+    [HideInInspector]
     public string convName;
-
+    [HideInInspector]
     public string[] convText;
 
-    public string[] bruv201;
-    public string[] bruv202;
-    public string[] bruv203;
-    public string[] bruv204;
-    public int bruv2Type;
-
+    
+    [HideInInspector]
     public Queue<string> sentences;
+    [HideInInspector]
     public string[] choicesOptions;
     // Start is called before the first frame update
     void Start()
@@ -53,31 +56,12 @@ public class TextLog : MonoBehaviour
 
         convText = new string[3];
 
-        bruv201 = new string[3];
-        bruv202 = new string[3];
-        bruv203 = new string[3];
-        bruv204 = new string[3];
+           
 
         choicesOptions = new string[4];
 
         
-        bruv201[0] = "First day of school huh";
-        bruv201[1] = "And it's also your final year";
-        bruv201[2] = "Are you excited?";
-
-        bruv202[0] = "First day of school huh";
-        bruv202[1] = "And it's also your final year";
-        bruv202[2] = "Are you excited?";
-
-        bruv203[0] = "First day of school huh";
-        bruv203[1] = "And it's also your final year";
-        bruv203[2] = "Are you excited?";
-
-        bruv204[0] = "First day of school huh";
-        bruv204[1] = "And it's also your final year";
-        bruv204[2] = "Are you excited?";
-
-        bruv2Type = 2;
+        
 
         PPScript = GameObject.Find("Main Camera").GetComponent<PostProcessingScript>();
     }
@@ -290,6 +274,39 @@ public class TextLog : MonoBehaviour
                 choicesOptions[2] = "...";
                 choicesOptions[3] = "I hope you get better fast...";
 
+                convType = 2;
+            }
+            if (line == 2)
+            {
+                momConv1Choice1 = choiceMade;
+                if (momConv1Choice1 == 1)
+                {
+                    convText[0] = "";
+                    convText[1] = "";
+                    convText[2] = "";
+                    
+                }
+                else if (momConv1Choice1 == 2)
+                {
+                    convText[0] = "";
+                    convText[1] = "";
+                    convText[2] = "";
+
+                }
+                else if (momConv1Choice1 == 3)
+                {
+                    convText[0] = "";
+                    convText[1] = "";
+                    convText[2] = "";
+
+                }
+                else if (momConv1Choice1 == 4)
+                {
+                    convText[0] = "";
+                    convText[1] = "";
+                    convText[2] = "";
+
+                }
                 convType = 2;
             }
         }
