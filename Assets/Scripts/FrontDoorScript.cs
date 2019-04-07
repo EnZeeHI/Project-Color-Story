@@ -22,7 +22,7 @@ public class FrontDoorScript : MonoBehaviour
     {
         if (openDoor)
         {
-            player.transform.position = (linkedDoor.transform.position + (player.transform.forward * 5));
+            player.transform.position = (linkedDoor.transform.position + (player.transform.forward * 1));
             openDoor = false;
         }
         else
