@@ -277,6 +277,22 @@ public class TextLog : MonoBehaviour
                 dadConvDone = true;
             }
         }
+        else if (convName == "MomConv1")
+        {
+            if (line == 1)
+            {
+                convText[0] = "It will be allright hun";
+                convText[1] = "Don't worry too much about it";
+                convText[2] = "It's something we will get through just like always, alright?";
+
+                choicesOptions[0] = "I'll believe in you...";
+                choicesOptions[1] = "But you're really sick!";
+                choicesOptions[2] = "...";
+                choicesOptions[3] = "I hope you get better fast...";
+
+                convType = 2;
+            }
+        }
     }
 
     public void whatConv(string convNameHere)
