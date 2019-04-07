@@ -281,33 +281,95 @@ public class TextLog : MonoBehaviour
                 momConv1Choice1 = choiceMade;
                 if (momConv1Choice1 == 1)
                 {
-                    convText[0] = "";
-                    convText[1] = "";
-                    convText[2] = "";
+                    convText[0] = "Your mom is a strong Lady";
+                    convText[1] = "Some sickness can't keep her down!";
+                    convText[2] = "How was your day at school by the way?";
                     
                 }
                 else if (momConv1Choice1 == 2)
                 {
-                    convText[0] = "";
-                    convText[1] = "";
-                    convText[2] = "";
+                    convText[0] = "It's not that bad, don't worry";
+                    convText[1] = "Didn't your dad tell you it was cureable?";
+                    convText[2] = "Anyway, lets talk about something more fun, how was school honey?";
 
                 }
                 else if (momConv1Choice1 == 3)
                 {
-                    convText[0] = "";
-                    convText[1] = "";
-                    convText[2] = "";
+                    convText[0] = "Don't worry too much hun, it will be fine";
+                    convText[1] = "In a few months I'll be all cured and back on my feet!";
+                    convText[2] = "Tell me, how was school today?";
 
                 }
                 else if (momConv1Choice1 == 4)
                 {
-                    convText[0] = "";
-                    convText[1] = "";
-                    convText[2] = "";
+                    convText[0] = "So do I hun, hopefully everything goes as fast as the doctor said it would";
+                    convText[1] = "Then we should be completely fine in about half a year's time";
+                    convText[2] = "Speaking about time, how was your time at school today?";
 
                 }
+
+                choicesOptions[0] = "Ellie asked me to come to a photograph thingy tomorrow!";
+                choicesOptions[1] = "Nothing too special...";
+                choicesOptions[2] = "School was okay, the same as usual";
+                choicesOptions[3] = "I think I might be going on a date?";
+
                 convType = 2;
+            }
+            else if (line == 3)
+            {
+                momConv1Choice2 = choiceMade;
+                if (momConv1Choice2 == 1)
+                {
+                    convText[0] = "Ellie is the girl you talked about before right? How fun!";
+                    convText[1] = "Are you into photography now?";
+                    convText[2] = "If so, I think we still have an old camera laying around from your grand father, I could go find it for you tomorrow.";
+
+                    reactionDyl = "That would be amazing mom!";
+                }
+                else if (momConv1Choice2 == 2)
+                {
+                    convText[0] = "Nothing too special again? What do you call not too special?";
+                    convText[1] = "We have an old camera laying around the house somewhere";
+                    convText[2] = "Maybe you can take pictures of your nothing too special days, so you can show your mom what you mean with not too special";
+
+                    reactionDyl = "I mean... I could try, espcially now that you probably won't leave the house much";
+                }
+                else if (momConv1Choice2 == 3)
+                {
+                    convText[0] = "Yea I guess school isn't too interesting sometimes";
+                    convText[1] = "Don't you have any fun classes?";
+                    convText[2] = "Or friends that make your classes more enjoyable?";
+
+                    reactionDyl = "I mean.. I do.... but it's still school...";
+
+                }
+                else if (momConv1Choice2 == 4)
+                {
+                    convText[0] = "On a date?! With that girl Ellie you told me about before?";
+                    convText[1] = "That's amazing! I'm so happy for you!";
+                    convText[2] = "We have a camera lying around somewhere, I can try and find it for you tomorrow so you can take pictures of your first date!";
+
+                    reactionDyl = "Thank you so much mom, I'm still quite nervous about the whole thing, but I would love to take that camera with me";
+                }
+               
+                convType = 3;
+            }
+            else if (line == 4)
+            {
+                convText[0] = "Hearing about how you are doing and how your day went always makes me happy";
+                convText[1] = "Even now that I'm sick you still manage to cheer me up";
+                convText[2] = "Thanks honey";
+
+                reactionDyl = "If it makes you feel better, I'm more then glad to to talk to you every day";
+                convType = 3;
+            }
+            else if (line == 5)
+            {
+                convText[0] = "Thank you honey";
+                convText[1] = "I do need some rest though now";
+                convText[2] = "Thank you again for the tea, and sleep well tonight";
+
+                convType = 1;
             }
         }
     }
