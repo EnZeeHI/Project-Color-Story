@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.3081517, g: 0.64842445, b: 1.0165154, a: 1}
+  m_IndirectSpecularColor: {r: 0.30832866, g: 0.64847916, b: 1.0165125, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4068,7 +4068,7 @@ MonoBehaviour:
   dialouge:
     name: Neighbour
     convName: NeighbourConv1
-    reaction: 
+    reaction: Hi Mr. Rogers... It's just been a weird day
     sentences:
     - Aaah Dylan! Good to see you!
     - Though you don't look too happy
@@ -4078,7 +4078,7 @@ MonoBehaviour:
     - 
     - 
     - 
-  convTypeThis: 0
+  convTypeThis: 3
 --- !u!64 &268330302
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8693,6 +8693,8 @@ MonoBehaviour:
   turnSpeed: 0.2
   speedTime: 0.1
   animator: {fileID: 0}
+  insideFootsteps: {fileID: 0}
+  outsideFootsteps: {fileID: 0}
   UI: {fileID: 63713632}
 --- !u!4 &619189321 stripped
 Transform:
@@ -18234,8 +18236,13 @@ MonoBehaviour:
   momConv1Choice2: 0
   momConv1Choice3: 0
   momConv1Choice4: 0
+  neighbourConv1Choice1: 0
+  neighbourConv1Choice2: 0
+  neighbourConv1Choice3: 0
+  neighbourConv1Choice4: 0
   dadConvDone: 0
   momConvDone: 0
+  neighbourConvDone: 0
   convName: 
   convText: []
   choicesOptions: []
