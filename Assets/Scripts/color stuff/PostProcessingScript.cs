@@ -37,7 +37,7 @@ public class PostProcessingScript : MonoBehaviour
                 //Debug.Log(saturationValue);
             }
         }
-        if (value<0)
+        else if (value<0)
         {
             if (saturationValue >=value)
             {

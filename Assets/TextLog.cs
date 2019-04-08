@@ -80,14 +80,19 @@ public class TextLog : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if (line == 1)
+        if (line == 5 && convName == "DadConv1")
         {
             PPScript.SaturationChange(-100);
         }
-        if (line == 3)
+        if (momConvDone == true && neighbourConvDone == false|| neighbourConvDone == true && momConvDone == false)
         {
-             PPScript.SaturationChange(10);
-            // Debug.Log()
+             PPScript.SaturationChange(-60);
+            Debug.Log("yeet");
+        }
+        else if (neighbourConvDone == true && momConvDone == true)
+        {
+            PPScript.SaturationChange(-20);
+            Debug.Log("yayeet");
         }
         //Debug.Log(line);
         //Debug.Log(dadConv1Choice1);
@@ -377,6 +382,7 @@ public class TextLog : MonoBehaviour
                 convText[1] = "I do need some rest though now";
                 convText[2] = "Thank you again for the tea, and sleep well tonight";
 
+                momConvDone = true;
                 convType = 1;
             }
         }
@@ -401,28 +407,81 @@ public class TextLog : MonoBehaviour
                 neighbourConv1Choice1 = choiceMade;
                 if (neighbourConv1Choice1 == 1)
                 {
-                    convText[1] = "";
-                    convText[2] = "";
-                    convText[3] = "";
+                    convText[0] = "A date? That sounds like fun!";
+                    convText[1] = "If you're stressed you should try and enjoy the date as much as possible";
+                    convText[2] = "Use it as a distraction so that you don't have to think about the thing that is causing you stress";
                 }
                 else if (neighbourConv1Choice1 == 2)
                 {
-                    convText[1] = "";
-                    convText[2] = "";
-                    convText[3] = "";
+                    convText[0] = "Your mom has a tumor? That isn't nice at all indeed";
+                    convText[1] = "Don't worry though, your mom is a strong lady, she'll get through it";
+                    convText[2] = "If you just stay positive you will make your mom happy, and her recovery will go smoother";
                 }
                 else if (neighbourConv1Choice1 == 3)
                 {
-                    convText[1] = "";
-                    convText[2] = "";
-                    convText[3] = "";
+                    convText[0] = "Ah so it's a bit of an emotional rollercoaster day I see";
+                    convText[1] = "On those days it's best to sit down for a second and look back. Ask yourself, was the bad thing really that bad?";
+                    convText[2] = "And most of the time you will find that the good thing will make you happier then the bad thing makes you sad";
                 }
                 else if (neighbourConv1Choice1 == 4)
                 {
-                    convText[1] = "";
-                    convText[2] = "";
-                    convText[3] = "";
+                    convText[0] = "Ah I see, that's very unfortunate";
+                    convText[1] = "It might be a good idea to look back at the good thing";
+                    convText[2] = "If it made you happy once, maybe it can make you feel really happy again";
                 }
+                reactionDyl = "That's actually really useful advice, thanks Mr. Rogers!";
+                convType = 3;
+            }
+            else if (line == 3)
+            {
+                convText[0] = "Hahaha don't worry about it kid";
+                convText[1] = "With age comes wisdom, and as you know, I am quite old";
+                convText[2] = "And sharing that wisdom is a pleasure if it makes the people around me happier";
+
+                choicesOptions[0] = "Where did you learn so much?";
+                choicesOptions[1] = "Did you go on dates? When you were still young?";
+                choicesOptions[2] = "Thanks for the conversation Mr. Rogers";
+                choicesOptions[3] = "Have you ever had to deal with someone close to you getting really sick?";
+
+                convType = 2;
+            }
+            else if (line == 4)
+            {
+                neighbourConv1Choice2 = choiceMade;
+                if (neighbourConv1Choice2 == 1)
+                {
+                    convText[0] = "Life chap!";
+                    convText[1] = "The more things you do and experience in life, the more you learn!";
+                    convText[2] = "That's why you should go out and do fun things while you're still young!";
+                }
+                else if (neighbourConv1Choice2 == 2)
+                {
+                    convText[0] = "I did go on dates indeed!";
+                    convText[1] = "That's how I met my lovely wife";
+                    convText[2] = "Even though she may not be with us anymore today, I will forever be glad for the time we got to spent together.";
+                }
+                else if (neighbourConv1Choice2 == 3)
+                {
+                    convText[0] = "Don't thank me!";
+                    convText[1] = "You know I like some conversation now and then, it get's lonely around here sometimes";
+                    convText[2] = "So thank you for taking your time to come to talk to this old man";
+                }
+                else if (neighbourConv1Choice2 == 4)
+                {
+                    convText[0] = "Yes I did, unfortunately. When people get older they get more prone to being sick";
+                    convText[1] = "And as I am quite old now, there are a lot of friends and relatives who have gotten sick.";
+                    convText[2] = "However there is no need to stay sad about it, illness is a part of life, and life goes on. So we also need to move on";
+                }
+                reactionDyl = "Thank you for everything, but I really should go do my homework at some point";
+                convType = 3;
+            }
+            else if (line == 5)
+            {
+                convText[0] = "Aah that's fine chap";
+                convText[1] = "Homework is something that needs to be done, school is important";
+                convText[2] = "Take care, and sleep well tonight Dylan";
+                convType = 1;
+                neighbourConvDone = true;
             }
         }
     }
