@@ -36,12 +36,21 @@ public class PostProcessingScript : MonoBehaviour
                 saturationValue = saturationValue+1;
                 //Debug.Log(saturationValue);
             }
+            else if (saturationValue <= value)
+            {
+                saturationValue = saturationValue-1;
+            }
         }
         else if (value<0)
         {
+            
             if (saturationValue >=value)
             {
                 saturationValue = saturationValue-1;
+            }
+            else if (saturationValue <=value)
+            {
+                  saturationValue = saturationValue+1;
             }
                 
         }
