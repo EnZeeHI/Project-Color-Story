@@ -84,8 +84,8 @@ public class TextLog : MonoBehaviour
         {
             PPScript.SaturationChange(0);
         }
-        Debug.Log(line);
-        Debug.Log(dadConv1Choice1);
+        //Debug.Log(line);
+        //Debug.Log(dadConv1Choice1);
     }
     
     public void setText ()
@@ -375,13 +375,49 @@ public class TextLog : MonoBehaviour
                 convType = 1;
             }
         }
-        else if (convName == "neighbourConv1")
+        else if (convName == "NeighbourConv1")
         {
             if (line == 1)
             {
                 convText[0] = "Aaaah sometimes you have days like that";
                 convText[1] = "So tell me chap, what happened?";
                 convText[2] = "Maybe this old man can give you some life advice";
+
+                choicesOptions[0] = "I'm going on a date tomorrow, but I'm a bit stressed and I don't think I'll be able to enjoy the date";
+                choicesOptions[1] = "My mom apparently has a tumor and I don't know what to do";
+                choicesOptions[2] = "Just something bad happened, but also something good, and now I don't know how to feel";
+                choicesOptions[3] = "My day was going really well, but then I got some bad news from my dad, and now the good feels insignificant";
+
+                convType = 2;
+
+            }
+            else if (line == 2)
+            {
+                neighbourConv1Choice1 = choiceMade;
+                if (neighbourConv1Choice1 == 1)
+                {
+                    convText[1] = "";
+                    convText[2] = "";
+                    convText[3] = "";
+                }
+                else if (neighbourConv1Choice1 == 2)
+                {
+                    convText[1] = "";
+                    convText[2] = "";
+                    convText[3] = "";
+                }
+                else if (neighbourConv1Choice1 == 3)
+                {
+                    convText[1] = "";
+                    convText[2] = "";
+                    convText[3] = "";
+                }
+                else if (neighbourConv1Choice1 == 4)
+                {
+                    convText[1] = "";
+                    convText[2] = "";
+                    convText[3] = "";
+                }
             }
         }
     }
