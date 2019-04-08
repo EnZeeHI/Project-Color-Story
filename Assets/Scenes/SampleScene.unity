@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.3081517, g: 0.64842445, b: 1.0165154, a: 1}
+  m_IndirectSpecularColor: {r: 0.30832866, g: 0.64847916, b: 1.0165125, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2179,8 +2179,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 740f2814e27f9fb4fb5670add6ecaa8c, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3769,7 +3769,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 62fe8563965a4744795eb0dd6837e08b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -75.54
+      value: -75.896
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 62fe8563965a4744795eb0dd6837e08b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6500,7 +6500,7 @@ PrefabInstance:
     - target: {fileID: 411903066635857449, guid: 8c1e46bdff74fb94db989dd00a82c537,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -205.3
+      value: -206.39
       objectReference: {fileID: 0}
     - target: {fileID: 411903066635857449, guid: 8c1e46bdff74fb94db989dd00a82c537,
         type: 3}
@@ -7411,7 +7411,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c02175d1cfeee6488d09579e9e8aeaa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -207.01
+      value: -208.06
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c02175d1cfeee6488d09579e9e8aeaa, type: 3}
       propertyPath: m_LocalPosition.y
@@ -12727,6 +12727,7 @@ MonoBehaviour:
   playAudio: 0
   isPlaying: 0
   UI: {fileID: 63713632}
+  UI2: {fileID: 1989272980}
 --- !u!4 &619189321 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: c64bf90f7a9b49145a007d05445001d3,
@@ -12940,7 +12941,7 @@ PrefabInstance:
     - target: {fileID: 3344688861338203124, guid: d783d3fe768384a408995a615b6c5fbb,
         type: 3}
       propertyPath: m_TagString
-      value: QuestObject
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 3344688861338203124, guid: d783d3fe768384a408995a615b6c5fbb,
         type: 3}
@@ -14274,6 +14275,7 @@ Transform:
   - {fileID: 1926937053}
   - {fileID: 692314349}
   - {fileID: 1963477333}
+  - {fileID: 3544339339021780608}
   - {fileID: 1351176282}
   - {fileID: 1177424667}
   - {fileID: 1330965932}
@@ -14324,7 +14326,6 @@ Transform:
   - {fileID: 8113476}
   - {fileID: 1769613399}
   - {fileID: 2068269487}
-  - {fileID: 3544339339021780608}
   m_Father: {fileID: 18356434}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17296,7 +17297,7 @@ PrefabInstance:
     - target: {fileID: 1156947048785903339, guid: e467dc15fd11c104790181a8debfc2fc,
         type: 3}
       propertyPath: m_TagString
-      value: QuestPerson
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 1156947048785903339, guid: e467dc15fd11c104790181a8debfc2fc,
         type: 3}
@@ -18795,7 +18796,7 @@ PrefabInstance:
     - target: {fileID: 1518775715382767699, guid: e467dc15fd11c104790181a8debfc2fc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.762024
+      value: -12.74
       objectReference: {fileID: 0}
     - target: {fileID: 1518775715382767699, guid: e467dc15fd11c104790181a8debfc2fc,
         type: 3}
@@ -21593,7 +21594,7 @@ RectTransform:
   m_GameObject: {fileID: 931401505}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1, y: 1.1, z: 1.1}
   m_Children:
   - {fileID: 2141418655}
   m_Father: {fileID: 63713633}
@@ -24576,8 +24577,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.2, y: 211.2}
-  m_SizeDelta: {x: 160, y: 160}
+  m_AnchoredPosition: {x: -1.2, y: 230.2}
+  m_SizeDelta: {x: 200, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1176909394
 MonoBehaviour:
@@ -24612,7 +24613,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: afdgfdahdgfhgdhfsghjgfjgfjfdhjdghjhgdjhgdjgdhjgdhjdghjgdhjhgdjgdhjgdhjgdhj
 --- !u!222 &1176909395
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -26007,9 +26008,10 @@ MonoBehaviour:
   continueButton2: {fileID: 1559470871}
   PPScript: {fileID: 0}
   neighbour: {fileID: 2045952356}
-  dad: {fileID: 0}
-  mom: {fileID: 0}
-  neighbouryeet: {fileID: 0}
+  dad: {fileID: 1452359236}
+  mom: {fileID: 319473990}
+  neighbouryeet: {fileID: 2045952356}
+  bed: {fileID: 665655233}
   convType: 0
   choices: {fileID: 1747451937}
   reactionBox: {fileID: 931401505}
@@ -30211,6 +30213,8 @@ MonoBehaviour:
   homeworkText: {fileID: 2044462416}
   homeworkCanvas: {fileID: 1989272980}
   homeworkPanel: {fileID: 1559160503}
+  countdown: 0
+  endTheGame: 0
   personIsHappy: 0
 --- !u!1001 &1433781256
 PrefabInstance:
@@ -33063,8 +33067,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 740f2814e27f9fb4fb5670add6ecaa8c, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -41666,7 +41670,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 93.8, y: 177.1}
+  m_AnchoredPosition: {x: 113, y: 165.9}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2010499373
@@ -44468,7 +44472,7 @@ Transform:
   m_LocalScale: {x: 6, y: 2, z: 11}
   m_Children: []
   m_Father: {fileID: 686164588}
-  m_RootOrder: 68
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3544339339022583456
 MeshFilter:

@@ -39,6 +39,9 @@ public class DialougeManager : MonoBehaviour
     public GameObject homeworkCanvas;
     public GameObject homeworkPanel;
 
+    public float countdown;
+    public bool endTheGame;
+
 
 
     // added code for color change
@@ -46,6 +49,15 @@ public class DialougeManager : MonoBehaviour
 
     private void Update()
     {
+        if (endTheGame == true)
+        {
+        //Debug.Log(countdown);
+
+            if (countdown <= Time.time)
+            {
+                SceneManager.LoadScene("Main menu");
+            }
+        }
         //Debug.Log(sentences.Count);
     }
     // Start is called before the first frame update
@@ -135,6 +147,9 @@ public class DialougeManager : MonoBehaviour
         noEndGame.SetActive(false);
         continueButton.SetActive(false);
         dialougeText.text = "End of day 13, End of Demo.";
+        endTheGame = true;
+        countdown = Time.time + 10;
+
         //SceneManager.LoadScene("Credits Scene");
     }
     public void DoHomework()

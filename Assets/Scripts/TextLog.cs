@@ -17,6 +17,7 @@ public class TextLog : MonoBehaviour
     public GameObject dad;
     public GameObject mom;
     public GameObject neighbouryeet;
+    public GameObject bed;
 
 
     [HideInInspector]
@@ -274,6 +275,7 @@ public class TextLog : MonoBehaviour
                 dadConvDone = true;
                 neighbour.SetActive(true);
                 dad.tag = "Untagged";
+                bed.tag = "QuestPerson";
             }
         }
         else if (convName == "MomConv1")

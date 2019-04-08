@@ -25,6 +25,7 @@ public class movement : MonoBehaviour
     Transform cameraT;
 
     public GameObject UI;
+    public GameObject UI2;
 
     
     // Start is called before the first frame update
@@ -40,6 +41,7 @@ public class movement : MonoBehaviour
     {
         if (UI.activeInHierarchy == false)
         {
+            Cursor.visible = false;
             float forward = Input.GetAxis("Vertical"), horizontal = Input.GetAxis("Horizontal");
             if (Input.GetAxis("Vertical") !=0 ||Input.GetAxis("Horizontal") != 0)
             {
@@ -106,6 +108,7 @@ public class movement : MonoBehaviour
        
         else
             {
+                Cursor.visible = true;
                 playAudio = false;
                 animator.SetBool("IsWalking", false);
                 insideFootsteps.Stop();
