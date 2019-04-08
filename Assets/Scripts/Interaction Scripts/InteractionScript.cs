@@ -45,15 +45,26 @@ public class InteractionScript : MonoBehaviour
          RaycastHit hit;
         // Does the ray intersect any objects excluding the player layer
         if (Physics.Raycast(transform.position + raycastOffset, camera.transform.TransformDirection(Vector3.forward), out hit, 3))
-        {
+        { 
+            float  promptPosition;
+            if (hit.transform.gameObject.GetComponent<Collider>() != null)
+            {
+                promptPosition = hit.transform.gameObject.GetComponent<Collider>().bounds.size.y;
+            }
+            else
+            {
+                promptPosition = 0;
+            }
+            
             Debug.DrawRay(transform.position + raycastOffset, camera.transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
         // checking if the raycast is detecting the Quest Object, Instantiating a prompt once, and seting it active/unactive based on if the player aims at the object or not 
             if (hit.collider.tag == "QuestObject"  )
             {
+                 
                 
                 if ( hit.transform.Find("InteractionObjectPrompt(Clone)") == null)
                 {   
-                    InteractionObjectPromptObject = Instantiate(InteractionObjectPrompt, hit.collider.transform.position+ offset, hit.collider.transform.rotation );
+                    InteractionObjectPromptObject = Instantiate(InteractionObjectPrompt, hit.collider.transform.position + (new Vector3 (0,promptPosition,0)+ offset), QuestItemPromptPrefab.transform.rotation );
                     InteractionObjectPromptObject.transform.parent = hit.transform;
                     isCreated = true;                    
                 }
@@ -80,7 +91,7 @@ public class InteractionScript : MonoBehaviour
         {
             if ( hit.transform.Find("QuestItemPromptPrefab(Clone)") == null)
             {   
-                QuestItemPromptObject = Instantiate(QuestItemPromptPrefab, hit.collider.transform.position+ offset, hit.collider.transform.rotation );
+                QuestItemPromptObject = Instantiate(QuestItemPromptPrefab,hit.collider.transform.position + (new Vector3 (0,promptPosition,0)+ offset), QuestItemPromptPrefab.transform.rotation );
                 QuestItemPromptObject.transform.parent = hit.transform;
                 isCreated = true;              
             }
@@ -104,7 +115,7 @@ public class InteractionScript : MonoBehaviour
         {
             if ( hit.transform.Find("QuestPersonPromptPrefab(Clone)") == null)
             {   
-                QuestPersonPromptObject = Instantiate(QuestPersonPromptPrefab, hit.collider.transform.position+ offset, hit.collider.transform.rotation );
+                QuestPersonPromptObject = Instantiate(QuestPersonPromptPrefab, hit.collider.transform.position + (new Vector3 (0,promptPosition,0)+ offset), QuestItemPromptPrefab.transform.rotation );
                 QuestPersonPromptObject.transform.parent = hit.transform;
                 isCreated = true;              
             }
@@ -141,13 +152,13 @@ public class InteractionScript : MonoBehaviour
                         Debug.Log("aaa");
                         if (GameObject.Find("choiceManager").GetComponent<TextLog>().dadConvDone)
                         {
-                           hit.transform.gameObject.GetComponent<FrontDoorScript>().openDoor = true;
+                           hit.transform.gameObject.GetComponent<DoorScript>().openTheDoor = true;
                             Debug.Log("open");
                         }
                         else
                         {
                             Debug.Log("nani" + GameObject.Find("choiceManager").GetComponent<TextLog>().line);
-                            hit.transform.GetComponent<FrontDoorScript>().openDoor = false;
+                            hit.transform.GetComponent<DoorScript>().openTheDoor = false;
                         }
                         //Debug.Log()
                     }

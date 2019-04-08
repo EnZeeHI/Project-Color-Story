@@ -28,6 +28,8 @@ ModelImporter:
     4300000: Cube.002
     4300002: Cube
     4300004: Cube.001
+    6400000: Cube
+    6400002: Cube.001
     7400000: door
     7400002: Armature|closedoor.001
     7400004: Armature|door
@@ -96,7 +98,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
