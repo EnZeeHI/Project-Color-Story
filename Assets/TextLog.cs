@@ -75,19 +75,19 @@ public class TextLog : MonoBehaviour
     
     void Update()
     {
-        if (line == 5 && convName == "DadConv1")
+        if (line >= 5 && convName == "DadConv1")
         {
             PPScript.SaturationChange(-100);
         }
         else if (momConvDone == true && neighbourConvDone == false|| neighbourConvDone == true && momConvDone == false)
         {
              PPScript.SaturationChange(-60);
-            Debug.Log("yeet");
+           
         }
         else if (neighbourConvDone == true && momConvDone == true)
         {
             PPScript.SaturationChange(-20);
-            Debug.Log("yayeet");
+            
         }
         //Debug.Log(line);
         //Debug.Log(dadConv1Choice1);
