@@ -29,10 +29,21 @@ public class PostProcessingScript : MonoBehaviour
     }
     public void SaturationChange(float value)
     {
-        if (saturationValue <= value)
+        if (value > 0)
         {
-            saturationValue = saturationValue+1;
-            //Debug.Log(saturationValue);
+            if (saturationValue <= value)
+            {
+                saturationValue = saturationValue+1;
+                //Debug.Log(saturationValue);
+            }
+        }
+        if (value<0)
+        {
+            if (saturationValue >=value)
+            {
+                saturationValue = saturationValue-1;
+            }
+                
         }
             
         

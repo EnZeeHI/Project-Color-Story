@@ -82,7 +82,12 @@ public class TextLog : MonoBehaviour
     {
         if (line == 1)
         {
-            PPScript.SaturationChange(0);
+            PPScript.SaturationChange(-100);
+        }
+        if (line == 3)
+        {
+             PPScript.SaturationChange(10);
+            // Debug.Log()
         }
         //Debug.Log(line);
         //Debug.Log(dadConv1Choice1);

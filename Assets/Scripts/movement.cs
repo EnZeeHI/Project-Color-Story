@@ -18,6 +18,9 @@ public class movement : MonoBehaviour
     public AudioSource insideFootsteps;
     public AudioSource outsideFootsteps;
 
+    public bool playAudio;
+    public bool isPlaying;
+
 
     Transform cameraT;
 
@@ -29,6 +32,7 @@ public class movement : MonoBehaviour
     {
         cameraT = Camera.main.transform;
         animator = transform.GetComponent<Animator>();
+        
     }
 
     // Update is called once per frame
@@ -41,15 +45,42 @@ public class movement : MonoBehaviour
             {
                 
                 animator.SetBool("IsWalking", true);
-                if (gameObject.transform.position.y >0)
+                playAudio = true;
+                 if (gameObject.transform.position.y >0 )
+                {  
+                    if (playAudio && isPlaying == false)
+                    {
+                        outsideFootsteps.Play(0);
+                        
+                        Debug.Log("oustide");
+                        isPlaying = true;
+                    }
+                   
+                }
+                else
                 {
+                     if (playAudio  && isPlaying == false)
+                    {
+                       insideFootsteps.Play(0);
+                        Debug.Log("inside");
+                        isPlaying = true;
+                    }
                     
                 }
+                
 
             }
             else
             {
+                playAudio = false;
                 animator.SetBool("IsWalking", false);
+                insideFootsteps.Stop();
+                outsideFootsteps.Stop();
+                Debug.Log("isnt walking");
+                isPlaying = false;
+                
+                //outsideFootsteps.Stop();
+                //insideFootsteps.Stop();
             }
 
             //Debug.Log(forward);
@@ -72,5 +103,18 @@ public class movement : MonoBehaviour
             transform.Translate(transform.forward * currentSpeed * Time.deltaTime, Space.World);
 
         }
+       
+        else
+            {
+                playAudio = false;
+                animator.SetBool("IsWalking", false);
+                insideFootsteps.Stop();
+                outsideFootsteps.Stop();
+                Debug.Log("isnt walking");
+                isPlaying = false;
+                
+                //outsideFootsteps.Stop();
+                //insideFootsteps.Stop();
+            }
     }
 }
