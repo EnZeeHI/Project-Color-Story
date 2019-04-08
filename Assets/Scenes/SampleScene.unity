@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.3081517, g: 0.64842445, b: 1.0165154, a: 1}
+  m_IndirectSpecularColor: {r: 0.30832866, g: 0.64847916, b: 1.0165125, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -15037,6 +15037,31 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 7088901310758754109, guid: e467dc15fd11c104790181a8debfc2fc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897717135351624527, guid: e467dc15fd11c104790181a8debfc2fc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3500715565381692857, guid: e467dc15fd11c104790181a8debfc2fc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 18435175291929039, guid: e467dc15fd11c104790181a8debfc2fc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8290938932201032579, guid: e467dc15fd11c104790181a8debfc2fc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 5542963024787916752, guid: e467dc15fd11c104790181a8debfc2fc,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -15071,31 +15096,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.471
-      objectReference: {fileID: 0}
-    - target: {fileID: 7088901310758754109, guid: e467dc15fd11c104790181a8debfc2fc,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8897717135351624527, guid: e467dc15fd11c104790181a8debfc2fc,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3500715565381692857, guid: e467dc15fd11c104790181a8debfc2fc,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 18435175291929039, guid: e467dc15fd11c104790181a8debfc2fc,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8290938932201032579, guid: e467dc15fd11c104790181a8debfc2fc,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e467dc15fd11c104790181a8debfc2fc, type: 3}
@@ -20418,6 +20418,9 @@ MonoBehaviour:
   continueButton2: {fileID: 1559470871}
   PPScript: {fileID: 0}
   neighbour: {fileID: 2045952356}
+  dad: {fileID: 1452359236}
+  mom: {fileID: 319473990}
+  neighbouryeet: {fileID: 2045952356}
   convType: 0
   choices: {fileID: 1747451937}
   reactionBox: {fileID: 931401505}

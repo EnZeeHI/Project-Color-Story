@@ -14,6 +14,11 @@ public class TextLog : MonoBehaviour
 
     public GameObject neighbour;
 
+    public GameObject dad;
+    public GameObject mom;
+    public GameObject neighbouryeet;
+
+
     [HideInInspector]
     public float convType;
     public GameObject choices;
@@ -81,12 +86,12 @@ public class TextLog : MonoBehaviour
         }
         else if (momConvDone == true && neighbourConvDone == false|| neighbourConvDone == true && momConvDone == false)
         {
-             PPScript.SaturationChange(-60);
+             PPScript.SaturationChange(-70);
            
         }
         else if (neighbourConvDone == true && momConvDone == true)
         {
-            PPScript.SaturationChange(-20);
+            PPScript.SaturationChange(-30);
             
         }
         //Debug.Log(line);
@@ -268,6 +273,7 @@ public class TextLog : MonoBehaviour
                 convType = 1;
                 dadConvDone = true;
                 neighbour.SetActive(true);
+                dad.tag = "Untagged";
             }
         }
         else if (convName == "MomConv1")
@@ -379,6 +385,7 @@ public class TextLog : MonoBehaviour
                 convText[2] = "Thank you again for the tea, and sleep well tonight";
 
                 momConvDone = true;
+                mom.tag = "Untagged";
                 convType = 1;
             }
         }
@@ -478,6 +485,7 @@ public class TextLog : MonoBehaviour
                 convText[2] = "Take care, and sleep well tonight Dylan";
                 convType = 1;
                 neighbourConvDone = true;
+                neighbouryeet.tag = "Untagged";
             }
         }
     }
