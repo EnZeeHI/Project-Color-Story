@@ -12,6 +12,8 @@ public class TextLog : MonoBehaviour
     public GameObject continueButton2;
     public PostProcessingScript PPScript;
 
+    public GameObject neighbour;
+
     [HideInInspector]
     public float convType;
     public GameObject choices;
@@ -272,6 +274,7 @@ public class TextLog : MonoBehaviour
                 }
                 convType = 1;
                 dadConvDone = true;
+                neighbour.SetActive(true);
             }
         }
         else if (convName == "MomConv1")
