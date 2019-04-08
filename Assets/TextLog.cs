@@ -75,7 +75,7 @@ public class TextLog : MonoBehaviour
     
     void Update()
     {
-        if (line >= 5 && convName == "DadConv1")
+        if (line >= 6 && convName == "DadConv1")
         {
             PPScript.SaturationChange(-100);
         }
