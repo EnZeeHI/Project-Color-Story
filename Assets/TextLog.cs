@@ -70,21 +70,14 @@ public class TextLog : MonoBehaviour
     }
 
     // Update is called once per frame
+    
     void Update()
-    {
-        //Debug.Log(convText[1]);
-        //Debug.Log(line);
-        //Debug.Log(convName);
-        
-        
-    }
-    void FixedUpdate()
     {
         if (line == 5 && convName == "DadConv1")
         {
             PPScript.SaturationChange(-100);
         }
-        if (momConvDone == true && neighbourConvDone == false|| neighbourConvDone == true && momConvDone == false)
+        else if (momConvDone == true && neighbourConvDone == false|| neighbourConvDone == true && momConvDone == false)
         {
              PPScript.SaturationChange(-60);
             Debug.Log("yeet");
@@ -133,7 +126,7 @@ public class TextLog : MonoBehaviour
                 if (dadConv1Choice1 == 1)
                 {
                     convText[0] = "Hahahaha";
-                    convText[1] = "No need to be emberassed!";
+                    convText[1] = "No need to be embarrassed!";
                     convText[2] = "It's fine I'll take you";
                     convType = 3;
 
@@ -149,7 +142,7 @@ public class TextLog : MonoBehaviour
                 else if (dadConv1Choice1 == 3)
                 {
                     convText[0] = "Bit shy about it?";
-                    convText[1] = "Dont be ashamed it will be fun!";
+                    convText[1] = "Don't be ashamed it will be fun!";
                     convText[2] = "And don't worry I'll take you there";
                     convType = 3;
                 }
@@ -229,7 +222,7 @@ public class TextLog : MonoBehaviour
                 convType = 2;
 
                 choicesOptions[0] = "I think I'm going to go to my room to calm down";
-                choicesOptions[1] = "Yea.. I'd like to talk to her...";
+                choicesOptions[1] = "Yeah... I'd like to talk to her...";
                 choicesOptions[2] = "I'm not sure what to do...";
                 choicesOptions[3] = "Maybe I'll go outside to clear my head first";
             }
@@ -264,7 +257,7 @@ public class TextLog : MonoBehaviour
                 }
                 else if (dadConv1Choice3 == 4)
                 {
-                    convText[0] = "Yea that sounds like a good plan";
+                    convText[0] = "Yeah that sounds like a good plan";
                     convText[1] = "The weather is decent so that might help";
                     convText[2] = "Maybe Mr. Rogers is also outside, maybe you can talk to him for a bit";
                     
@@ -278,7 +271,7 @@ public class TextLog : MonoBehaviour
         {
             if (line == 1)
             {
-                convText[0] = "It will be allright hun";
+                convText[0] = "It will be alright hun";
                 convText[1] = "Don't worry too much about it";
                 convText[2] = "It's something we will get through just like always, alright?";
 
@@ -303,7 +296,7 @@ public class TextLog : MonoBehaviour
                 {
                     convText[0] = "It's not that bad, don't worry";
                     convText[1] = "Didn't your dad tell you it was cureable?";
-                    convText[2] = "Anyway, lets talk about something more fun, how was school honey?";
+                    convText[2] = "Anyway, let's talk about something more fun, how was school honey?";
 
                 }
                 else if (momConv1Choice1 == 3)
@@ -345,7 +338,7 @@ public class TextLog : MonoBehaviour
                     convText[1] = "We have an old camera laying around the house somewhere";
                     convText[2] = "Maybe you can take pictures of your nothing too special days, so you can show your mom what you mean with not too special";
 
-                    reactionDyl = "I mean... I could try, espcially now that you probably won't leave the house much";
+                    reactionDyl = "I mean... I could try, especially now that you probably won't leave the house much";
                 }
                 else if (momConv1Choice2 == 3)
                 {
@@ -373,7 +366,7 @@ public class TextLog : MonoBehaviour
                 convText[1] = "Even now that I'm sick you still manage to cheer me up";
                 convText[2] = "Thanks honey";
 
-                reactionDyl = "If it makes you feel better, I'm more then glad to to talk to you every day";
+                reactionDyl = "If it makes you feel better, I'm more than glad to to talk to you every day";
                 convType = 3;
             }
             else if (line == 5)
@@ -413,7 +406,7 @@ public class TextLog : MonoBehaviour
                 }
                 else if (neighbourConv1Choice1 == 2)
                 {
-                    convText[0] = "Your mom has a tumor? That isn't nice at all indeed";
+                    convText[0] = "Your mom has a tumor? I'm sorry to hear that.";
                     convText[1] = "Don't worry though, your mom is a strong lady, she'll get through it";
                     convText[2] = "If you just stay positive you will make your mom happy, and her recovery will go smoother";
                 }
@@ -463,7 +456,7 @@ public class TextLog : MonoBehaviour
                 else if (neighbourConv1Choice2 == 3)
                 {
                     convText[0] = "Don't thank me!";
-                    convText[1] = "You know I like some conversation now and then, it get's lonely around here sometimes";
+                    convText[1] = "You know I like some conversation now and then, it gets lonely around here sometimes";
                     convText[2] = "So thank you for taking your time to come to talk to this old man";
                 }
                 else if (neighbourConv1Choice2 == 4)
