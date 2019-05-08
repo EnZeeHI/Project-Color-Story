@@ -12703,11 +12703,13 @@ MonoBehaviour:
   gravity: -5
   turnSpeed: 0.2
   speedTime: 0.1
+  sprintSpeedTime: 0.9
   animator: {fileID: 0}
   insideFootsteps: {fileID: 619189322}
   outsideFootsteps: {fileID: 619189323}
   playAudio: 0
   isPlaying: 0
+  sprintEnabled: 0
   UI: {fileID: 63713632}
   UI2: {fileID: 1989272980}
 --- !u!4 &619189321 stripped

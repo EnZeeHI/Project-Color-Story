@@ -13,6 +13,7 @@ public class movement : MonoBehaviour
     float currentSpeed;
 
     public float speedTime = 0.1f;
+    public float sprintSpeedTime = 0.9f;
     float speedVelocity;
     public Animator animator;
     public AudioSource insideFootsteps;
@@ -20,6 +21,7 @@ public class movement : MonoBehaviour
 
     public bool playAudio;
     public bool isPlaying;
+    public bool sprintEnabled;
 
 
     Transform cameraT;
@@ -56,6 +58,7 @@ public class movement : MonoBehaviour
                         
                         Debug.Log("oustide");
                         isPlaying = true;
+                        sprintEnabled = true;
                     }
                    
                 }
@@ -66,6 +69,7 @@ public class movement : MonoBehaviour
                        insideFootsteps.Play(0);
                         Debug.Log("inside");
                         isPlaying = true;
+                        sprintEnabled = false;
                     }
                     
                 }
@@ -100,9 +104,29 @@ public class movement : MonoBehaviour
             }
 
             float targetSpeed = forwardSpeed * inputDir.magnitude;
-            currentSpeed = Mathf.SmoothDamp(currentSpeed, targetSpeed, ref speedVelocity, speedTime);
+            if (Input.GetKey("left shift") )
+            {if (sprintEnabled =true)
+                {
+                    currentSpeed = Mathf.SmoothDamp(currentSpeed, targetSpeed *2, ref speedVelocity, speedTime);
+                    animator.speed = 2;
+                    Debug.Log("sprint enabled");
+                }
+                else
+                {
+                    currentSpeed = Mathf.SmoothDamp(currentSpeed, targetSpeed, ref speedVelocity, speedTime);
+                    Debug.Log("sprint disabled");
+                    animator.speed = 1;
+                }
+            }
+            else
+            {
+                currentSpeed = Mathf.SmoothDamp(currentSpeed, targetSpeed, ref speedVelocity, speedTime);
+                animator.speed = 1;
+            }
+            
 
             transform.Translate(transform.forward * currentSpeed * Time.deltaTime, Space.World);
+            Debug.Log(currentSpeed);
 
         }
        
