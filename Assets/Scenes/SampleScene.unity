@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.30832866, g: 0.64847916, b: 1.0165125, a: 1}
+  m_IndirectSpecularColor: {r: 0.3081517, g: 0.64842445, b: 1.0165154, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -12681,9 +12681,11 @@ MonoBehaviour:
   activateItem: 0
   camera: {fileID: 534669904}
   image: {fileID: 1989272980}
+  triggerCollider: {fileID: 619189324}
   UI: {fileID: 63713632}
   itemToMove: {fileID: 0}
   objectInInventory: {fileID: 0}
+  hit: {fileID: 0}
 --- !u!114 &619189319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12906,6 +12908,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!65 &619189324
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619189315}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.8557588, z: 2.581395}
+  m_Center: {x: 0, y: 1.1643703, z: 0.7906971}
 --- !u!1001 &622432038
 PrefabInstance:
   m_ObjectHideFlags: 0

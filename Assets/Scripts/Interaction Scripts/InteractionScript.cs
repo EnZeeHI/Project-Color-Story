@@ -21,11 +21,13 @@ public class InteractionScript : MonoBehaviour
     public bool activateItem;
     public Camera camera;
     public GameObject image;
+    public Collider triggerCollider;
 
     //hello aras this is my fucking about with the text
     public GameObject UI;
     public GameObject itemToMove;
     public GameObject objectInInventory;
+    public Collider hit;
 
     //public InventoryScript InventoryScript;
     private string activeItem;
@@ -42,9 +44,10 @@ public class InteractionScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         RaycastHit hit;
+        // OnCollisionEnter();
         // Does the ray intersect any objects excluding the player layer
-        if (Physics.Raycast(transform.position + raycastOffset, camera.transform.TransformDirection(Vector3.forward), out hit, 3))
+        
+        if (hit != null)
         { 
             float  promptPosition;
             if (hit.transform.gameObject.GetComponent<Collider>() != null)
@@ -56,15 +59,15 @@ public class InteractionScript : MonoBehaviour
                 promptPosition = 0;
             }
             
-            Debug.DrawRay(transform.position + raycastOffset, camera.transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
+           
         // checking if the raycast is detecting the Quest Object, Instantiating a prompt once, and seting it active/unactive based on if the player aims at the object or not 
-            if (hit.collider.tag == "QuestObject"  )
+            if (hit.transform.tag == "QuestObject"  )
             {
                  
                 
                 if ( hit.transform.Find("InteractionObjectPrompt(Clone)") == null)
                 {   
-                    InteractionObjectPromptObject = Instantiate(InteractionObjectPrompt, hit.collider.transform.position + (new Vector3 (0,promptPosition,0)+ offset), QuestItemPromptPrefab.transform.rotation );
+                    InteractionObjectPromptObject = Instantiate(InteractionObjectPrompt, hit.transform.position + (new Vector3 (0,promptPosition,0)+ offset), QuestItemPromptPrefab.transform.rotation );
                     InteractionObjectPromptObject.transform.parent = hit.transform;
                     isCreated = true;                    
                 }
@@ -87,11 +90,11 @@ public class InteractionScript : MonoBehaviour
             
             
             // checking if the raycast detects a quest item, istantiating the prompt and toggling the active state of the prompt based on if the player is aiming at it or not
-        if (hit.collider.tag=="QuestItem")
+        if (hit.transform.tag=="QuestItem")
         {
             if ( hit.transform.Find("QuestItemPromptPrefab(Clone)") == null)
             {   
-                QuestItemPromptObject = Instantiate(QuestItemPromptPrefab,hit.collider.transform.position + (new Vector3 (0,promptPosition,0)+ offset), QuestItemPromptPrefab.transform.rotation );
+                QuestItemPromptObject = Instantiate(QuestItemPromptPrefab,hit.transform.position + (new Vector3 (0,promptPosition,0)+ offset), QuestItemPromptPrefab.transform.rotation );
                 QuestItemPromptObject.transform.parent = hit.transform;
                 isCreated = true;              
             }
@@ -111,11 +114,11 @@ public class InteractionScript : MonoBehaviour
            // Debug.Log("Not Quest Item"); 
         }
         // same as before but for a quest person 
-        if (hit.collider.tag=="QuestPerson")
+        if (hit.transform.tag=="QuestPerson")
         {
             if ( hit.transform.Find("QuestPersonPromptPrefab(Clone)") == null)
             {   
-                QuestPersonPromptObject = Instantiate(QuestPersonPromptPrefab, hit.collider.transform.position + (new Vector3 (0,promptPosition,0)+ offset), QuestItemPromptPrefab.transform.rotation );
+                QuestPersonPromptObject = Instantiate(QuestPersonPromptPrefab, hit.transform.position + (new Vector3 (0,promptPosition,0)+ offset), QuestItemPromptPrefab.transform.rotation );
                 QuestPersonPromptObject.transform.parent = hit.transform;
                 isCreated = true;              
             }
@@ -208,8 +211,8 @@ public class InteractionScript : MonoBehaviour
         {
             if (Input.GetButton("Interaction1"))
             {
-            activeItem = hit.collider.gameObject.name;
-            objectInInventory = hit.collider.gameObject;
+            activeItem = hit.transform.gameObject.name;
+            objectInInventory = hit.transform.gameObject;
             
             if (InventoryScript.InventoryObject1 == null)
             {
@@ -255,7 +258,7 @@ public class InteractionScript : MonoBehaviour
         // disabling every prompt if the raycast doesnt detect anything
         else
         {   
-            Debug.DrawRay(transform.position + raycastOffset, camera.transform.TransformDirection(Vector3.forward) * 1000, Color.white);
+           
             InteractionObjectPromptObject.SetActive(false);
             InteractionObjectPromptActive = false;
             QuestItemPromptObject.SetActive(false);
@@ -286,5 +289,10 @@ public class InteractionScript : MonoBehaviour
             activateItem = false;
             Debug.Log(" no Pizza Time :(");
         }
+    }
+    void OnCollisionEnter(Collision collision)
+    {
+        hit = collision.collider;
+       // return = hit;
     }
 }
