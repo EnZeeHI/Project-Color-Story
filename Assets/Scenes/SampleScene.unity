@@ -17221,6 +17221,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 6870209330828167431, guid: e467dc15fd11c104790181a8debfc2fc,
+        type: 3}
+      propertyPath: m_TagString
+      value: QuestObject
+      objectReference: {fileID: 0}
     - target: {fileID: 1518775715382767699, guid: e467dc15fd11c104790181a8debfc2fc,
         type: 3}
       propertyPath: m_LocalPosition.x

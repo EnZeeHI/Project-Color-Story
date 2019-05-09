@@ -290,9 +290,23 @@ public class InteractionScript : MonoBehaviour
             Debug.Log(" no Pizza Time :(");
         }
     }
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider other)
     {
-        hit = collision.collider;
+        if (other.transform.gameObject.tag == "QuestObject" ||other.transform.gameObject.tag == "QuestItem" ||other.transform.gameObject.tag == "QuestPerson")
+            {
+                hit = other;
+            } 
        // return = hit;
+    }
+    void OnTriggerStay(Collider other)
+    {
+         if (other.transform.gameObject.tag == "QuestObject" ||other.transform.gameObject.tag == "QuestItem" ||other.transform.gameObject.tag == "QuestPerson")
+            {
+                hit = other;
+            } 
+    }
+    void OnTriggerExit(Collider other)
+    {
+        hit = null;
     }
 }
