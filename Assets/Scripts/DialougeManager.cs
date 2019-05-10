@@ -55,7 +55,7 @@ public class DialougeManager : MonoBehaviour
 
             if (countdown <= Time.time)
             {
-                SceneManager.LoadScene("Main menu");
+                SceneManager.LoadScene("Credits Scene");
             }
         }
         //Debug.Log(sentences.Count);
