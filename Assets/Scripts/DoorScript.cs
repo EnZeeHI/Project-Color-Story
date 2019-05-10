@@ -9,12 +9,19 @@ public class DoorScript : MonoBehaviour
     Vector3 doorOpenVector;
     Vector3 doorClosedVector;
     public bool doorOpen = false;
-    bool doorClosed = true;
+   //bool doorClosed = true;
     public Animator doorOpenAnimation;
+    public float doorOpenAngle = 90f;
+    public float doorClosedAngle = 0f;
+    public float smoothening = 2f;
+    public GameObject doorObject;
+    public Quaternion doorObjectInitialRotation;
+
     // Start is called before the first frame update
     void Start()
     {
-        doorOpenAnimation = GetComponent<Animator>();
+        //doorOpenAnimation = GetComponent<Animator>();
+        doorObjectInitialRotation =doorObject.transform.rotation;
     }
 
     // Update is called once per frame
@@ -23,30 +30,39 @@ public class DoorScript : MonoBehaviour
 
         if(objectiveComplete = true)
         {
-        if (openTheDoor)
-        {
+       
             //doorOpenVector = transform.position + new Vector3 (0,0,2);
             //doorClosedVector =  transform.position + new Vector3 (0,0,-2);
-            if (openTheDoor && doorOpen)
+            if ( doorOpen)
             {
                 //transform.position = doorClosedVector;
-                doorClosed = true;
-                doorOpen = false;
-                openTheDoor =false;
-                doorOpenAnimation.SetBool("DoorOpen", false);
-                transform.GetComponent<BoxCollider>().isTrigger = false;
+                //doorClosed = true;
+                //doorOpen = false;
+                //openTheDoor =false;
+                //doorOpenAnimation.SetBool("DoorOpen", false);
+                Quaternion targetRotation =  doorObjectInitialRotation* Quaternion.Euler (0,  doorOpenAngle, 0);
+                doorObject.transform.rotation = Quaternion.Slerp (transform.rotation, targetRotation, smoothening * Time.deltaTime);
+                //transform.GetComponent<BoxCollider>().isTrigger = false;
+                Debug.Log(doorObject.transform.localRotation + "opening");
             }
-            if (openTheDoor && doorClosed)
+            else 
             {
                 //transform.position = doorOpenVector;
-                doorClosed = false;
-                doorOpen  = true;
-                openTheDoor =false;
-                doorOpenAnimation.SetBool("DoorOpen", true);
-                transform.GetComponent<BoxCollider>().isTrigger = true;
+                //doorClosed = false;
+                //doorOpen  = true;
+                //openTheDoor =false;
+                //doorOpenAnimation.SetBool("DoorOpen", true);
+                Quaternion targetRotation2 =  doorObjectInitialRotation*Quaternion.Euler (0, doorClosedAngle, 0);
+                doorObject.transform.rotation = Quaternion.Slerp (transform.rotation, targetRotation2, smoothening * Time.deltaTime);
+                //transform.GetComponent<BoxCollider>().isTrigger = true;
+                Debug.Log(doorObject.transform.localRotation + "closing");
             }
             
+        
         }
-        }
+    }
+    public void ChangeDoorState()
+    {
+        doorOpen= !doorOpen;
     }
 }

@@ -109,12 +109,12 @@ public class movement : MonoBehaviour
                 {
                     currentSpeed = Mathf.SmoothDamp(currentSpeed, targetSpeed *2, ref speedVelocity, speedTime);
                     animator.speed = 2;
-                    Debug.Log("sprint enabled");
+                    //Debug.Log("sprint enabled");
                 }
                 else
                 {
                     currentSpeed = Mathf.SmoothDamp(currentSpeed, targetSpeed, ref speedVelocity, speedTime);
-                    Debug.Log("sprint disabled");
+                    //Debug.Log("sprint disabled");
                     animator.speed = 1;
                 }
             }
@@ -126,7 +126,7 @@ public class movement : MonoBehaviour
             
 
             transform.Translate(transform.forward * currentSpeed * Time.deltaTime, Space.World);
-            Debug.Log(currentSpeed);
+            //Debug.Log(currentSpeed);
 
         }
        

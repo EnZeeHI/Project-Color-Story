@@ -146,7 +146,7 @@ public class InteractionScript : MonoBehaviour
                         UseItem(hit.transform.GetComponent<ItemCheck>().ItemToCheck) ;
                         if (activateItem)
                         {
-                            hit.transform.gameObject.GetComponent<DoorScript>().openTheDoor = true;
+                            hit.transform.gameObject.GetComponent<DoorScript>().ChangeDoorState();
                         }
                     }
 
@@ -155,13 +155,13 @@ public class InteractionScript : MonoBehaviour
                         Debug.Log("aaa");
                         if (GameObject.Find("choiceManager").GetComponent<TextLog>().dadConvDone)
                         {
-                           hit.transform.gameObject.GetComponent<DoorScript>().openTheDoor = true;
+                           hit.transform.gameObject.GetComponent<DoorScript>().ChangeDoorState();
                             Debug.Log("open");
                         }
                         else
                         {
                             Debug.Log("nani" + GameObject.Find("choiceManager").GetComponent<TextLog>().line);
-                            hit.transform.GetComponent<DoorScript>().openTheDoor = false;
+                            //hit.transform.GetComponent<DoorScript>().ChangeDoorState();
                         }
                         //Debug.Log()
                     }
@@ -169,7 +169,7 @@ public class InteractionScript : MonoBehaviour
                     {
                         if (hit.transform.gameObject.GetComponent<DoorScript>())
                         {
-                            hit.transform.gameObject.GetComponent<DoorScript>().openTheDoor = true;
+                            hit.transform.gameObject.GetComponent<DoorScript>().ChangeDoorState();
                             Debug.Log("oof");
                         }
                         if (hit.transform.gameObject.GetComponent<FrontDoorScript>())
