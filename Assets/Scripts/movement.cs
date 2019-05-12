@@ -28,6 +28,9 @@ public class movement : MonoBehaviour
 
     public GameObject UI;
     public GameObject UI2;
+    public GameObject pauseMenu;
+
+    public int pauseMenuActive = 0;
 
     
     // Start is called before the first frame update
@@ -41,7 +44,7 @@ public class movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (UI.activeInHierarchy == false)
+        if (UI.activeInHierarchy == false && pauseMenuActive == 0)
         {
             Cursor.visible = false;
             float forward = Input.GetAxis("Vertical"), horizontal = Input.GetAxis("Horizontal");
@@ -128,6 +131,8 @@ public class movement : MonoBehaviour
             transform.Translate(transform.forward * currentSpeed * Time.deltaTime, Space.World);
             //Debug.Log(currentSpeed);
 
+            
+
         }
        
         else
@@ -143,5 +148,20 @@ public class movement : MonoBehaviour
                 //outsideFootsteps.Stop();
                 //insideFootsteps.Stop();
             }
+
+        if (Input.GetKeyDown("escape"))
+        {
+            Debug.Log("YEET");
+            if (pauseMenuActive == 0)
+            {
+                pauseMenu.SetActive(true);
+                pauseMenuActive = 1;
+            }
+            else
+            {
+                pauseMenu.SetActive(false);
+                pauseMenuActive = 0;
+            }
+        }
     }
 }
