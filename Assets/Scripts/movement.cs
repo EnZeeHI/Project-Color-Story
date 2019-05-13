@@ -21,7 +21,7 @@ public class movement : MonoBehaviour
 
     public bool playAudio;
     public bool isPlaying;
-    public bool sprintEnabled;
+    public bool sprintEnabled = false;
 
 
     Transform cameraT;
@@ -61,7 +61,7 @@ public class movement : MonoBehaviour
                         
                         Debug.Log("oustide");
                         isPlaying = true;
-                        sprintEnabled = true;
+                        
                     }
                    
                 }
@@ -72,9 +72,9 @@ public class movement : MonoBehaviour
                        insideFootsteps.Play(0);
                         Debug.Log("inside");
                         isPlaying = true;
-                        sprintEnabled = false;
+                        
                     }
-                    
+                    sprintEnabled = false;
                 }
                 
 
@@ -90,6 +90,14 @@ public class movement : MonoBehaviour
                 
                 //outsideFootsteps.Stop();
                 //insideFootsteps.Stop();
+            }
+            if (gameObject.transform.position.y > 0)
+            {
+                sprintEnabled = true;
+            }
+            else
+            {
+                sprintEnabled = false;
             }
 
             //Debug.Log(forward);
@@ -108,10 +116,10 @@ public class movement : MonoBehaviour
 
             float targetSpeed = forwardSpeed * inputDir.magnitude;
             if (Input.GetKey("left shift") )
-            {if (sprintEnabled =true)
+            {if (sprintEnabled)
                 {
-                    currentSpeed = Mathf.SmoothDamp(currentSpeed, targetSpeed *2, ref speedVelocity, speedTime);
-                    animator.speed = 2;
+                    currentSpeed = Mathf.SmoothDamp(currentSpeed, targetSpeed *1.3f , ref speedVelocity, speedTime);
+                    animator.speed = 1.3f;
                     //Debug.Log("sprint enabled");
                 }
                 else
