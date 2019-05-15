@@ -29,7 +29,7 @@ public class InteractionScript : MonoBehaviour
     public GameObject objectInInventory;
     public Collider hit;
 
-    //public InventoryScript InventoryScript;
+    public InventoryScript InventoryScript;
     private string activeItem;
     // Start is called before the first frame update
     void Start()

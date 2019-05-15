@@ -56,7 +56,7 @@ public class movement : MonoBehaviour
                  if (gameObject.transform.position.y >0 )
                 {  
                     if (playAudio && isPlaying == false)
-                    {
+                    {   insideFootsteps.Stop();
                         outsideFootsteps.Play(0);
                         
                         Debug.Log("oustide");
@@ -68,7 +68,8 @@ public class movement : MonoBehaviour
                 else
                 {
                      if (playAudio  && isPlaying == false)
-                    {
+                    {   
+                        outsideFootsteps.Stop();
                        insideFootsteps.Play(0);
                         Debug.Log("inside");
                         isPlaying = true;
@@ -153,8 +154,8 @@ public class movement : MonoBehaviour
                 Debug.Log("isnt walking");
                 isPlaying = false;
                 
-                //outsideFootsteps.Stop();
-                //insideFootsteps.Stop();
+                outsideFootsteps.Stop();
+                insideFootsteps.Stop();
             }
 
         if (Input.GetKeyDown("escape"))

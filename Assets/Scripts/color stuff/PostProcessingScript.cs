@@ -10,7 +10,7 @@ public class PostProcessingScript : MonoBehaviour
     public float hueShiftValue;
     public float saturationValue;
     public bool isThePersonHappy;
-
+    public PlayerInfo PlayerInfo;
     GameObject questPerson;
 
     void Start()
@@ -25,6 +25,7 @@ public class PostProcessingScript : MonoBehaviour
     void Update()
     {   
        p_colorGrading.saturation.Override(saturationValue);
+       SaturationChange(PlayerInfo.PlayerMood);
        
     }
     public void SaturationChange(float value)

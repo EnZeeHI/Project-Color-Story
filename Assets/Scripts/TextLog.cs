@@ -19,6 +19,8 @@ public class TextLog : MonoBehaviour
     public GameObject neighbouryeet;
     public GameObject bed;
 
+    //public PlayerInfo playerInfo;
+
 
     [HideInInspector]
     public float convType;
@@ -75,6 +77,7 @@ public class TextLog : MonoBehaviour
         
 
         PPScript = GameObject.Find("Main Camera").GetComponent<PostProcessingScript>();
+        //PlayerInfo playerInfo ;
     }
 
     // Update is called once per frame
@@ -83,16 +86,16 @@ public class TextLog : MonoBehaviour
     {
         if (line >= 6 && convName == "DadConv1")
         {
-            PPScript.SaturationChange(-100);
+            PlayerInfo.PlayerMood = -100;
         }
         else if (momConvDone == true && neighbourConvDone == false|| neighbourConvDone == true && momConvDone == false)
         {
-             PPScript.SaturationChange(-70);
+            PlayerInfo.PlayerMood = -70;
            
         }
         else if (neighbourConvDone == true && momConvDone == true)
         {
-            PPScript.SaturationChange(-30);
+            PlayerInfo.PlayerMood = -30;
             
         }
         //Debug.Log(line);
@@ -126,11 +129,14 @@ public class TextLog : MonoBehaviour
                 choicesOptions[3] = "We're just friends";
 
                 dadConv1Choice2 = choiceMade;
+                PlayerInfo.DadConv1Choice2 = choiceMade;
             }
             else if (line == 3)
             {
                 dadConv1Choice1 = choiceMade;
-
+                
+                PlayerInfo.DadConv1Choice1 = choiceMade;
+                
                 if (dadConv1Choice1 == 1)
                 {
                     convText[0] = "Hahahaha";
@@ -187,6 +193,7 @@ public class TextLog : MonoBehaviour
             else if (line == 6)
             {
                 dadConv1Choice2 = choiceMade;
+                PlayerInfo.DadConv1Choice2 = choiceMade;
 
                 if (dadConv1Choice2 == 1)
                 {
@@ -237,6 +244,7 @@ public class TextLog : MonoBehaviour
             else if (line == 8)
             {
                 dadConv1Choice3 = choiceMade;
+                PlayerInfo.DadConv1Choice3 = choiceMade;
 
                 if (dadConv1Choice3 == 1)
                 {
@@ -296,6 +304,8 @@ public class TextLog : MonoBehaviour
             if (line == 2)
             {
                 momConv1Choice1 = choiceMade;
+
+                PlayerInfo.MomConv1Choice1 = choiceMade;
                 if (momConv1Choice1 == 1)
                 {
                     convText[0] = "Your mom is a strong Lady";
@@ -335,6 +345,7 @@ public class TextLog : MonoBehaviour
             else if (line == 3)
             {
                 momConv1Choice2 = choiceMade;
+                PlayerInfo.MomConv1Choice2 = choiceMade;
                 if (momConv1Choice2 == 1)
                 {
                     convText[0] = "Ellie is the girl you talked about before right? How fun!";
@@ -410,6 +421,7 @@ public class TextLog : MonoBehaviour
             else if (line == 2)
             {
                 neighbourConv1Choice1 = choiceMade;
+                PlayerInfo.NeighbourConv1Choice1 = choiceMade;
                 if (neighbourConv1Choice1 == 1)
                 {
                     convText[0] = "A date? That sounds like fun!";
@@ -453,6 +465,7 @@ public class TextLog : MonoBehaviour
             else if (line == 4)
             {
                 neighbourConv1Choice2 = choiceMade;
+                PlayerInfo.NeighbourConv1Choice1 = choiceMade;
                 if (neighbourConv1Choice2 == 1)
                 {
                     convText[0] = "Life chap!";
