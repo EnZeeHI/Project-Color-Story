@@ -42,6 +42,10 @@ public class DialougeManager : MonoBehaviour
     public float countdown;
     public bool endTheGame;
 
+    Scene currentScene;
+    string sceneName;
+    
+
 
 
     // added code for color change
@@ -55,7 +59,15 @@ public class DialougeManager : MonoBehaviour
 
             if (countdown <= Time.time)
             {
-                SceneManager.LoadScene("Credits Scene");
+                if (sceneName == "Tutorial")
+                {
+                    SceneManager.LoadScene("SampleScene");
+                }
+                else
+                {
+                    SceneManager.LoadScene("Credits Scene");
+                }
+                
             }
         }
         //Debug.Log(sentences.Count);
@@ -65,7 +77,9 @@ public class DialougeManager : MonoBehaviour
     {
         sentences = new Queue<string>();
 
-        
+        currentScene = SceneManager.GetActiveScene();
+        sceneName = currentScene.name;
+
     }
 
     public void StartDialouge (Dialouge dialouge)
@@ -150,6 +164,10 @@ public class DialougeManager : MonoBehaviour
         endTheGame = true;
         countdown = Time.time + 10;
 
+        if (sceneName == "Tutorial")
+        {
+            dialougeText.text = "End of the tutorial, starting game";
+        }
         //SceneManager.LoadScene("Credits Scene");
     }
     public void DoHomework()
