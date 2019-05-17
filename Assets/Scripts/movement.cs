@@ -58,6 +58,7 @@ public class movement : MonoBehaviour
             {
                 
                 animator.SetBool("IsWalking", true);
+                animator.speed = 1;
                 playAudio = true;
                  if (gameObject.transform.position.y >0 )
                 {  
@@ -136,12 +137,14 @@ public class movement : MonoBehaviour
                 {
                     outsideFootsteps.Stop();
                     insideFootsteps.Stop();
+                    animator.speed = 1.3f;
+                    currentSpeed = Mathf.SmoothDamp(currentSpeed, targetSpeed *1.3f , ref speedVelocity, speedTime);
                     
                     sprinting = true;
                     if (sprinting &&  sprintSoundIsPlaying == false)
                     {
-                        currentSpeed = Mathf.SmoothDamp(currentSpeed, targetSpeed *1.3f , ref speedVelocity, speedTime);
-                        animator.speed = 1.3f;
+                        
+                        
                         
                         
                        
@@ -151,13 +154,13 @@ public class movement : MonoBehaviour
                     }
                    
                     
-                    //Debug.Log("sprint enabled");
+                    Debug.Log("sprint enabled");
                 }
                 else
                 {   
                     sprinting = false;
                     currentSpeed = Mathf.SmoothDamp(currentSpeed, targetSpeed, ref speedVelocity, speedTime);
-                    //Debug.Log("sprint disabled");
+                    Debug.Log("sprint disabled");
                     animator.speed = 1;
                    
                 }
@@ -219,5 +222,6 @@ public class movement : MonoBehaviour
             pauseMenuActive = 0;
         }
         Debug.Log(pauseAnimator.GetBool("pause"));
+        Debug.Log(animator.speed);
     }
 }
