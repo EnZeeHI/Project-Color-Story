@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.30811378, g: 0.6484122, b: 1.0165209, a: 1}
+  m_IndirectSpecularColor: {r: 0.30832866, g: 0.64847916, b: 1.0165125, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -14302,11 +14302,6 @@ PrefabInstance:
       propertyPath: m_TagString
       value: QuestObject
       objectReference: {fileID: 0}
-    - target: {fileID: 2131733545374396476, guid: 0bd841f491060a04cba508b54c5db53d,
-        type: 3}
-      propertyPath: m_TagString
-      value: QuestObject
-      objectReference: {fileID: 0}
     - target: {fileID: 2131733544718584592, guid: 0bd841f491060a04cba508b54c5db53d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14376,6 +14371,11 @@ PrefabInstance:
         type: 3}
       propertyPath: objectiveComplete
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2131733545374396476, guid: 0bd841f491060a04cba508b54c5db53d,
+        type: 3}
+      propertyPath: m_TagString
+      value: QuestObject
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0bd841f491060a04cba508b54c5db53d, type: 3}
@@ -34340,7 +34340,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1573654032}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 619189319}
+        m_MethodName: pauseMenuFunc
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1573654032

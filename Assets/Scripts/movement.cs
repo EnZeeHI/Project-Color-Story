@@ -198,24 +198,13 @@ public class movement : MonoBehaviour
         if (Input.GetKeyDown("escape"))
         {
             Debug.Log("YEET");
-            if (pauseMenuActive == 0)
-            {
-                pauseMenu.SetActive(true);
-                pauseMenuActive = 1;
-                pauseAnimator.SetBool("pause", true);
-            }
-            else
-            {
-                
-                pauseAnimator.SetBool("pause", false);
 
-                countdown = Time.time + 0.1f;
-
-                
-            }
-
+            pauseMenuFunc();
             
         }
+
+        
+
         if (pauseMenuActive == 1 && countdown > Time.time)
         {
             pauseMenu.SetActive(false);
@@ -223,5 +212,24 @@ public class movement : MonoBehaviour
         }
         Debug.Log(pauseAnimator.GetBool("pause"));
         Debug.Log(animator.speed);
+    }
+
+    public void pauseMenuFunc()
+    {
+        if (pauseMenuActive == 0)
+        {
+            pauseMenu.SetActive(true);
+            pauseMenuActive = 1;
+            pauseAnimator.SetBool("pause", true);
+        }
+        else
+        {
+
+            pauseAnimator.SetBool("pause", false);
+
+            countdown = Time.time + 0.1f;
+
+
+        }
     }
 }
