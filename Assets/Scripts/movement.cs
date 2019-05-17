@@ -18,10 +18,13 @@ public class movement : MonoBehaviour
     public Animator animator;
     public AudioSource insideFootsteps;
     public AudioSource outsideFootsteps;
+    public AudioSource sprintSound;
 
     public bool playAudio;
     public bool isPlaying;
     public bool sprintEnabled = false;
+    public bool sprinting = false;
+    public bool sprintSoundIsPlaying;
 
 
     Transform cameraT;
@@ -55,12 +58,17 @@ public class movement : MonoBehaviour
                 playAudio = true;
                  if (gameObject.transform.position.y >0 )
                 {  
-                    if (playAudio && isPlaying == false)
-                    {   insideFootsteps.Stop();
+                    if (playAudio && isPlaying == false )
+                    {   
+                        sprinting = false;
+                        insideFootsteps.Stop();
                         outsideFootsteps.Play(0);
+                        sprintSound.Stop();
                         
                         Debug.Log("oustide");
                         isPlaying = true;
+                       
+                        
                         
                     }
                    
@@ -69,7 +77,9 @@ public class movement : MonoBehaviour
                 {
                      if (playAudio  && isPlaying == false)
                     {   
+                        sprinting = false;
                         outsideFootsteps.Stop();
+                        sprintSound.Stop();
                        insideFootsteps.Play(0);
                         Debug.Log("inside");
                         isPlaying = true;
@@ -86,6 +96,7 @@ public class movement : MonoBehaviour
                 animator.SetBool("IsWalking", false);
                 insideFootsteps.Stop();
                 outsideFootsteps.Stop();
+                sprintSound.Stop();
                 Debug.Log("isnt walking");
                 isPlaying = false;
                 
@@ -117,23 +128,42 @@ public class movement : MonoBehaviour
 
             float targetSpeed = forwardSpeed * inputDir.magnitude;
             if (Input.GetKey("left shift") )
-            {if (sprintEnabled)
+            {
+                if (sprintEnabled)
                 {
-                    currentSpeed = Mathf.SmoothDamp(currentSpeed, targetSpeed *1.3f , ref speedVelocity, speedTime);
-                    animator.speed = 1.3f;
+                    outsideFootsteps.Stop();
+                    insideFootsteps.Stop();
+                    
+                    sprinting = true;
+                    if (sprinting &&  sprintSoundIsPlaying == false)
+                    {
+                        currentSpeed = Mathf.SmoothDamp(currentSpeed, targetSpeed *1.3f , ref speedVelocity, speedTime);
+                        animator.speed = 1.3f;
+                        
+                        
+                       
+                            sprintSound.Play();
+                            sprintSoundIsPlaying = true;
+                        
+                    }
+                   
+                    
                     //Debug.Log("sprint enabled");
                 }
                 else
-                {
+                {   
+                    sprinting = false;
                     currentSpeed = Mathf.SmoothDamp(currentSpeed, targetSpeed, ref speedVelocity, speedTime);
                     //Debug.Log("sprint disabled");
                     animator.speed = 1;
+                   
                 }
             }
             else
-            {
+            {   sprinting = false;
                 currentSpeed = Mathf.SmoothDamp(currentSpeed, targetSpeed, ref speedVelocity, speedTime);
                 animator.speed = 1;
+                
             }
             
 
@@ -151,11 +181,12 @@ public class movement : MonoBehaviour
                 animator.SetBool("IsWalking", false);
                 insideFootsteps.Stop();
                 outsideFootsteps.Stop();
+                sprintSound.Stop();
                 Debug.Log("isnt walking");
                 isPlaying = false;
                 
-                outsideFootsteps.Stop();
-                insideFootsteps.Stop();
+    
+                
             }
 
         if (Input.GetKeyDown("escape"))
