@@ -16,6 +16,7 @@ public class movement : MonoBehaviour
     public float sprintSpeedTime = 0.9f;
     float speedVelocity;
     public Animator animator;
+    public Animator pauseAnimator;
     public AudioSource insideFootsteps;
     public AudioSource outsideFootsteps;
     public AudioSource sprintSound;
@@ -34,6 +35,8 @@ public class movement : MonoBehaviour
     public GameObject pauseMenu;
 
     public int pauseMenuActive = 0;
+
+    public float countdown;
 
     
     // Start is called before the first frame update
@@ -196,12 +199,25 @@ public class movement : MonoBehaviour
             {
                 pauseMenu.SetActive(true);
                 pauseMenuActive = 1;
+                pauseAnimator.SetBool("pause", true);
             }
             else
             {
-                pauseMenu.SetActive(false);
-                pauseMenuActive = 0;
+                
+                pauseAnimator.SetBool("pause", false);
+
+                countdown = Time.time + 0.1f;
+
+                
             }
+
+            
         }
+        if (pauseMenuActive == 1 && countdown > Time.time)
+        {
+            pauseMenu.SetActive(false);
+            pauseMenuActive = 0;
+        }
+        Debug.Log(pauseAnimator.GetBool("pause"));
     }
 }

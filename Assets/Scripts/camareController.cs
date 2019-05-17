@@ -15,13 +15,14 @@ public class camareController : MonoBehaviour
     public Vector2 pitchMM = new Vector2(-40, 85);
 
     public GameObject UI;
+    public GameObject pauseMenu;
 
     public float verticalOffeset;
     
     // Update is called once per frame
     void LateUpdate()
     {
-        if (UI.activeInHierarchy == false)
+        if (UI.activeInHierarchy == false && pauseMenu.activeInHierarchy == false)
         {
 
 
