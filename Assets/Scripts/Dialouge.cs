@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [System.Serializable]
 public class Dialouge 
@@ -16,5 +17,7 @@ public class Dialouge
 
     [TextArea(2,6)]
     public string[] choices;
+
+    public Image face;
 
 }

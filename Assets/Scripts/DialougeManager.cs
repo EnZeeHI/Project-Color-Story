@@ -44,6 +44,8 @@ public class DialougeManager : MonoBehaviour
 
     Scene currentScene;
     string sceneName;
+
+    public Image faceHere;
     
 
 
@@ -88,6 +90,8 @@ public class DialougeManager : MonoBehaviour
         nameText.text = dialouge.name;
 
         sentences.Clear();
+
+        faceHere.sprite = dialouge.face.sprite;
 
         foreach (string sentence in dialouge.sentences)
         {
