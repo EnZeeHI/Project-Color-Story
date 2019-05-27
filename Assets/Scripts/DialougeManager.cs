@@ -65,10 +65,15 @@ public class DialougeManager : MonoBehaviour
                 {
                     SceneManager.LoadScene("SampleScene");
                 }
+                else if (sceneName == "day2") 
+                {
+                    SceneManager.LoadScene("Exhibition");
+                }
                 else
                 {
-                    SceneManager.LoadScene("Credits Scene");
+                    SceneManager.LoadScene("day2");
                 }
+                
                 
             }
         }
@@ -164,13 +169,17 @@ public class DialougeManager : MonoBehaviour
         yesEndGame.SetActive(false);
         noEndGame.SetActive(false);
         continueButton.SetActive(false);
-        dialougeText.text = "End of day 13, End of Demo.";
+        dialougeText.text = "End of day 13.";
         endTheGame = true;
         countdown = Time.time + 10;
 
         if (sceneName == "Tutorial")
         {
             dialougeText.text = "End of the tutorial, starting game";
+        }
+        else if (sceneName == "day2")
+        {
+            dialougeText.text = "Traveling to exhibition";
         }
         //SceneManager.LoadScene("Credits Scene");
     }
