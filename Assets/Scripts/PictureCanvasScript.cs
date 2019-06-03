@@ -6,6 +6,7 @@ using System.IO;
 
 public class PictureCanvasScript : MonoBehaviour
 {  
+    PlayerInfo PlayerInfo;
     
     string gameFilesPath;
     string PicturesPath;
@@ -14,6 +15,14 @@ public class PictureCanvasScript : MonoBehaviour
 
 
     public GameObject Canvas;
+
+    // picture spaces
+
+    public GameObject picture1;
+    public GameObject picture2;
+    public GameObject picture3;
+    public GameObject picture4;
+    public GameObject picture5;
     
     
 
@@ -29,13 +38,14 @@ public class PictureCanvasScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+       Resources.Load("");
+       FindPictures();
       
       
     }
     void FindPictures()
     {
-        Pictures = Directory.GetFiles(Application.dataPath + "/Pictures","*.png");
+        Pictures = Directory.GetFiles(Application.dataPath + "/Resources/Pictures","*.png");
     }
     void DisplayPictures()
     {   
@@ -83,4 +93,22 @@ public class PictureCanvasScript : MonoBehaviour
         }
         
     }
+    public void ExitScreen()
+    {
+        Canvas.SetActive(false);
+    }
+    public void ConfirmSelection()
+    {
+
+    }
+    public void PlacePhoto( string filePath)
+    {
+        filePath = Pictures[PicturesIndex];
+       if(PlayerInfo.PlayerPhoto1 != null)
+       {
+           PlayerInfo.PlayerPhoto1 = filePath;
+
+       }
+    }
 }
+

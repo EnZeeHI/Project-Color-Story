@@ -13,7 +13,7 @@ public class PictureCaptureScript : MonoBehaviour
 
     public static string ScreenShotName(int width, int height)
     {
-        return string.Format("{0}/Pictures/Picture_{1}x{2}_{3}.png",
+        return string.Format("{0}/Resources/Pictures/Picture_{1}x{2}_{3}.png",
                             Application.dataPath, 
                             width, height,
                             System.DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss")

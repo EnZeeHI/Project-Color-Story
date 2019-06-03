@@ -102,5 +102,60 @@ public class PlayerInfo
            neighbourConv1Choice2 = value;
        }
    }
-   
+   private static string playerPhoto1, playerPhoto2, playerPhoto3, playerPhoto4, playerPhoto5;
+   public static string PlayerPhoto1
+   {
+       get
+       {
+           return playerPhoto1;
+       }
+       set
+       {
+           playerPhoto1 = value;
+       }
+   }
+   public static string PlayerPhoto2
+   {
+       get
+       {
+           return playerPhoto2;
+       }
+       set
+       {
+           playerPhoto2 = value;
+       }
+   }
+   public static string PlayerPhoto3
+   {
+       get
+       {
+           return playerPhoto3;
+       }
+       set
+       {
+           playerPhoto3 = value;
+       }
+   }
+   public static string PlayerPhoto4
+   {
+       get
+       {
+           return playerPhoto4;
+       }
+       set 
+       {
+           playerPhoto4 = value;
+       }
+   }
+   public static string PlayerPhoto5
+   {
+       get 
+       {
+           return playerPhoto5;
+       }
+       set 
+       {
+           playerPhoto5 = value;
+       }
+   }
 }
