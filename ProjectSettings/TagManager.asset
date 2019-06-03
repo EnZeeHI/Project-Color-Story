@@ -8,6 +8,7 @@ TagManager:
   - QuestPerson
   - QuestItem
   - InteriorLight
+  - Image Wall
   layers:
   - Default
   - TransparentFX

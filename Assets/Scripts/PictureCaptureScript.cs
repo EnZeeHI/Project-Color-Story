@@ -8,6 +8,8 @@ public class PictureCaptureScript : MonoBehaviour
     public int resHeight = 1080;
     private bool takeScreenShot;
     public bool ableToCapture = false;
+   
+    
 
     public static string ScreenShotName(int width, int height)
     {
@@ -38,8 +40,10 @@ public class PictureCaptureScript : MonoBehaviour
             byte[] bytes = screenShot.EncodeToPNG();
             string filename = ScreenShotName(resWidth, resHeight);
             System.IO.File.WriteAllBytes(filename, bytes);
+            
             Debug.Log(string.Format("Took screenshot to: {0}", filename));
             takeScreenShot = false;
+            
         }
     }
 }
