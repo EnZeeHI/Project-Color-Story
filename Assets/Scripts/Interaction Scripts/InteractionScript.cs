@@ -29,6 +29,9 @@ public class InteractionScript : MonoBehaviour
     public GameObject objectInInventory;
     public Collider hit;
 
+
+
+    public GameObject imageWallCanvas;
     public InventoryScript InventoryScript;
     private string activeItem;
     // Start is called before the first frame update
@@ -135,6 +138,14 @@ public class InteractionScript : MonoBehaviour
             QuestPersonPromptObject.SetActive(false);
             QuestPersonPromptObjectActive = false;
            // Debug.Log("Not Quest Person"); 
+        }
+        if (hit.transform.tag =="ImageWall")
+        {   Debug.Log("imagewallhit");
+            if (Input.GetButtonDown("Interaction1"))
+            {
+                imageWallCanvas.SetActive(true);
+
+            }
         }
         // this the interaction with the object
         if (InteractionObjectPromptActive)
@@ -292,7 +303,7 @@ public class InteractionScript : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        if (other.transform.gameObject.tag == "QuestObject" ||other.transform.gameObject.tag == "QuestItem" ||other.transform.gameObject.tag == "QuestPerson")
+        if (other.transform.gameObject.tag == "QuestObject" ||other.transform.gameObject.tag == "QuestItem" ||other.transform.gameObject.tag == "QuestPerson" || other.transform.gameObject.tag == "ImageWall")
             {
                 hit = other;
             } 
@@ -300,7 +311,7 @@ public class InteractionScript : MonoBehaviour
     }
     void OnTriggerStay(Collider other)
     {
-         if (other.transform.gameObject.tag == "QuestObject" ||other.transform.gameObject.tag == "QuestItem" ||other.transform.gameObject.tag == "QuestPerson")
+         if (other.transform.gameObject.tag == "QuestObject" ||other.transform.gameObject.tag == "QuestItem" ||other.transform.gameObject.tag == "QuestPerson" || other.transform.gameObject.tag == "ImageWall")
             {
                 hit = other;
             } 

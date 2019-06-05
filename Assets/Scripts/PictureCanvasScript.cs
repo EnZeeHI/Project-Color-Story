@@ -99,16 +99,75 @@ public class PictureCanvasScript : MonoBehaviour
     }
     public void ConfirmSelection()
     {
-
-    }
-    public void PlacePhoto( string filePath)
-    {
-        filePath = Pictures[PicturesIndex];
-       if(PlayerInfo.PlayerPhoto1 != null)
-       {
+        string filePath = Pictures[PicturesIndex];
+        if(PlayerInfo.PlayerPhoto1 == null)
+        {
            PlayerInfo.PlayerPhoto1 = filePath;
 
-       }
+        }
+        else if (PlayerInfo.PlayerPhoto2 == null)
+        {
+            PlayerInfo.PlayerPhoto2 = filePath;
+        }
+        else if (PlayerInfo.PlayerPhoto3 == null)
+        {
+            PlayerInfo.PlayerPhoto3 = filePath;
+        }
+        else if (PlayerInfo.PlayerPhoto4 == null)
+        {
+            PlayerInfo.PlayerPhoto4 = filePath;
+        }
+        else if (PlayerInfo.PlayerPhoto5 == null)
+        {
+            PlayerInfo.PlayerPhoto5 = filePath;
+        }
+        PlacePhoto();
+        Debug.Log("PlacePhoto");
     }
+    
+    public void PlacePhoto()
+    {   if (PlayerInfo.PlayerPhoto1 !=null)
+        {
+            string pathToFile1 = PlayerInfo.PlayerPhoto1;
+            Debug.Log(pathToFile1);
+            Texture2D texture1 = GetScreenshotImage (pathToFile1);
+            Sprite sp1 = Sprite.Create(texture1, new Rect( 0, 0, texture1.width, texture1.height), new Vector2(0.5f,0.5f));
+            picture1.GetComponent<SpriteRenderer>().sprite = sp1;
+        }
+        if (PlayerInfo.PlayerPhoto2 !=null)
+        {
+            string pathToFile2 = PlayerInfo.PlayerPhoto2;
+            Debug.Log(pathToFile2);
+            Texture2D texture2 = GetScreenshotImage (pathToFile2);
+            Sprite sp2 = Sprite.Create(texture2, new Rect( 0, 0, texture2.width, texture2.height), new Vector2(0.5f,0.5f));
+            picture2.GetComponent<SpriteRenderer>().sprite = sp2;
+        }
+        if (PlayerInfo.PlayerPhoto3 !=null)
+        {
+            string pathToFile3 = PlayerInfo.PlayerPhoto3;
+            Debug.Log(pathToFile3);
+            Texture2D texture3 = GetScreenshotImage (pathToFile3);
+            Sprite sp3 = Sprite.Create(texture3, new Rect( 0, 0, texture3.width, texture3.height), new Vector2(0.5f,0.5f));
+            picture3.GetComponent<SpriteRenderer>().sprite = sp3;
+        }
+        if (PlayerInfo.PlayerPhoto4 !=null)
+        {
+            string pathToFile4 = PlayerInfo.PlayerPhoto4;
+            Debug.Log(pathToFile4);
+            Texture2D texture4 = GetScreenshotImage (pathToFile4);
+            Sprite sp4 = Sprite.Create(texture4, new Rect( 0, 0, texture4.width, texture4.height), new Vector2(0.5f,0.5f));
+            picture4.GetComponent<SpriteRenderer>().sprite = sp4;
+        }
+        if (PlayerInfo.PlayerPhoto5 !=null)
+        {
+            string pathToFile5 = PlayerInfo.PlayerPhoto5;
+            Debug.Log(pathToFile5);
+            Texture2D texture5 = GetScreenshotImage (pathToFile5);
+            Sprite sp5 = Sprite.Create(texture5, new Rect( 0, 0, texture5.width, texture5.height), new Vector2(0.5f,0.5f));
+            picture5.GetComponent<SpriteRenderer>().sprite = sp5;
+        }
+        
+    }
+       
 }
 
