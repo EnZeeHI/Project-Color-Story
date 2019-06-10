@@ -18,6 +18,7 @@ public class TextLog : MonoBehaviour
     public GameObject mom;
     public GameObject neighbouryeet;
     public GameObject bed;
+    public GameObject ellie;
 
     //public PlayerInfo playerInfo;
 
@@ -501,6 +502,20 @@ public class TextLog : MonoBehaviour
                 convType = 1;
                 neighbourConvDone = true;
                 neighbouryeet.tag = "Untagged";
+            }
+        }
+        else if (convName == "EllieEnterExhibit")
+        {
+            if (line == 1)
+            {
+                convText[0] = "Let's go look around!";
+                convText[1] = "You brought a camera?!";
+                convText[2] = "You should take a picture of your favourite piece to remember today!";
+
+                reactionDyl = "That's a great idea!";
+                convType = 1;
+                ellie.tag = "Untagged";
+
             }
         }
     }

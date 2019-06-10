@@ -7,6 +7,7 @@ public class ellieBeStalking : MonoBehaviour
     public Transform target;
     public float stoppingDistance;
     public float speed;
+    public GameObject Ellie;
 
 
     // Start is called before the first frame update
@@ -18,13 +19,16 @@ public class ellieBeStalking : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(transform.position, target.position) > stoppingDistance)
+        if (Ellie.tag == "Untagged")
         {
-            Vector3 targetDir = target.position - transform.position;
+            if (Vector3.Distance(transform.position, target.position) > stoppingDistance)
+            {
+                Vector3 targetDir = target.position - transform.position;
 
-            transform.position = Vector3.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
-            Vector3 newDir = Vector3.RotateTowards(transform.forward, targetDir, 5, 0.0f);
-            transform.rotation = Quaternion.LookRotation(newDir);
+                transform.position = Vector3.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+                Vector3 newDir = Vector3.RotateTowards(transform.forward, targetDir, 5, 0.0f);
+                transform.rotation = Quaternion.LookRotation(newDir);
+            }
         }
     }
 }

@@ -2532,6 +2532,32 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1333067436}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &450050020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 450050019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92938568374e557499918af1153471fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialouge:
+    name: Ellie
+    convName: EllieEnterExhibit
+    reaction: I'm happy to be here.
+    sentences:
+    - Hi Dylan!
+    - I'm so happy you could make it!
+    choices:
+    - 
+    - 
+    - 
+    - 
+    face: {fileID: 1280230853}
+  convTypeThis: 3
 --- !u!136 &450050022
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2577,6 +2603,7 @@ MonoBehaviour:
   target: {fileID: 0}
   stoppingDistance: 3
   speed: 5
+  Ellie: {fileID: 450050019}
 --- !u!1 &465213206 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 354a750f33ac68047be114a7c3f2ab06,
@@ -6554,6 +6581,7 @@ MonoBehaviour:
   mom: {fileID: 0}
   neighbouryeet: {fileID: 0}
   bed: {fileID: 0}
+  ellie: {fileID: 450050019}
   convType: 0
   choices: {fileID: 1747451937}
   reactionBox: {fileID: 931401505}
@@ -7120,7 +7148,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100002, guid: 5fb98670efd7abb4a9bac637748c9f1b, type: 3}
       propertyPath: m_Name
-      value: girl_Idle
+      value: Ellie
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 5fb98670efd7abb4a9bac637748c9f1b, type: 3}
+      propertyPath: m_TagString
+      value: QuestPerson
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 5fb98670efd7abb4a9bac637748c9f1b, type: 3}
       propertyPath: m_LocalPosition.x
