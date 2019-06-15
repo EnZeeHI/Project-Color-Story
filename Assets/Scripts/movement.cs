@@ -33,8 +33,10 @@ public class movement : MonoBehaviour
     public GameObject UI;
     public GameObject UI2;
     public GameObject pauseMenu;
+    public GameObject photoWallCanvas;
 
     public int pauseMenuActive = 0;
+    public bool pictureCanvasActive;
 
     public float countdown;
 
@@ -42,15 +44,17 @@ public class movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        cameraT = Camera.main.transform;
+        cameraT = Camera.main.transform ;
+        
         animator = transform.GetComponent<Animator>();
+        
         
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (UI.activeInHierarchy == false && pauseMenuActive == 0)
+        if (UI.activeInHierarchy == false && pauseMenuActive == 0 && photoWallCanvas.activeSelf == false)
         {
             Cursor.visible = false;
             float forward = Input.GetAxis("Vertical"), horizontal = Input.GetAxis("Horizontal");
