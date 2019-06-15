@@ -69,6 +69,10 @@ public class DialougeManager : MonoBehaviour
                 {
                     SceneManager.LoadScene("Exhibition");
                 }
+                else if (sceneName == "Exhibition")
+                {
+                    SceneManager.LoadScene("Main menu");
+                }
                 else
                 {
                     SceneManager.LoadScene("day2");
@@ -180,6 +184,10 @@ public class DialougeManager : MonoBehaviour
         else if (sceneName == "day2")
         {
             dialougeText.text = "Traveling to exhibition";
+        }
+        else if (sceneName == "Exhibition")
+        {
+            dialougeText.text = "Going home";
         }
         //SceneManager.LoadScene("Credits Scene");
     }
