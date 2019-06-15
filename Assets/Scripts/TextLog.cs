@@ -54,6 +54,9 @@ public class TextLog : MonoBehaviour
     public bool dadConvDone, momConvDone, neighbourConvDone;
 
     [HideInInspector]
+    public int picTalk1Choice;
+
+    [HideInInspector]
     public string convName;
     [HideInInspector]
     public string[] convText;
@@ -516,6 +519,46 @@ public class TextLog : MonoBehaviour
                 convType = 1;
                 ellie.tag = "Untagged";
 
+            }
+        }
+        else if (convName == "PicTalk1")
+        {
+            if (line == 1)
+            {
+                picTalk1Choice = choiceMade;
+
+                if (picTalk1Choice == 1 )
+                {
+                    convText[0] = "Hahaha";
+                    convText[1] = "Art is interpreted differently by everyone";
+                    convText[2] = "So I guess it could be fruits";
+
+                    convType = 1;
+                }
+                else if (picTalk1Choice == 2)
+                {
+                    convText[0] = "I know right!";
+                    convText[1] = "This guy is a genius!";
+                    convText[2] = "He reminds me of you a little bit";
+
+                    convType = 1;
+                }
+                else if (picTalk1Choice == 3)
+                {
+                    convText[0] = "this is 3";
+                    convText[1] = "";
+                    convText[2] = "";
+
+                    convType = 1;
+                }
+                else if (picTalk1Choice == 4)
+                {
+                    convText[0] = "You don't think it's good?";
+                    convText[1] = "I think it's quite unique";
+                    convText[2] = "Let's find one that you will like better";
+
+                    convType = 1;
+                }
             }
         }
     }

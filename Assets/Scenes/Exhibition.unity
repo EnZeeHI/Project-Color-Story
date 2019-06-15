@@ -2568,18 +2568,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialouge:
     name: Ellie
-    convName: 
+    convName: PicTalk1
     reaction: asdasd
     sentences:
-    - dads
-    - asdasd
+    - Wow, This must be his main piece
+    - "No wonder he is so famous, it\u2019s amazing"
     choices:
-    - 
-    - 
-    - 
-    - 
+    - "I don\u2019t get it looks like some fruit"
+    - That must of been really difficult to take I really like it
+    - ..
+    - It's okay I guess
     face: {fileID: 1280230853}
-  convTypeThis: 1
+  convTypeThis: 2
 --- !u!1 &430474700 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 12d5b150fbbb4944baec7141e7bd61a7,
