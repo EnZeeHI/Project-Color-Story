@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 21574100}
   m_Layer: 0
   m_Name: WhatsApp Image 2019-05-29 at 10.01.40 PM (3)
-  m_TagString: QuestPerson
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -192,7 +192,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &21574099
 BoxCollider:
@@ -221,18 +221,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialouge:
     name: Ellie
-    convName: ElliePic1
-    reaction: yeet pic 1
+    convName: PicTalk6
+    reaction: He must travel all over the world, must be an amazing job
     sentences:
-    - "oh\t"
-    - hello
+    - He really enjoys taking landscape pictures
+    - This one is not my favorite but still very nice
     choices:
     - 
     - 
     - 
     - 
     face: {fileID: 1280230853}
-  convTypeThis: 1
+  convTypeThis: 3
 --- !u!1 &35822304 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 12d5b150fbbb4944baec7141e7bd61a7,
@@ -265,6 +265,32 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1324273961}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &46849180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 46849179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92938568374e557499918af1153471fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialouge:
+    name: Man
+    convName: RandomManTalk
+    reaction: 
+    sentences:
+    - My friend keeps talking about why this piece is so amazing
+    - He doesn't actually have any knowledge about photography though
+    choices:
+    - 
+    - 
+    - 
+    - 
+    face: {fileID: 1971471000}
+  convTypeThis: 1
 --- !u!4 &46849181 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 78d88f2e54f3ac54da954008f14c6ebf,
@@ -1182,7 +1208,7 @@ GameObject:
   - component: {fileID: 211302527}
   m_Layer: 0
   m_Name: WhatsApp Image 2019-05-29 at 10.01.39 PM
-  m_TagString: QuestPerson
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1247,7 +1273,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &211302526
 BoxCollider:
@@ -1276,18 +1302,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialouge:
     name: Ellie
-    convName: 
-    reaction: asdasd
+    convName: PicTalk2
+    reaction: Wait I know that city, I went there last summer it was really fun.
     sentences:
-    - dads
-    - asdasd
+    - This city is so nice
     choices:
     - 
     - 
     - 
     - 
     face: {fileID: 1280230853}
-  convTypeThis: 1
+  convTypeThis: 3
 --- !u!4 &212970702
 Transform:
   m_ObjectHideFlags: 0
@@ -1300,7 +1325,7 @@ Transform:
   m_LocalScale: {x: 240, y: 240, z: 240}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: -89.98, y: 90, z: 0}
 --- !u!1 &213266670
 GameObject:
@@ -1461,7 +1486,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1.236}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &243363856
 PrefabInstance:
@@ -2020,7 +2045,7 @@ Transform:
   m_LocalScale: {x: 240, y: 240, z: 240}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: -89.98, y: 180, z: 0}
 --- !u!33 &312570655
 MeshFilter:
@@ -2474,7 +2499,7 @@ GameObject:
   - component: {fileID: 405653542}
   m_Layer: 0
   m_Name: WhatsApp Image 2019-05-29 at 10.01.37 PM
-  m_TagString: QuestPerson
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2539,7 +2564,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &405653541
 BoxCollider:
@@ -2716,6 +2741,32 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 812824125}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &465213207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465213206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92938568374e557499918af1153471fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialouge:
+    name: Dog Lover
+    convName: DogLove
+    reaction: sadasd
+    sentences:
+    - Have you heard of a dog named Zazoo?
+    - He's famous, I wanted to pet him
+    choices:
+    - 
+    - 
+    - 
+    - 
+    face: {fileID: 1971471000}
+  convTypeThis: 1
 --- !u!4 &465213208 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 354a750f33ac68047be114a7c3f2ab06,
@@ -3013,7 +3064,7 @@ Transform:
   m_LocalScale: {x: 240, y: 240, z: 240}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &514607671
 GameObject:
@@ -3117,7 +3168,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 16.621, y: 257.96698, z: 0.21300001}
 --- !u!114 &534669906
 MonoBehaviour:
@@ -3268,7 +3319,7 @@ Transform:
   - {fileID: 2393152652254570264}
   - {fileID: 575335545}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &539245741 stripped
 GameObject:
@@ -3381,6 +3432,31 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1770657745}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &575335544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575335543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92938568374e557499918af1153471fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialouge:
+    name: Employee
+    convName: employee
+    reaction: 
+    sentences:
+    - Enjoy your time!
+    choices:
+    - 
+    - 
+    - 
+    - 
+    face: {fileID: 1971471000}
+  convTypeThis: 1
 --- !u!4 &575335545 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 354a750f33ac68047be114a7c3f2ab06,
@@ -3457,7 +3533,7 @@ Transform:
   - {fileID: 1452700904}
   - {fileID: 2065022984}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &582736533 stripped
 GameObject:
@@ -3917,7 +3993,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1.2360004}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &616051507 stripped
 GameObject:
@@ -4735,6 +4811,223 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300000, guid: 18ead0c2f43e77e47bfbd216d84405aa, type: 3}
+--- !u!1001 &670968597
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 100022, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
+      propertyPath: m_Name
+      value: frontdoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 100022, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 400022, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 31.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 400022, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.5899061
+      objectReference: {fileID: 0}
+    - target: {fileID: 400022, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 400022, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400022, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400022, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400022, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400022, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400022, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400022, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 400022, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400022, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400022, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400022, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
+--- !u!1 &670968598 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100022, guid: ecf13570de149804aa474609d0dc0e43,
+    type: 3}
+  m_PrefabInstance: {fileID: 670968597}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &670968599 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100010, guid: ecf13570de149804aa474609d0dc0e43,
+    type: 3}
+  m_PrefabInstance: {fileID: 670968597}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &670968600 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100008, guid: ecf13570de149804aa474609d0dc0e43,
+    type: 3}
+  m_PrefabInstance: {fileID: 670968597}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &670968601 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100004, guid: ecf13570de149804aa474609d0dc0e43,
+    type: 3}
+  m_PrefabInstance: {fileID: 670968597}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &670968602 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100006, guid: ecf13570de149804aa474609d0dc0e43,
+    type: 3}
+  m_PrefabInstance: {fileID: 670968597}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &670968603 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: ecf13570de149804aa474609d0dc0e43,
+    type: 3}
+  m_PrefabInstance: {fileID: 670968597}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &670968604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670968598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92938568374e557499918af1153471fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialouge:
+    name: Door
+    convName: GoHome
+    reaction: 
+    sentences:
+    - Do you want to go home?
+    choices:
+    - 
+    - 
+    - 
+    - 
+    face: {fileID: 1971471000}
+  convTypeThis: 4
+--- !u!64 &670968605
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670968599}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300006, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
+--- !u!64 &670968606
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670968600}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300004, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
+--- !u!64 &670968607
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670968601}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300008, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
+--- !u!64 &670968608
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670968602}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300002, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
+--- !u!64 &670968609
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670968603}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
+--- !u!65 &670968610
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670968598}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.94, y: 4.52, z: 1.62}
+  m_Center: {x: 0, y: 2.45, z: 0}
 --- !u!1 &681833148
 GameObject:
   m_ObjectHideFlags: 0
@@ -4957,7 +5250,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1.236}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &711545052
 PrefabInstance:
@@ -5433,6 +5726,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 354a750f33ac68047be114a7c3f2ab06, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 354a750f33ac68047be114a7c3f2ab06, type: 3}
+      propertyPath: m_TagString
+      value: QuestPerson
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 354a750f33ac68047be114a7c3f2ab06, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -6106,7 +6403,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1.236}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &870182051
 PrefabInstance:
@@ -6478,7 +6775,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c64bf90f7a9b49145a007d05445001d3, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c64bf90f7a9b49145a007d05445001d3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7703,7 +8000,7 @@ Transform:
   m_Children:
   - {fileID: 1142728205}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1090691045
 GameObject:
@@ -7772,7 +8069,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1.2360004}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!64 &1112434185
 MeshCollider:
@@ -8120,6 +8417,14 @@ MonoBehaviour:
   neighbouryeet: {fileID: 0}
   bed: {fileID: 0}
   ellie: {fileID: 450050019}
+  pic1: {fileID: 405653538}
+  pic2: {fileID: 211302523}
+  pic3: {fileID: 1507410619}
+  pic4: {fileID: 1463911287}
+  pic5: {fileID: 1953543769}
+  pic6: {fileID: 21574096}
+  doorExhib: {fileID: 670968598}
+  picturesTalkedTo: 0
   convType: 0
   choices: {fileID: 1747451937}
   reactionBox: {fileID: 931401505}
@@ -8146,6 +8451,9 @@ MonoBehaviour:
   dadConvDone: 0
   momConvDone: 0
   neighbourConvDone: 0
+  picTalk1Choice: 0
+  picTalk2Choice: 0
+  picTalk3Choice: 0
   convName: 
   convText: []
   choicesOptions: []
@@ -8697,6 +9005,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 78d88f2e54f3ac54da954008f14c6ebf, type: 3}
+      propertyPath: m_TagString
+      value: QuestPerson
+      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 78d88f2e54f3ac54da954008f14c6ebf, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
@@ -9034,7 +9346,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 5fb98670efd7abb4a9bac637748c9f1b, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 5fb98670efd7abb4a9bac637748c9f1b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -9654,7 +9966,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1.2360004}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!23 &1443297700
 MeshRenderer:
@@ -9714,7 +10026,7 @@ Transform:
   m_LocalScale: {x: 240, y: 240, z: 240}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: -89.98, y: 90, z: 0}
 --- !u!1 &1445226340
 GameObject:
@@ -9775,7 +10087,7 @@ GameObject:
   - component: {fileID: 1463911291}
   m_Layer: 0
   m_Name: WhatsApp Image 2019-05-29 at 10.01.40 PM (1)
-  m_TagString: QuestPerson
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9840,7 +10152,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!65 &1463911290
 BoxCollider:
@@ -9869,18 +10181,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialouge:
     name: Ellie
-    convName: 
-    reaction: asdasd
+    convName: PicTalk4
+    reaction: "Yeah that is very nice. I like how you can see all the stars\r\n"
     sentences:
-    - dads
-    - asdasd
+    - This one is my favorite landscape
+    - It's so beautiful and peaceful
     choices:
     - 
     - 
     - 
     - 
     face: {fileID: 1280230853}
-  convTypeThis: 1
+  convTypeThis: 3
 --- !u!1 &1487772573
 GameObject:
   m_ObjectHideFlags: 0
@@ -10287,7 +10599,7 @@ GameObject:
   - component: {fileID: 1507410623}
   m_Layer: 0
   m_Name: WhatsApp Image 2019-05-29 at 10.01.40 PM
-  m_TagString: QuestPerson
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10352,7 +10664,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!65 &1507410622
 BoxCollider:
@@ -10381,18 +10693,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialouge:
     name: Ellie
-    convName: 
-    reaction: asdasd
+    convName: PicTalk3
+    reaction: "Oh wow I have never seen someone take a self portrait with a camera,
+      he looks a bit like jesus\r\n"
     sentences:
-    - dads
-    - asdasd
+    - There he is, the man himself
+    - That's the fotographer, this must be a self portrait
     choices:
     - 
     - 
     - 
     - 
     face: {fileID: 1280230853}
-  convTypeThis: 1
+  convTypeThis: 3
 --- !u!1001 &1509436425
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10632,7 +10945,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1.236}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1559160503
 GameObject:
@@ -10842,6 +11155,31 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1707484915}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1563891983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563891982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92938568374e557499918af1153471fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialouge:
+    name: Man
+    convName: randomMan1
+    reaction: 
+    sentences:
+    - This piece is amazing!
+    choices:
+    - 
+    - 
+    - 
+    - 
+    face: {fileID: 1971471000}
+  convTypeThis: 1
 --- !u!4 &1563891984 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 15184ec879c50ab4abccbc9abcde92e5,
@@ -11058,7 +11396,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1.236}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1614236324
 GameObject:
@@ -11347,7 +11685,7 @@ Transform:
   m_Children:
   - {fileID: 2076603839}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1673493366
 PrefabInstance:
@@ -11462,6 +11800,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 15184ec879c50ab4abccbc9abcde92e5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 15184ec879c50ab4abccbc9abcde92e5, type: 3}
+      propertyPath: m_TagString
+      value: QuestPerson
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 15184ec879c50ab4abccbc9abcde92e5, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -12467,6 +12809,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 354a750f33ac68047be114a7c3f2ab06, type: 3}
+      propertyPath: m_TagString
+      value: QuestPerson
+      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 354a750f33ac68047be114a7c3f2ab06, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
@@ -13027,7 +13373,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1.236}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1837077592 stripped
 GameObject:
@@ -13116,7 +13462,7 @@ Transform:
   m_LocalScale: {x: 240, y: 240, z: 240}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: -89.98, y: 180, z: 0}
 --- !u!33 &1869230899
 MeshFilter:
@@ -13270,7 +13616,7 @@ GameObject:
   - component: {fileID: 1953543773}
   m_Layer: 0
   m_Name: WhatsApp Image 2019-05-29 at 10.01.40 PM (2)
-  m_TagString: QuestPerson
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13335,7 +13681,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1953543772
 BoxCollider:
@@ -13364,18 +13710,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialouge:
     name: Ellie
-    convName: ElliePic2
-    reaction: wedsfsd
+    convName: PicTalk5
+    reaction: Oh, I never thought about that, it does sound very fun
     sentences:
-    - fdgfdg
-    - dfgdfg
+    - I wonder how nice it must be to adventure into nature
+    - And then be able to capture such an amazing picture to remember moment
     choices:
     - 
     - 
     - 
     - 
     face: {fileID: 1280230853}
-  convTypeThis: 1
+  convTypeThis: 3
 --- !u!23 &1963740654
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13434,7 +13780,7 @@ Transform:
   m_LocalScale: {x: 240, y: 240, z: 240}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1966002990
 GameObject:
@@ -13616,7 +13962,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 18b70a5ece336cc49ad6237695ccf348, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 18b70a5ece336cc49ad6237695ccf348, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -14786,7 +15132,7 @@ PrefabInstance:
     - target: {fileID: 2131733544718584592, guid: 0bd841f491060a04cba508b54c5db53d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2131733544718584592, guid: 0bd841f491060a04cba508b54c5db53d,
         type: 3}

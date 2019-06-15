@@ -19,6 +19,10 @@ public class TextLog : MonoBehaviour
     public GameObject neighbouryeet;
     public GameObject bed;
     public GameObject ellie;
+    public GameObject pic1, pic2, pic3, pic4, pic5, pic6;
+    public GameObject doorExhib;
+
+    public int picturesTalkedTo = 0;
 
     //public PlayerInfo playerInfo;
 
@@ -54,7 +58,7 @@ public class TextLog : MonoBehaviour
     public bool dadConvDone, momConvDone, neighbourConvDone;
 
     [HideInInspector]
-    public int picTalk1Choice;
+    public int picTalk1Choice, picTalk2Choice, picTalk3Choice;
 
     [HideInInspector]
     public string convName;
@@ -105,17 +109,17 @@ public class TextLog : MonoBehaviour
         //Debug.Log(line);
         //Debug.Log(dadConv1Choice1);
     }
-    
-    public void setText ()
+
+    public void setText()
     {
         if (convName == "DadConv1")
         {
             if (line == 1)
-            {                
-                    convText[0] = "Sounds mysterious";
-                    convText[1] = "Well you're always free to ask";
-                    convText[2] = "So what is it bud?";
-                    convType = 3;
+            {
+                convText[0] = "Sounds mysterious";
+                convText[1] = "Well you're always free to ask";
+                convText[2] = "So what is it bud?";
+                convType = 3;
 
                 reactionDyl = "It's nothing but Ellie asked me if I wanna go to this photography thing tomorrow and I was wondering if you could drive me there";
 
@@ -138,9 +142,9 @@ public class TextLog : MonoBehaviour
             else if (line == 3)
             {
                 dadConv1Choice1 = choiceMade;
-                
+
                 PlayerInfo.DadConv1Choice1 = choiceMade;
-                
+
                 if (dadConv1Choice1 == 1)
                 {
                     convText[0] = "Hahahaha";
@@ -148,7 +152,7 @@ public class TextLog : MonoBehaviour
                     convText[2] = "It's fine I'll take you";
                     convType = 3;
 
-                    
+
                 }
                 else if (dadConv1Choice1 == 2)
                 {
@@ -172,7 +176,7 @@ public class TextLog : MonoBehaviour
                     convType = 3;
                 }
                 reactionDyl = "Thanks dad...";
-                
+
             }
             else if (line == 4)
             {
@@ -255,8 +259,8 @@ public class TextLog : MonoBehaviour
                     convText[0] = "That's fine";
                     convText[1] = "If you need some time for yourself that's understandable";
                     convText[2] = "I'll see you later";
-                    
-                    
+
+
 
                 }
                 else if (dadConv1Choice3 == 2)
@@ -264,24 +268,24 @@ public class TextLog : MonoBehaviour
                     convText[0] = "I think she would like that too";
                     convText[1] = "Maybe you could tell her about  Ellie";
                     convText[2] = "Don't keep her up for too long though, she needs to rest as well";
-                    
-                    
+
+
                 }
                 else if (dadConv1Choice3 == 3)
                 {
                     convText[0] = "That's understandable";
                     convText[1] = "Just take your time to figure things out";
                     convText[2] = "Don't be too upset though, we'll get through this";
-                    
-                    
+
+
                 }
                 else if (dadConv1Choice3 == 4)
                 {
                     convText[0] = "Yeah that sounds like a good plan";
                     convText[1] = "The weather is decent so that might help";
                     convText[2] = "Maybe Mr. Rogers is also outside, maybe you can talk to him for a bit";
-                    
-                    
+
+
                 }
                 convType = 1;
                 dadConvDone = true;
@@ -315,7 +319,7 @@ public class TextLog : MonoBehaviour
                     convText[0] = "Your mom is a strong Lady";
                     convText[1] = "Some sickness can't keep her down!";
                     convText[2] = "How was your day at school by the way?";
-                    
+
                 }
                 else if (momConv1Choice1 == 2)
                 {
@@ -383,7 +387,7 @@ public class TextLog : MonoBehaviour
 
                     reactionDyl = "Thank you so much mom, I'm still quite nervous about the whole thing, but I would love to take that camera with me";
                 }
-               
+
                 convType = 3;
             }
             else if (line == 4)
@@ -518,6 +522,12 @@ public class TextLog : MonoBehaviour
                 reactionDyl = "That's a great idea!";
                 convType = 1;
                 ellie.tag = "Untagged";
+                pic1.tag = "QuestPerson";
+                pic2.tag = "QuestPerson";
+                pic3.tag = "QuestPerson";
+                pic4.tag = "QuestPerson";
+                pic5.tag = "QuestPerson";
+                pic6.tag = "QuestPerson";
 
             }
         }
@@ -527,7 +537,7 @@ public class TextLog : MonoBehaviour
             {
                 picTalk1Choice = choiceMade;
 
-                if (picTalk1Choice == 1 )
+                if (picTalk1Choice == 1)
                 {
                     convText[0] = "Hahaha";
                     convText[1] = "Art is interpreted differently by everyone";
@@ -559,10 +569,183 @@ public class TextLog : MonoBehaviour
 
                     convType = 1;
                 }
+                pic1.tag = "Untagged";
+                picturesTalkedTo += 1;
+                if (picturesTalkedTo == 6)
+                {
+                    doorExhib.tag = "QuestPerson";
+                }
+            }
+        }
+        else if (convName == "PicTalk2")
+        {
+            if (line == 1)
+            {
+
+                convText[0] = "I have always wanted to go there";
+                convText[1] = "It seems like such a fun place to be";
+                convText[2] = "Maybe we can go one day";
+
+                choicesOptions[0] = "Oh, that would be amazing";
+                choicesOptions[1] = "Why would you want to go with me?";
+                choicesOptions[2] = "I'm not sure, but we'll see";
+                choicesOptions[3] = "...";
+
+                convType = 2;
+
+            }
+            if (line == 2)
+            {
+                picTalk2Choice = choiceMade;
+
+                if (picTalk2Choice == 1)
+                {
+                    convText[0] = "Hihi";
+                    convText[1] = "It would be";
+                    convText[2] = "We'll see what the future holds for us ";
+
+                    //increase happiness
+                }
+                else if (picTalk2Choice == 2)
+                {
+                    convText[0] = "Oh you dummy!";
+                    convText[1] = "Because you're fun!";
+                    convText[2] = "And I like hanging around with you.";
+
+                    //increase happiness
+                }
+                else if (picTalk2Choice == 3)
+                {
+                    convText[0] = "Yeah you're right";
+                    convText[1] = "It would probably cost quite some money";
+                    convText[2] = "We'll have to see";
+                }
+                else if (picTalk2Choice == 4)
+                {
+                    convText[0] = "Anyway the picture";
+                    convText[1] = "It looks amazing";
+                    convText[2] = "Let's go look at the different pictures";
+                }
+                convType = 1;
+                pic2.tag = "Untagged";
+                picturesTalkedTo += 1;
+                if (picturesTalkedTo == 6)
+                {
+                    doorExhib.tag = "QuestPerson";
+                }
+            }
+        }
+        else if (convName == "PicTalk3")
+        {
+            if (line == 1)
+            {
+
+                convText[0] = "Hahaha he does";
+                convText[1] = "He must be very brave to take a picture of himself";
+                convText[2] = "I have never seen that before";
+
+                choicesOptions[0] = "They should call those selfies";
+                choicesOptions[1] = "I don’t find them appropriate";
+                choicesOptions[2] = "I don’t see why I need to see his face but I like it for some reason";
+                choicesOptions[3] = "...";
+                convType = 2;
+
+            }
+            if (line == 2)
+            {
+                picTalk3Choice = choiceMade;
+
+                if (picTalk3Choice == 1)
+                {
+                    convText[0] = "Hahaha that's a funny word";
+                    convText[1] = "But I get it";
+                    convText[2] = "It really suits it, you're smart";
+                }
+                else if (picTalk3Choice == 2)
+                {
+                    convText[0] = "Hmmmm I'm not sure";
+                    convText[1] = "Yeah you're putting yourself in the centre of attention";
+                    convText[2] = "But that's not so bad once in a while is it?";
+                }
+                else if (picTalk3Choice == 3)
+                {
+                    convText[0] = "I have the same haha";
+                    convText[1] = "I don't know the man but still";
+                    convText[2] = "Seeing him happy like makes me happy as well";
+                }
+                else if (picTalk3Choice == 4)
+                {
+                    convText[0] = "I'm a bit lost for words myself as well";
+                    convText[1] = "He looks so majestic";
+                    convText[2] = "It's quite overwhelming";
+                }
+                convType = 1;
+                pic3.tag = "Untagged";
+                picturesTalkedTo += 1;
+                if (picturesTalkedTo == 6)
+                {
+                    doorExhib.tag = "QuestPerson";
+                }
+            }
+        }
+        else if (convName == "PicTalk4")
+        {
+            if (line == 1)
+            {
+
+                convText[0] = "I wish we could see something like that here";
+                convText[1] = "But you need to be away from all civilization to see something like this";
+                convText[2] = "If only I had someone to go with";
+
+                convType = 1;
+                pic4.tag = "Untagged";
+                picturesTalkedTo += 1;
+                if (picturesTalkedTo == 6)
+                {
+                    doorExhib.tag = "QuestPerson";
+                }
+
+            }
+        }
+        else if (convName == "PicTalk5")
+        {
+            if (line == 1)
+            {
+
+                convText[0] = "Doing something really fun is already nice";
+                convText[1] = "And then with a camera you can capture the moment";
+                convText[2] = "It allows you to never forget that amazing moment";
+
+                convType = 1;
+                pic5.tag = "Untagged";
+                picturesTalkedTo += 1;
+                if (picturesTalkedTo == 6)
+                {
+                    doorExhib.tag = "QuestPerson";
+                }
+
+            }
+        }
+        else if (convName == "PicTalk6")
+        {
+            if (line == 1)
+            {
+
+                convText[0] = "Nothing is stopping you from doing the same if you want to";
+                convText[1] = "Now you have a camera";
+                convText[2] = "I think you could make some awesome pictures as well";
+
+                convType = 1;
+                pic6.tag = "Untagged";
+                picturesTalkedTo += 1;
+                if (picturesTalkedTo == 6)
+                {
+                    doorExhib.tag = "QuestPerson";
+                }
+
             }
         }
     }
-
     public void whatConv(string convNameHere)
     {
         convName = convNameHere; 
