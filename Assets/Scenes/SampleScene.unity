@@ -6988,6 +6988,7 @@ MonoBehaviour:
   pitchMM: {x: -40, y: 85}
   UI: {fileID: 63713632}
   pauseMenu: {fileID: 777462786}
+  pictureWallCanvas: {fileID: 461034927}
   verticalOffeset: 0
 --- !u!114 &534669909
 MonoBehaviour:
@@ -8050,7 +8051,9 @@ MonoBehaviour:
   UI: {fileID: 63713632}
   UI2: {fileID: 1989272980}
   pauseMenu: {fileID: 777462786}
+  photoWallCanvas: {fileID: 461034927}
   pauseMenuActive: 0
+  pictureCanvasActive: 0
   countdown: 0
 --- !u!82 &619189320
 AudioSource:
