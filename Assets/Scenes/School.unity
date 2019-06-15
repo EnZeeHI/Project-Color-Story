@@ -3961,6 +3961,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 0.8
       objectReference: {fileID: 0}
+    - target: {fileID: 2300002, guid: c4af6a84340d22842b14b546c4545df7, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8659b96a811124c479def5a0988198ff, type: 2}
+    - target: {fileID: 2300002, guid: c4af6a84340d22842b14b546c4545df7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5074d55db94f88a4b8f7207c4cbc4368, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4af6a84340d22842b14b546c4545df7, type: 3}
 --- !u!1001 &850000262
@@ -4026,6 +4034,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 0.8
       objectReference: {fileID: 0}
+    - target: {fileID: 2300002, guid: c4af6a84340d22842b14b546c4545df7, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8659b96a811124c479def5a0988198ff, type: 2}
+    - target: {fileID: 2300002, guid: c4af6a84340d22842b14b546c4545df7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5074d55db94f88a4b8f7207c4cbc4368, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4af6a84340d22842b14b546c4545df7, type: 3}
 --- !u!1 &920823556 stripped
@@ -4758,6 +4774,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2300002, guid: c4af6a84340d22842b14b546c4545df7, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8659b96a811124c479def5a0988198ff, type: 2}
+    - target: {fileID: 2300002, guid: c4af6a84340d22842b14b546c4545df7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5074d55db94f88a4b8f7207c4cbc4368, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4af6a84340d22842b14b546c4545df7, type: 3}
 --- !u!1 &1010043349
@@ -8291,15 +8315,15 @@ PrefabInstance:
     - target: {fileID: 2300018, guid: d777cd78092dce74988c5c0862f767de, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 89f23214c91f798468282bfed0d00cad, type: 2}
+      objectReference: {fileID: 2100000, guid: cceb74ca5e16ca445a7a285525d34100, type: 2}
     - target: {fileID: 2300020, guid: d777cd78092dce74988c5c0862f767de, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 0fed5f01b6b981c4291736cf78ed3eda, type: 2}
+      objectReference: {fileID: 2100000, guid: 1718386cf1d4a9543ac4ae6345d9f809, type: 2}
     - target: {fileID: 2300022, guid: d777cd78092dce74988c5c0862f767de, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 391acfc5e94c9c4448a743e3ac85a99d, type: 2}
+      objectReference: {fileID: 2100000, guid: ae9d1b62d5cf5d842b2d2b10bd83f85e, type: 2}
     - target: {fileID: 100000, guid: d777cd78092dce74988c5c0862f767de, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
@@ -8862,6 +8886,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2300002, guid: c4af6a84340d22842b14b546c4545df7, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8659b96a811124c479def5a0988198ff, type: 2}
+    - target: {fileID: 2300002, guid: c4af6a84340d22842b14b546c4545df7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5074d55db94f88a4b8f7207c4cbc4368, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4af6a84340d22842b14b546c4545df7, type: 3}
 --- !u!1 &2007701362

@@ -16,13 +16,15 @@ public class camareController : MonoBehaviour
 
     public GameObject UI;
     public GameObject pauseMenu;
+    public GameObject pictureWallCanvas;
 
     public float verticalOffeset;
     
     // Update is called once per frame
+  
     void LateUpdate()
     {
-        if (UI.activeInHierarchy == false && pauseMenu.activeInHierarchy == false)
+        if (UI.activeInHierarchy == false && pauseMenu.activeInHierarchy == false && pictureWallCanvas.activeSelf== false )
         {
 
 
