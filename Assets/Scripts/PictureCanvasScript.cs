@@ -23,6 +23,8 @@ public class PictureCanvasScript : MonoBehaviour
     public GameObject picture3;
     public GameObject picture4;
     public GameObject picture5;
+    public GameObject picture6;
+    public GameObject displayedImage;
     
     
 
@@ -53,7 +55,7 @@ public class PictureCanvasScript : MonoBehaviour
        string pathToFile = Pictures[PicturesIndex];
        Texture2D texture = GetScreenshotImage (pathToFile);
        Sprite sp = Sprite.Create(texture, new Rect( 0, 0, texture.width, texture.height), new Vector2(0.5f,0.5f));
-       Canvas.GetComponent<Image>().sprite = sp;
+       displayedImage.GetComponent<Image>().sprite = sp;
        
     }
     Texture2D GetScreenshotImage(string filePath)
@@ -121,6 +123,10 @@ public class PictureCanvasScript : MonoBehaviour
         {
             PlayerInfo.PlayerPhoto5 = filePath;
         }
+        else if (PlayerInfo.PlayerPhoto6 == null)
+        {
+            PlayerInfo.PlayerPhoto6 = filePath;
+        }
         PlacePhoto();
         Debug.Log("PlacePhoto");
     }
@@ -165,6 +171,14 @@ public class PictureCanvasScript : MonoBehaviour
             Texture2D texture5 = GetScreenshotImage (pathToFile5);
             Sprite sp5 = Sprite.Create(texture5, new Rect( 0, 0, texture5.width, texture5.height), new Vector2(0.5f,0.5f));
             picture5.GetComponent<SpriteRenderer>().sprite = sp5;
+        }
+         if (PlayerInfo.PlayerPhoto6 !=null)
+        {
+            string pathToFile6 = PlayerInfo.PlayerPhoto1;
+            Debug.Log(pathToFile6);
+            Texture2D texture6 = GetScreenshotImage (pathToFile6);
+            Sprite sp6 = Sprite.Create(texture6, new Rect( 0, 0, texture6.width, texture6.height), new Vector2(0.5f,0.5f));
+            picture6.GetComponent<SpriteRenderer>().sprite = sp6;
         }
         
     }

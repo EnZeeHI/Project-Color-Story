@@ -21,6 +21,7 @@ public class TextLog : MonoBehaviour
     public GameObject ellie;
     public GameObject pic1, pic2, pic3, pic4, pic5, pic6;
     public GameObject doorExhib;
+    public GameObject doorSchool;
 
     public int picturesTalkedTo = 0;
 
@@ -716,7 +717,7 @@ public class TextLog : MonoBehaviour
                     convText[1] = "He looks so majestic";
                     convText[2] = "It's quite overwhelming";
                 }
-                
+
                 pic3.tag = "Untagged";
                 picturesTalkedTo += 1;
                 if (picturesTalkedTo == 6)
@@ -745,7 +746,7 @@ public class TextLog : MonoBehaviour
                 convText[2] = "See you next time Dylan!";
                 convType = 1;
             }
-        
+
         }
         else if (convName == "PicTalk4")
         {
@@ -756,7 +757,7 @@ public class TextLog : MonoBehaviour
                 convText[1] = "But you need to be away from all civilization to see something like this";
                 convText[2] = "If only I had someone to go with";
 
-                
+
                 pic4.tag = "Untagged";
                 picturesTalkedTo += 1;
                 if (picturesTalkedTo == 6)
@@ -795,7 +796,7 @@ public class TextLog : MonoBehaviour
                 convText[1] = "And then with a camera you can capture the moment";
                 convText[2] = "It allows you to never forget that amazing moment";
 
-                
+
                 pic5.tag = "Untagged";
                 picturesTalkedTo += 1;
                 if (picturesTalkedTo == 6)
@@ -834,7 +835,7 @@ public class TextLog : MonoBehaviour
                 convText[1] = "Now you have a camera";
                 convText[2] = "I think you could make some awesome pictures as well";
 
-                
+
                 pic6.tag = "Untagged";
                 picturesTalkedTo += 1;
                 if (picturesTalkedTo == 6)
@@ -862,6 +863,35 @@ public class TextLog : MonoBehaviour
                 convText[1] = "It was fun though! Let's do this again some time";
                 convText[2] = "See you next time Dylan!";
                 convType = 1;
+            }
+        }
+        else if (convName == "EllieSchool")
+        {
+            if (line == 1)
+            {
+                convText[0] = "So I got these tickets for a photography exhibition tomorrow";
+                convText[1] = "I was wondering if you would to come along";
+                convText[2] = "I got 2 tickets so I can invite 1 person";
+                convType = 3;
+                reactionDyl = "Oh yea sure, sounds fun! What time is it?";
+            }
+            else if (line == 2)
+            {
+                convText[0] = "It's at 15:00, a bit late but it should be fine";
+                convText[1] = "Thanks for coming along";
+                convText[2] = "Are you sure you will be able to get there?";
+                convType = 3;
+                reactionDyl = "No problem! I'll figure out a way to get there, it will be fine.";
+            }
+            else if (line == 3)
+            {
+                convText[0] = "If you say so!";
+                convText[1] = "I'm really excited, thank you!";
+                convText[2] = "I'll see you tomorrow!";
+                convType = 1;
+                doorSchool.tag = "QuestPerson";
+                ellie.tag = "Untagged";
+
             }
         }
     }
@@ -999,12 +1029,12 @@ public class TextLog : MonoBehaviour
             continueButton1.SetActive(true);
             continueButton2.SetActive(false);
             UI.SetActive(false);
-            Debug.Log("End of conversation");
+            //Debug.Log("End of conversation");
             line = 0;
 
-            Debug.Log(dadConv1Choice1);
-            Debug.Log(dadConv1Choice2);
-            Debug.Log(dadConv1Choice3);
+            //Debug.Log(dadConv1Choice1);
+           // Debug.Log(dadConv1Choice2);
+           // Debug.Log(dadConv1Choice3);
         }
         else if (convType == 2)
         {

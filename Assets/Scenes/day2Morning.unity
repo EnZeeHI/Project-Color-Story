@@ -2019,6 +2019,129 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acbba20cbfb02164d974a8636cb138fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &226580932
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 405084137}
+    m_Modifications:
+    - target: {fileID: 100000, guid: f77da80daa111c744a0b34b68d275700, type: 3}
+      propertyPath: m_Name
+      value: car
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f77da80daa111c744a0b34b68d275700, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f77da80daa111c744a0b34b68d275700, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f77da80daa111c744a0b34b68d275700, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f77da80daa111c744a0b34b68d275700, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f77da80daa111c744a0b34b68d275700, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f77da80daa111c744a0b34b68d275700, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f77da80daa111c744a0b34b68d275700, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f77da80daa111c744a0b34b68d275700, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f77da80daa111c744a0b34b68d275700, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f77da80daa111c744a0b34b68d275700, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f77da80daa111c744a0b34b68d275700, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f77da80daa111c744a0b34b68d275700, type: 3}
+--- !u!4 &226580933 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: f77da80daa111c744a0b34b68d275700,
+    type: 3}
+  m_PrefabInstance: {fileID: 226580932}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &226580934 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100006, guid: f77da80daa111c744a0b34b68d275700,
+    type: 3}
+  m_PrefabInstance: {fileID: 226580932}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &226580935 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100004, guid: f77da80daa111c744a0b34b68d275700,
+    type: 3}
+  m_PrefabInstance: {fileID: 226580932}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &226580936 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: f77da80daa111c744a0b34b68d275700,
+    type: 3}
+  m_PrefabInstance: {fileID: 226580932}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &226580937
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226580934}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: f77da80daa111c744a0b34b68d275700, type: 3}
+--- !u!64 &226580938
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226580935}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300002, guid: f77da80daa111c744a0b34b68d275700, type: 3}
+--- !u!64 &226580939
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226580936}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300004, guid: f77da80daa111c744a0b34b68d275700, type: 3}
 --- !u!1 &242285883
 GameObject:
   m_ObjectHideFlags: 0
@@ -2033,7 +2156,7 @@ GameObject:
   - component: {fileID: 242285885}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: ImageWall
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2698,7 +2821,7 @@ Transform:
   m_LocalScale: {x: 200, y: 100, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &300007066 stripped
 GameObject:
@@ -3288,19 +3411,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialouge:
     name: Mom
-    convName: MomConv1
+    convName: MomConv2
     reaction: Yea he did......
     sentences:
-    - Hey honey
-    - Thanks for the Tea
-    - I assume your dad told you about the news?
+    - Hey honey good morning, Here's the camera I talked to you about yesterday
+    - Please remember to take a picture for me!
+    - You can open the camera by pressing the "C" button, then you can take a picture
+      with E. You can hang the pictures in your room afterwards by pressing E on your
+      picture board.
+    - If you forget all that feel free to talk to me again.
     choices:
     - 
     - 
     - 
     - 
     face: {fileID: 2020352463}
-  convTypeThis: 3
+  convTypeThis: 1
 --- !u!64 &319473992
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3339,7 +3465,7 @@ GameObject:
   - component: {fileID: 339964556}
   m_Layer: 0
   m_Name: Photo Wall
-  m_TagString: ImageWall
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3817,6 +3943,77 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0bd841f491060a04cba508b54c5db53d, type: 3}
+--- !u!1 &405084134
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 405084137}
+  - component: {fileID: 405084136}
+  - component: {fileID: 405084135}
+  m_Layer: 0
+  m_Name: tempCar
+  m_TagString: QuestPerson
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &405084135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405084134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92938568374e557499918af1153471fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialouge:
+    name: Car Vroom Vroom
+    convName: toExhibition
+    reaction: yeet
+    sentences:
+    - Do you want to travel to the exhibition
+    choices:
+    - 
+    - 
+    - 
+    - 
+    face: {fileID: 1971471000}
+  convTypeThis: 4
+--- !u!65 &405084136
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405084134}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3, y: 2.5, z: 5}
+  m_Center: {x: -0.95, y: -2.42, z: 2.78}
+--- !u!4 &405084137
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405084134}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -222.97, y: 22.19, z: 27.92}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 226580933}
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &407373038 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5564527089201985476, guid: 0abba06e57aab4640aac264670600c11,
@@ -4175,7 +4372,7 @@ GameObject:
   - component: {fileID: 492560080}
   m_Layer: 0
   m_Name: New Sprite
-  m_TagString: ImageWall
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7507,7 +7704,7 @@ PrefabInstance:
     - target: {fileID: 1156947048785903339, guid: e467dc15fd11c104790181a8debfc2fc,
         type: 3}
       propertyPath: m_TagString
-      value: QuestPerson
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 1156947048785903339, guid: e467dc15fd11c104790181a8debfc2fc,
         type: 3}
@@ -8831,15 +9028,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c64bf90f7a9b49145a007d05445001d3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -187.75
+      value: -187.64
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c64bf90f7a9b49145a007d05445001d3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 17.83
+      value: -75.88
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c64bf90f7a9b49145a007d05445001d3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 19.3
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c64bf90f7a9b49145a007d05445001d3, type: 3}
       propertyPath: m_LocalRotation.x
@@ -8847,15 +9044,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c64bf90f7a9b49145a007d05445001d3, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c64bf90f7a9b49145a007d05445001d3, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c64bf90f7a9b49145a007d05445001d3, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c64bf90f7a9b49145a007d05445001d3, type: 3}
       propertyPath: m_RootOrder
@@ -8867,7 +9064,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c64bf90f7a9b49145a007d05445001d3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 270
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c64bf90f7a9b49145a007d05445001d3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -10675,7 +10872,7 @@ Transform:
   m_LocalScale: {x: 250, y: 100, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!4 &1215363426 stripped
 Transform:
@@ -11607,7 +11804,7 @@ Transform:
   m_LocalScale: {x: 200, y: 100, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1358801309
 GameObject:
@@ -12381,19 +12578,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialouge:
     name: Dad
-    convName: DadConv1
+    convName: DadConv2
     reaction: 'Yeah... everything is okay, I actually have a favor to ask of you. '
     sentences:
-    - Oh hey Dylan!
-    - You're home later then usual
-    - Everything okay at school?
+    - Good morning Dylan!
+    - I'm ready to leave whenever you are
+    - The car is outside, just get in when you're ready!
     choices:
     - 
     - 
     - 
     - 
     face: {fileID: 721632751}
-  convTypeThis: 3
+  convTypeThis: 1
 --- !u!64 &1452359241
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14153,7 +14350,7 @@ Transform:
   m_LocalScale: {x: 200, y: 100, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1793209931
 GameObject:
@@ -17598,6 +17795,8 @@ MonoBehaviour:
   picture3: {fileID: 1821991928}
   picture4: {fileID: 1814452768}
   picture5: {fileID: 1965781732}
+  picture6: {fileID: 0}
+  displayedImage: {fileID: 0}
 --- !u!1 &2141418654
 GameObject:
   m_ObjectHideFlags: 0
