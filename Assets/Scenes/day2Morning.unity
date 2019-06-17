@@ -4101,7 +4101,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &461034928
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5537,7 +5537,7 @@ MonoBehaviour:
   itemToMove: {fileID: 0}
   objectInInventory: {fileID: 0}
   hit: {fileID: 0}
-  imageWallCanvas: {fileID: 0}
+  imageWallCanvas: {fileID: 461034927}
 --- !u!114 &619189319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11246,6 +11246,10 @@ MonoBehaviour:
   momConv1Choice2: 0
   momConv1Choice3: 0
   momConv1Choice4: 0
+  momConv2Choice1: 0
+  momConv2Choice2: 0
+  momConv2Choice3: 0
+  momConv2Choice4: 0
   neighbourConv1Choice1: 0
   neighbourConv1Choice2: 0
   neighbourConv1Choice3: 0
