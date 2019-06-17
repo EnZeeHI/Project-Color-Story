@@ -53,6 +53,9 @@ public class TextLog : MonoBehaviour
     public int momConv1Choice1, momConv1Choice2, momConv1Choice3, momConv1Choice4;
 
     [HideInInspector]
+    public int momConv2Choice1, momConv2Choice2, momConv2Choice3, momConv2Choice4;
+
+    [HideInInspector]
     public int neighbourConv1Choice1, neighbourConv1Choice2, neighbourConv1Choice3, neighbourConv1Choice4;
 
     [HideInInspector]
@@ -409,6 +412,89 @@ public class TextLog : MonoBehaviour
                 momConvDone = true;
                 mom.tag = "Untagged";
                 convType = 1;
+            }
+        
+        }
+
+        else if (convName == "MomConv3")
+        {
+            if (line == 1)
+            {
+                momConv2Choice1 = choiceMade;
+
+                if (momConv2Choice1 == 1)
+                {
+                    convText[0] = "Nice, a fun time is a good time!";
+                    convText[1] = "I guess you also had nice company";
+                    convText[2] = "Did you manage to take a good picture whilst having so much fun?";
+                }
+                else if (momConv2Choice1 == 2)
+                {
+                    convText[0] = "Sounds good!";
+                    convText[1] = "Must have been a pretty good photographer then!";
+                    convText[2] = "Did you catch any good pictures as well?";
+                }
+                else if (momConv2Choice1 == 3)
+                {
+                    convText[0] = "Well that doesn't sound too exciting";
+                    convText[1] = "Guess the exhibitio wasn't as fun as expected";
+                    convText[2] = "Did you take a nice picture at least?";
+                }
+                else if (momConv2Choice1 == 4)
+                {
+                    convText[0] = "Everything can always be better";
+                    convText[1] = "As long as it was a fun time its good";
+                    convText[2] = "Did you manage to get a good picture?";
+                }
+
+                choicesOptions[0] = "Yea I took a decent picture";
+                choicesOptions[1] = "I took one, but not it's not good or anything";
+                choicesOptions[2] = "I didn't take one";
+                choicesOptions[3] = "I'm proud of the one I took, I'm gonna hang it in my room";
+
+                convType = 2;
+            }
+            else if (line == 2)
+            {
+                momConv2Choice2 = choiceMade;
+
+                if (momConv2Choice2 == 1)
+                {
+                    convText[0] = "Good job!";
+                    convText[1] = "Are you going to hang it in your room?";
+                    convText[2] = "It would be nice to see the pictures you made, it would make me happy";
+                }
+                else if (momConv2Choice2 == 2)
+                {
+                    convText[0] = "Nawh, honey don't worry about it";
+                    convText[1] = "Every person needs to start off somewhere";
+                    convText[2] = "If you get some more experience, I'm sure your pictures will look great!";
+                }
+                else if (momConv2Choice2 == 3)
+                {
+                    convText[0] = "Nawhh, why didn't you take one";
+                    convText[1] = "I would've loved to see how your day was";
+                    convText[2] = "Don't be afraid to take one next time, I wan't to know about your life!";
+                }
+                else if (momConv2Choice2 == 4)
+                {
+                    convText[0] = "That's really nice!";
+                    convText[1] = "You'll have to show it to me some time";
+                    convText[2] = "I'm glad you found something you like";
+                }
+
+                reactionDyl = "Thanks mom!";
+                convType = 3;
+            }
+            else if (line == 3)
+            {
+                
+                    convText[0] = "No problem, I'll always be here for you";
+                    convText[1] = "On that note though, it's getting late, so I'm heading of to beed soon";
+                    convText[2] = "Goodnight! And don't stay up too late!";
+               
+                convType = 1;
+                mom.tag = "Untagged";
             }
         }
         else if (convName == "NeighbourConv1")

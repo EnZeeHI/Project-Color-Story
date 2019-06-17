@@ -195,7 +195,7 @@ public class DialougeManager : MonoBehaviour
         }
         else if (sceneName == "day2")
         {
-            dialougeText.text = "Traveling to exhibition";
+            dialougeText.text = "End of day 14 // End of demo";
         }
         else if (sceneName == "Exhibition")
         {
@@ -204,6 +204,18 @@ public class DialougeManager : MonoBehaviour
         else if (sceneName == "School")
         {
             dialougeText.text = "Listening to the teacher";
+        }
+        else if (sceneName == "SchoolAfterClass")
+        {
+            dialougeText.text = "Going home";
+        }
+        else if (sceneName == "day2Morning")
+        {
+            dialougeText.text = "Travelling to the exhibition";
+        }
+        else if (sceneName == "SampleScene")
+        {
+            dialougeText.text = "End of day 13";
         }
         //SceneManager.LoadScene("Credits Scene");
     }

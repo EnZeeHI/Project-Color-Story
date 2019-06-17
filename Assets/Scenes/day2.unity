@@ -1704,7 +1704,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 62fe8563965a4744795eb0dd6837e08b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -208.22
+      value: -184.02
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 62fe8563965a4744795eb0dd6837e08b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1712,7 +1712,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 62fe8563965a4744795eb0dd6837e08b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 25.58
+      value: 41.65
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 62fe8563965a4744795eb0dd6837e08b, type: 3}
       propertyPath: m_LocalRotation.x
@@ -3288,19 +3288,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialouge:
     name: Mom
-    convName: MomConv1
-    reaction: Yea he did......
+    convName: MomConv3
+    reaction: Hsfdfgdfgdfgdfgdfgfdgdfg
     sentences:
-    - Hey honey
-    - Thanks for the Tea
-    - I assume your dad told you about the news?
+    - Hey honey, welcome home!
+    - How was your day?
+    - Did you have fun?
     choices:
-    - 
-    - 
-    - 
-    - 
+    - Yea it was really fun!
+    - There were some really nice pictures!
+    - It was okay I guess
+    - It could have been better
     face: {fileID: 2020352463}
-  convTypeThis: 3
+  convTypeThis: 2
 --- !u!64 &319473992
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12381,19 +12381,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialouge:
     name: Dad
-    convName: DadConv1
+    convName: DadConv3
     reaction: 'Yeah... everything is okay, I actually have a favor to ask of you. '
     sentences:
     - Oh hey Dylan!
-    - You're home later then usual
-    - Everything okay at school?
+    - Don't mind me
+    - I'm just standing here because we didn't have enough time to create a sitting
+      animation for me! Woops!
     choices:
     - 
     - 
     - 
     - 
     face: {fileID: 721632751}
-  convTypeThis: 3
+  convTypeThis: 1
 --- !u!64 &1452359241
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17598,6 +17599,8 @@ MonoBehaviour:
   picture3: {fileID: 1821991928}
   picture4: {fileID: 1814452768}
   picture5: {fileID: 1965781732}
+  picture6: {fileID: 0}
+  displayedImage: {fileID: 0}
 --- !u!1 &2141418654
 GameObject:
   m_ObjectHideFlags: 0
