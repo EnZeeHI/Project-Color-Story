@@ -8,6 +8,7 @@ public class PictureCaptureScript : MonoBehaviour
     public int resHeight = 1080;
     private bool takeScreenShot;
     public bool ableToCapture = false;
+    public AudioSource PictureSound;
    
     
 
@@ -22,6 +23,7 @@ public class PictureCaptureScript : MonoBehaviour
     public void TakeScreenShot()
     {
         takeScreenShot = true;
+        
     }
     void Update()
     {
@@ -40,7 +42,7 @@ public class PictureCaptureScript : MonoBehaviour
             byte[] bytes = screenShot.EncodeToPNG();
             string filename = ScreenShotName(resWidth, resHeight);
             System.IO.File.WriteAllBytes(filename, bytes);
-            
+            PictureSound.Play();
             Debug.Log(string.Format("Took screenshot to: {0}", filename));
             takeScreenShot = false;
             
