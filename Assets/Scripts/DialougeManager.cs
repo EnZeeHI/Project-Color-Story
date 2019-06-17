@@ -63,7 +63,7 @@ public class DialougeManager : MonoBehaviour
             {
                 if (sceneName == "Tutorial")
                 {
-                    SceneManager.LoadScene("SampleScene");
+                    SceneManager.LoadScene("School");
                 }
                 else if (sceneName == "day2") 
                 {
@@ -76,6 +76,10 @@ public class DialougeManager : MonoBehaviour
                 else if (sceneName == "School")
                 {
                     SceneManager.LoadScene("SchoolAfterClass");
+                }
+                else if (sceneName == "SchoolAfterClass")
+                {
+                    SceneManager.LoadScene("SampleScene");
                 }
                 else
                 {

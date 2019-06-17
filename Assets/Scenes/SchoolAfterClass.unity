@@ -7147,7 +7147,7 @@ MonoBehaviour:
   mom: {fileID: 0}
   neighbouryeet: {fileID: 0}
   bed: {fileID: 0}
-  ellie: {fileID: 0}
+  ellie: {fileID: 1801146926}
   pic1: {fileID: 0}
   pic2: {fileID: 0}
   pic3: {fileID: 0}
@@ -7155,6 +7155,7 @@ MonoBehaviour:
   pic5: {fileID: 0}
   pic6: {fileID: 0}
   doorExhib: {fileID: 0}
+  doorSchool: {fileID: 1534410387}
   picturesTalkedTo: 0
   convType: 0
   choices: {fileID: 1747451937}
@@ -9933,7 +9934,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100022, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
       propertyPath: m_TagString
-      value: QuestPerson
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 400022, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
       propertyPath: m_LocalPosition.x
