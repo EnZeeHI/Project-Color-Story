@@ -259,8 +259,8 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Thanks for playing this demo! Please leave some feedback in the comments
     :)\n\nDevelopment:\nMarcel Schokker\nAras Nazarovas\n\nDesign:\nTommaso Giulietti\n\nCharacter
-    art:\nAndr\xE9 Fernandes\n\nUI Design:\nJoan Nikolov\n\nOther art assets:\nMaya
-    Lioe-A-Tjam\n\n\n\n\n\n\n"
+    art:\nAndr\xE9 Fernandes\n\nAsset art:\nMaya Lioe-A-Tjam\n\nUI Design:\nJoan Nikolov\n\nOther
+    art assets:\nMaya Lioe-A-Tjam\n\n\n\n\n\n\n"
 --- !u!222 &1297541458
 CanvasRenderer:
   m_ObjectHideFlags: 0
