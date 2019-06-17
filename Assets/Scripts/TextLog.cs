@@ -543,7 +543,6 @@ public class TextLog : MonoBehaviour
                     convText[1] = "Art is interpreted differently by everyone";
                     convText[2] = "So I guess it could be fruits";
 
-                    convType = 1;
                 }
                 else if (picTalk1Choice == 2)
                 {
@@ -551,7 +550,6 @@ public class TextLog : MonoBehaviour
                     convText[1] = "This guy is a genius!";
                     convText[2] = "He reminds me of you a little bit";
 
-                    convType = 1;
                 }
                 else if (picTalk1Choice == 3)
                 {
@@ -559,7 +557,6 @@ public class TextLog : MonoBehaviour
                     convText[1] = "";
                     convText[2] = "";
 
-                    convType = 1;
                 }
                 else if (picTalk1Choice == 4)
                 {
@@ -567,14 +564,34 @@ public class TextLog : MonoBehaviour
                     convText[1] = "I think it's quite unique";
                     convText[2] = "Let's find one that you will like better";
 
-                    convType = 1;
                 }
                 pic1.tag = "Untagged";
                 picturesTalkedTo += 1;
                 if (picturesTalkedTo == 6)
                 {
+                    reactionDyl = "I guess that was all of the pictures?";
                     doorExhib.tag = "QuestPerson";
+                    convType = 3;
                 }
+                else
+                {
+                    convType = 1;
+                }
+            }
+            if (line == 2)
+            {
+                convText[0] = "Yea they were all so good";
+                convText[1] = "I wish there were more pictures";
+                convText[2] = "But it was fun";
+                convType = 3;
+                reactionDyl = "Yea it was really fun! It's getting late though... I should probably go home";
+            }
+            if (line == 3)
+            {
+                convText[0] = "Yeah same... else my parents will get worried";
+                convText[1] = "It was fun though! Let's do this again some time";
+                convText[2] = "See you next time Dylan!";
+                convType = 1;
             }
         }
         else if (convName == "PicTalk2")
@@ -626,13 +643,33 @@ public class TextLog : MonoBehaviour
                     convText[1] = "It looks amazing";
                     convText[2] = "Let's go look at the different pictures";
                 }
-                convType = 1;
                 pic2.tag = "Untagged";
                 picturesTalkedTo += 1;
                 if (picturesTalkedTo == 6)
                 {
+                    reactionDyl = "I guess that was all of the pictures?";
                     doorExhib.tag = "QuestPerson";
+                    convType = 3;
                 }
+                else
+                {
+                    convType = 1;
+                }
+            }
+            if (line == 3)
+            {
+                convText[0] = "Yea they were all so good";
+                convText[1] = "I wish there were more pictures";
+                convText[2] = "But it was fun";
+                convType = 3;
+                reactionDyl = "Yea it was really fun! It's getting late though... I should probably go home";
+            }
+            if (line == 4)
+            {
+                convText[0] = "Yeah same... else my parents will get worried";
+                convText[1] = "It was fun though! Let's do this again some time";
+                convText[2] = "See you next time Dylan!";
+                convType = 1;
             }
         }
         else if (convName == "PicTalk3")
@@ -679,14 +716,36 @@ public class TextLog : MonoBehaviour
                     convText[1] = "He looks so majestic";
                     convText[2] = "It's quite overwhelming";
                 }
-                convType = 1;
+                
                 pic3.tag = "Untagged";
                 picturesTalkedTo += 1;
                 if (picturesTalkedTo == 6)
                 {
+                    reactionDyl = "I guess that was all of the pictures?";
                     doorExhib.tag = "QuestPerson";
+                    convType = 3;
+                }
+                else
+                {
+                    convType = 1;
                 }
             }
+            if (line == 3)
+            {
+                convText[0] = "Yea they were all so good";
+                convText[1] = "I wish there were more pictures";
+                convText[2] = "But it was fun";
+                convType = 3;
+                reactionDyl = "Yea it was really fun! It's getting late though... I should probably go home";
+            }
+            if (line == 4)
+            {
+                convText[0] = "Yeah same... else my parents will get worried";
+                convText[1] = "It was fun though! Let's do this again some time";
+                convText[2] = "See you next time Dylan!";
+                convType = 1;
+            }
+        
         }
         else if (convName == "PicTalk4")
         {
@@ -697,14 +756,34 @@ public class TextLog : MonoBehaviour
                 convText[1] = "But you need to be away from all civilization to see something like this";
                 convText[2] = "If only I had someone to go with";
 
-                convType = 1;
+                
                 pic4.tag = "Untagged";
                 picturesTalkedTo += 1;
                 if (picturesTalkedTo == 6)
                 {
+                    reactionDyl = "I guess that was all of the pictures?";
                     doorExhib.tag = "QuestPerson";
+                    convType = 3;
                 }
-
+                else
+                {
+                    convType = 1;
+                }
+            }
+            if (line == 2)
+            {
+                convText[0] = "Yea they were all so good";
+                convText[1] = "I wish there were more pictures";
+                convText[2] = "But it was fun";
+                convType = 3;
+                reactionDyl = "Yea it was really fun! It's getting late though... I should probably go home";
+            }
+            if (line == 3)
+            {
+                convText[0] = "Yeah same... else my parents will get worried";
+                convText[1] = "It was fun though! Let's do this again some time";
+                convText[2] = "See you next time Dylan!";
+                convType = 1;
             }
         }
         else if (convName == "PicTalk5")
@@ -716,14 +795,34 @@ public class TextLog : MonoBehaviour
                 convText[1] = "And then with a camera you can capture the moment";
                 convText[2] = "It allows you to never forget that amazing moment";
 
-                convType = 1;
+                
                 pic5.tag = "Untagged";
                 picturesTalkedTo += 1;
                 if (picturesTalkedTo == 6)
                 {
+                    reactionDyl = "I guess that was all of the pictures?";
                     doorExhib.tag = "QuestPerson";
+                    convType = 3;
                 }
-
+                else
+                {
+                    convType = 1;
+                }
+            }
+            if (line == 2)
+            {
+                convText[0] = "Yea they were all so good";
+                convText[1] = "I wish there were more pictures";
+                convText[2] = "But it was fun";
+                convType = 3;
+                reactionDyl = "Yea it was really fun! It's getting late though... I should probably go home";
+            }
+            if (line == 3)
+            {
+                convText[0] = "Yeah same... else my parents will get worried";
+                convText[1] = "It was fun though! Let's do this again some time";
+                convText[2] = "See you next time Dylan!";
+                convType = 1;
             }
         }
         else if (convName == "PicTalk6")
@@ -735,14 +834,34 @@ public class TextLog : MonoBehaviour
                 convText[1] = "Now you have a camera";
                 convText[2] = "I think you could make some awesome pictures as well";
 
-                convType = 1;
+                
                 pic6.tag = "Untagged";
                 picturesTalkedTo += 1;
                 if (picturesTalkedTo == 6)
                 {
+                    reactionDyl = "I guess that was all of the pictures?";
                     doorExhib.tag = "QuestPerson";
+                    convType = 3;
                 }
-
+                else
+                {
+                    convType = 1;
+                }
+            }
+            if (line == 2)
+            {
+                convText[0] = "Yea they were all so good";
+                convText[1] = "I wish there were more pictures";
+                convText[2] = "But it was fun";
+                convType = 3;
+                reactionDyl = "Yea it was really fun! It's getting late though... I should probably go home";
+            }
+            if (line == 3)
+            {
+                convText[0] = "Yeah same... else my parents will get worried";
+                convText[1] = "It was fun though! Let's do this again some time";
+                convText[2] = "See you next time Dylan!";
+                convType = 1;
             }
         }
     }
