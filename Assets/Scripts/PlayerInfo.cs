@@ -102,7 +102,7 @@ public class PlayerInfo
            neighbourConv1Choice2 = value;
        }
    }
-   private static string playerPhoto1, playerPhoto2, playerPhoto3, playerPhoto4, playerPhoto5;
+   private static string playerPhoto1, playerPhoto2, playerPhoto3, playerPhoto4, playerPhoto5, playerPhoto6;
    public static string PlayerPhoto1
    {
        get
@@ -156,6 +156,17 @@ public class PlayerInfo
        set 
        {
            playerPhoto5 = value;
+       }
+   }
+   public static string PlayerPhoto6
+   {
+       get 
+       {
+           return playerPhoto6;
+       }
+       set
+       {
+           playerPhoto6 = value;
        }
    }
 }
