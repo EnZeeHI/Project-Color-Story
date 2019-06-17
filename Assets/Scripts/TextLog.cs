@@ -1029,12 +1029,12 @@ public class TextLog : MonoBehaviour
             continueButton1.SetActive(true);
             continueButton2.SetActive(false);
             UI.SetActive(false);
-            Debug.Log("End of conversation");
+            //Debug.Log("End of conversation");
             line = 0;
 
-            Debug.Log(dadConv1Choice1);
-            Debug.Log(dadConv1Choice2);
-            Debug.Log(dadConv1Choice3);
+            //Debug.Log(dadConv1Choice1);
+           // Debug.Log(dadConv1Choice2);
+           // Debug.Log(dadConv1Choice3);
         }
         else if (convType == 2)
         {
