@@ -7507,7 +7507,7 @@ PrefabInstance:
     - target: {fileID: 1156947048785903339, guid: e467dc15fd11c104790181a8debfc2fc,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: QuestPerson
       objectReference: {fileID: 0}
     - target: {fileID: 1156947048785903339, guid: e467dc15fd11c104790181a8debfc2fc,
         type: 3}

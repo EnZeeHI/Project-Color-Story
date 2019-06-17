@@ -3411,19 +3411,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialouge:
     name: Mom
-    convName: MomConv1
+    convName: MomConv2
     reaction: Yea he did......
     sentences:
-    - Hey honey
-    - Thanks for the Tea
-    - I assume your dad told you about the news?
+    - Hey honey good morning, Here's the camera I talked to you about yesterday
+    - Please remember to take a picture for me!
+    - You can open the camera by pressing the "C" button, then you can take a picture
+      with E. You can hang the pictures in your room afterwards by pressing E on your
+      picture board.
+    - If you forget all that feel free to talk to me again.
     choices:
     - 
     - 
     - 
     - 
     face: {fileID: 2020352463}
-  convTypeThis: 3
+  convTypeThis: 1
 --- !u!64 &319473992
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12575,19 +12578,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialouge:
     name: Dad
-    convName: DadConv1
+    convName: DadConv2
     reaction: 'Yeah... everything is okay, I actually have a favor to ask of you. '
     sentences:
-    - Oh hey Dylan!
-    - You're home later then usual
-    - Everything okay at school?
+    - Good morning Dylan!
+    - I'm ready to leave whenever you are
+    - The car is outside, just get in when you're ready!
     choices:
     - 
     - 
     - 
     - 
     face: {fileID: 721632751}
-  convTypeThis: 3
+  convTypeThis: 1
 --- !u!64 &1452359241
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17792,6 +17795,8 @@ MonoBehaviour:
   picture3: {fileID: 1821991928}
   picture4: {fileID: 1814452768}
   picture5: {fileID: 1965781732}
+  picture6: {fileID: 0}
+  displayedImage: {fileID: 0}
 --- !u!1 &2141418654
 GameObject:
   m_ObjectHideFlags: 0
