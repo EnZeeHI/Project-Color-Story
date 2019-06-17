@@ -9125,6 +9125,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 100022, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
+      propertyPath: m_Name
+      value: frontdoor
+      objectReference: {fileID: 0}
     - target: {fileID: 400022, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.23484015
@@ -9168,10 +9172,6 @@ PrefabInstance:
     - target: {fileID: 400022, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 100022, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
-      propertyPath: m_Name
-      value: frontdoor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
