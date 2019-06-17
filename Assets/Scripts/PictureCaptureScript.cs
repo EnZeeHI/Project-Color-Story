@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
 
 public class PictureCaptureScript : MonoBehaviour
 {
@@ -26,7 +27,11 @@ public class PictureCaptureScript : MonoBehaviour
         
     }
     void Update()
-    {
+    {   
+        if (!Directory.Exists(string.Format("{0}/Resources/Pictures", Application.dataPath)))
+        {
+            Directory.CreateDirectory(string.Format("{0}/Resources/Pictures", Application.dataPath));
+        }
         takeScreenShot |= Input.GetKeyDown("e");
         if (takeScreenShot && ableToCapture)
         {

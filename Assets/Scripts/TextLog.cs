@@ -59,7 +59,7 @@ public class TextLog : MonoBehaviour
     public int neighbourConv1Choice1, neighbourConv1Choice2, neighbourConv1Choice3, neighbourConv1Choice4;
 
     [HideInInspector]
-    public bool dadConvDone, momConvDone, neighbourConvDone;
+    public bool dadConvDone, momConvDone, neighbourConvDone, ellieConv1Done, ellieCompliment1Done, ellieCompliment2Done, ellieCompliment3Done;
 
     [HideInInspector]
     public int picTalk1Choice, picTalk2Choice, picTalk3Choice;
@@ -95,7 +95,7 @@ public class TextLog : MonoBehaviour
     // Update is called once per frame
     
     void Update()
-    {
+    {   
         if (line >= 6 && convName == "DadConv1")
         {
             PlayerInfo.PlayerMood = -100;
@@ -110,6 +110,35 @@ public class TextLog : MonoBehaviour
             PlayerInfo.PlayerMood = -30;
             
         }
+        else if(ellieConv1Done && !dadConvDone)
+        {
+            PlayerInfo.PlayerMood = 10;
+        }
+        else if(ellieCompliment1Done || ellieCompliment2Done || ellieCompliment3Done)
+        {
+            PlayerInfo.PlayerMood = 10;
+        }
+        else if (ellieCompliment1Done && ellieCompliment2Done && !ellieCompliment3Done )
+        {
+            PlayerInfo.PlayerMood = 20;
+        }
+        else if (ellieCompliment1Done && !ellieCompliment2Done && ellieCompliment3Done )
+        {
+            PlayerInfo.PlayerMood = 20;
+        }
+        else if (!ellieCompliment1Done && ellieCompliment2Done && !ellieCompliment3Done )
+        {
+            PlayerInfo.PlayerMood = 20;
+        }
+        else if (ellieCompliment1Done && ellieCompliment2Done && ellieCompliment3Done)
+        {
+            PlayerInfo.PlayerMood = 30;
+        }
+        else if (!dadConvDone)
+        {
+            PlayerInfo.PlayerMood =  -20;
+        }
+
         //Debug.Log(line);
         //Debug.Log(dadConv1Choice1);
     }
@@ -636,6 +665,7 @@ public class TextLog : MonoBehaviour
                     convText[0] = "I know right!";
                     convText[1] = "This guy is a genius!";
                     convText[2] = "He reminds me of you a little bit";
+                    ellieCompliment2Done = true;
 
                 }
                 else if (picTalk1Choice == 3)
@@ -696,6 +726,7 @@ public class TextLog : MonoBehaviour
                 choicesOptions[3] = "...";
 
                 convType = 2;
+                ellieCompliment3Done = true;
 
             }
             if (line == 2)
@@ -921,6 +952,8 @@ public class TextLog : MonoBehaviour
                 convText[1] = "Now you have a camera";
                 convText[2] = "I think you could make some awesome pictures as well";
 
+                ellieCompliment1Done= true;
+
 
                 pic6.tag = "Untagged";
                 picturesTalkedTo += 1;
@@ -977,7 +1010,7 @@ public class TextLog : MonoBehaviour
                 convType = 1;
                 doorSchool.tag = "QuestPerson";
                 ellie.tag = "Untagged";
-
+                ellieConv1Done = true;
             }
         }
     }
