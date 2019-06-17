@@ -5044,6 +5044,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 100022, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
+      propertyPath: m_Name
+      value: frontdoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 100022, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 400022, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
       propertyPath: m_LocalPosition.x
       value: 31.43
@@ -5099,14 +5107,6 @@ PrefabInstance:
     - target: {fileID: 400022, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
       propertyPath: m_LocalScale.z
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 100022, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
-      propertyPath: m_Name
-      value: frontdoor
-      objectReference: {fileID: 0}
-    - target: {fileID: 100022, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
-      propertyPath: m_TagString
-      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
@@ -8893,6 +8893,7 @@ MonoBehaviour:
   pic5: {fileID: 1953543769}
   pic6: {fileID: 21574096}
   doorExhib: {fileID: 670968598}
+  doorSchool: {fileID: 0}
   picturesTalkedTo: 0
   convType: 0
   choices: {fileID: 1747451937}
@@ -10097,6 +10098,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 5fb98670efd7abb4a9bac637748c9f1b, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: e771c3a18e6587a46952638a9f77c502, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fb98670efd7abb4a9bac637748c9f1b, type: 3}
 --- !u!1 &1346725097 stripped

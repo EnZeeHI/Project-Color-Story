@@ -24,11 +24,14 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 6dd78ede212a97847a0372da1cfff584
   - enabled: 1
-    path: Assets/Scenes/day2.unity
-    guid: d49de0ac1405b1c4c98ba746c4b066d1
+    path: Assets/Scenes/day2Morning.unity
+    guid: 9f4749fb871381e4e9412087037cea09
   - enabled: 1
     path: Assets/Scenes/Exhibition.unity
     guid: a85033c069d6f1b4d952fb8d870e790e
+  - enabled: 1
+    path: Assets/Scenes/day2.unity
+    guid: d49de0ac1405b1c4c98ba746c4b066d1
   - enabled: 1
     path: Assets/Scenes/Credits Scene.unity
     guid: 0f878061f7aeea84eae62a80ca14e828

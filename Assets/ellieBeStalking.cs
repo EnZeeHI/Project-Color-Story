@@ -8,12 +8,15 @@ public class ellieBeStalking : MonoBehaviour
     public float stoppingDistance;
     public float speed;
     public GameObject Ellie;
+    public Animator animator;
 
 
     // Start is called before the first frame update
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+
+        animator = transform.GetComponent<Animator>();
     }
 
     // Update is called once per frame
