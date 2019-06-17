@@ -558,6 +558,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 79119140}
   m_CullTransparentMesh: 0
+--- !u!1001 &94973225
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 38f22c97a6e7ddb44b9328f6ca5b86a9, type: 3}
+      propertyPath: m_Name
+      value: X
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 38f22c97a6e7ddb44b9328f6ca5b86a9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 38f22c97a6e7ddb44b9328f6ca5b86a9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.6511226
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 38f22c97a6e7ddb44b9328f6ca5b86a9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 38f22c97a6e7ddb44b9328f6ca5b86a9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.6123724
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 38f22c97a6e7ddb44b9328f6ca5b86a9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.35355344
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 38f22c97a6e7ddb44b9328f6ca5b86a9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.3535534
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 38f22c97a6e7ddb44b9328f6ca5b86a9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6123724
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 38f22c97a6e7ddb44b9328f6ca5b86a9, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 38f22c97a6e7ddb44b9328f6ca5b86a9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 38f22c97a6e7ddb44b9328f6ca5b86a9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 38f22c97a6e7ddb44b9328f6ca5b86a9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 38f22c97a6e7ddb44b9328f6ca5b86a9, type: 3}
 --- !u!1 &101311787
 GameObject:
   m_ObjectHideFlags: 0
@@ -673,7 +730,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 39
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &105716790
 PrefabInstance:
@@ -750,7 +807,7 @@ PrefabInstance:
     - target: {fileID: 8533156540426274558, guid: 98c694d2ee6746146a276bb4e81c4908,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -546
+      value: -328
       objectReference: {fileID: 0}
     - target: {fileID: 8533156540426274558, guid: 98c694d2ee6746146a276bb4e81c4908,
         type: 3}
@@ -2722,7 +2779,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 16.621, y: 257.96698, z: 0.21300001}
 --- !u!114 &534669906
 MonoBehaviour:
@@ -6496,7 +6553,7 @@ Transform:
   m_Children:
   - {fileID: 1142728205}
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1056772846 stripped
 GameObject:
@@ -7235,7 +7292,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 40
+  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1195702634
 GameObject:
@@ -8936,7 +8993,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialouge:
-    name: Your friendly neighboordhood door
+    name: 
     convName: dsffsdf
     reaction: 
     sentences:
@@ -9728,7 +9785,7 @@ Transform:
   m_Children:
   - {fileID: 2076603839}
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1672349396
 PrefabInstance:
@@ -11669,7 +11726,7 @@ MonoBehaviour:
     convName: sdafsdfsdf
     reaction: 
     sentences:
-    - go fuck yourself dylan
+    - Have a fun weekend Dylan!
     choices:
     - 
     - 

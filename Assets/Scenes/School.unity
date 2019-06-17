@@ -673,7 +673,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 34
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &134470545
 GameObject:
@@ -2409,7 +2409,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 16.621, y: 257.96698, z: 0.21300001}
 --- !u!114 &534669906
 MonoBehaviour:
@@ -4949,6 +4949,63 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 5074d55db94f88a4b8f7207c4cbc4368, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4af6a84340d22842b14b546c4545df7, type: 3}
+--- !u!1001 &853550235
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 38f22c97a6e7ddb44b9328f6ca5b86a9, type: 3}
+      propertyPath: m_Name
+      value: X
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 38f22c97a6e7ddb44b9328f6ca5b86a9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.297
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 38f22c97a6e7ddb44b9328f6ca5b86a9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.309
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 38f22c97a6e7ddb44b9328f6ca5b86a9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 38f22c97a6e7ddb44b9328f6ca5b86a9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.6123724
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 38f22c97a6e7ddb44b9328f6ca5b86a9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.35355344
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 38f22c97a6e7ddb44b9328f6ca5b86a9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.3535534
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 38f22c97a6e7ddb44b9328f6ca5b86a9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6123724
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 38f22c97a6e7ddb44b9328f6ca5b86a9, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 38f22c97a6e7ddb44b9328f6ca5b86a9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 38f22c97a6e7ddb44b9328f6ca5b86a9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 38f22c97a6e7ddb44b9328f6ca5b86a9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 38f22c97a6e7ddb44b9328f6ca5b86a9, type: 3}
 --- !u!1 &920823556 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100004, guid: 84a43c0eac149f141bcaa1b6daaa3b92,
@@ -5965,7 +6022,7 @@ Transform:
   m_Children:
   - {fileID: 1142728205}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1056772846 stripped
 GameObject:
@@ -6756,7 +6813,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 35
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1195702634
 GameObject:
@@ -9214,7 +9271,7 @@ Transform:
   m_Children:
   - {fileID: 2076603839}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1672349396
 PrefabInstance:
@@ -11115,7 +11172,7 @@ MonoBehaviour:
     convName: sdafsdfsdf
     reaction: 
     sentences:
-    - go fuck yourself dylan
+    - Sit down Dylan! Class is about to start!
     choices:
     - 
     - 
