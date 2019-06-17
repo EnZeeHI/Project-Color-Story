@@ -2421,7 +2421,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100014, guid: 097ebcbb2d4100b4ca32fcf894d4e46e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 097ebcbb2d4100b4ca32fcf894d4e46e, type: 3}
       propertyPath: m_TagString
@@ -5791,6 +5791,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: QuestObject
       objectReference: {fileID: 0}
+    - target: {fileID: 2131733545374396476, guid: 0bd841f491060a04cba508b54c5db53d,
+        type: 3}
+      propertyPath: m_TagString
+      value: QuestObject
+      objectReference: {fileID: 0}
     - target: {fileID: 2131733544718584592, guid: 0bd841f491060a04cba508b54c5db53d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5866,11 +5871,6 @@ PrefabInstance:
       propertyPath: doorObject
       value: 
       objectReference: {fileID: 325125171}
-    - target: {fileID: 2131733545374396476, guid: 0bd841f491060a04cba508b54c5db53d,
-        type: 3}
-      propertyPath: m_TagString
-      value: QuestObject
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0bd841f491060a04cba508b54c5db53d, type: 3}
 --- !u!1 &635882313
@@ -10447,9 +10447,17 @@ MonoBehaviour:
   neighbour: {fileID: 2045952356}
   dad: {fileID: 1452359236}
   mom: {fileID: 319473990}
-  neighbouryeet: {fileID: 2045952356}
+  neighbouryeet: {fileID: 268330300}
   bed: {fileID: 665655233}
   ellie: {fileID: 0}
+  pic1: {fileID: 0}
+  pic2: {fileID: 0}
+  pic3: {fileID: 0}
+  pic4: {fileID: 0}
+  pic5: {fileID: 0}
+  pic6: {fileID: 0}
+  doorExhib: {fileID: 0}
+  picturesTalkedTo: 0
   convType: 0
   choices: {fileID: 1747451937}
   reactionBox: {fileID: 931401505}
@@ -10477,6 +10485,8 @@ MonoBehaviour:
   momConvDone: 0
   neighbourConvDone: 0
   picTalk1Choice: 0
+  picTalk2Choice: 0
+  picTalk3Choice: 0
   convName: 
   convText: []
   choicesOptions: []
@@ -13317,6 +13327,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8999157413371985101, guid: 1a379ae01113e8a468b857d4179357aa,
+        type: 3}
+      propertyPath: linkedDoor
+      value: 
+      objectReference: {fileID: 603182763}
+    - target: {fileID: 8999157413371985101, guid: 1a379ae01113e8a468b857d4179357aa,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 619189315}
+    - target: {fileID: 8999157413371985101, guid: 1a379ae01113e8a468b857d4179357aa,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 534669904}
     - target: {fileID: 5842402524176371484, guid: 1a379ae01113e8a468b857d4179357aa,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -13482,21 +13507,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 2.0938
       objectReference: {fileID: 0}
-    - target: {fileID: 8999157413371985101, guid: 1a379ae01113e8a468b857d4179357aa,
-        type: 3}
-      propertyPath: linkedDoor
-      value: 
-      objectReference: {fileID: 603182763}
-    - target: {fileID: 8999157413371985101, guid: 1a379ae01113e8a468b857d4179357aa,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 619189315}
-    - target: {fileID: 8999157413371985101, guid: 1a379ae01113e8a468b857d4179357aa,
-        type: 3}
-      propertyPath: camera
-      value: 
-      objectReference: {fileID: 534669904}
     m_RemovedComponents:
     - {fileID: 5834364784549472762, guid: 1a379ae01113e8a468b857d4179357aa, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1a379ae01113e8a468b857d4179357aa, type: 3}
@@ -14858,34 +14868,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 144664376}
     m_Modifications:
-    - target: {fileID: 100022, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
-      propertyPath: m_Name
-      value: frontdoor (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 100022, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
-      propertyPath: m_TagString
-      value: QuestObject
-      objectReference: {fileID: 0}
-    - target: {fileID: 100022, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 100004, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 100008, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 100010, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 400022, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.0100098
@@ -14930,11 +14912,39 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100022, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
+      propertyPath: m_Name
+      value: frontdoor (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100022, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
+      propertyPath: m_TagString
+      value: QuestObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 100022, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: ecf13570de149804aa474609d0dc0e43, type: 3}
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
