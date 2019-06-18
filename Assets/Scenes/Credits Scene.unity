@@ -221,7 +221,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -84}
   m_SizeDelta: {x: 1000, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1297541457
@@ -246,7 +246,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 52ddc10bab0ec644988230069d10ccde, type: 3}
-    m_FontSize: 40
+    m_FontSize: 22
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -259,8 +259,8 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Thanks for playing this demo! Please leave some feedback in the comments
     :)\n\nDevelopment:\nMarcel Schokker\nAras Nazarovas\n\nDesign:\nTommaso Giulietti\n\nCharacter
-    art:\nAndr\xE9 Fernandes\n\nAsset art:\nMaya Lioe-A-Tjam\n\nUI Design:\nJoan Nikolov\n\nOther
-    art assets:\nMaya Lioe-A-Tjam\n\n\n\n\n\n\n"
+    art:\nAndr\xE9 Fernandes\n\nAsset art:\nMaya Lioe-A-Tjam\n\nUI Design and Illustrations:\nJoan
+    Nikolov\n\nOther art assets:\nMaya Lioe-A-Tjam\n\n\n\n\n\n\n"
 --- !u!222 &1297541458
 CanvasRenderer:
   m_ObjectHideFlags: 0

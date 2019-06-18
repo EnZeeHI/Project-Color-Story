@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class movement : MonoBehaviour
 {
@@ -205,6 +206,11 @@ public class movement : MonoBehaviour
 
             pauseMenuFunc();
             
+        }
+
+        if (Input.GetKeyDown("p"))
+        {
+            SceneManager.LoadScene("Exhibition");
         }
 
         

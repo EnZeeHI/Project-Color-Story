@@ -134,10 +134,7 @@ public class TextLog : MonoBehaviour
         {
             PlayerInfo.PlayerMood = 30;
         }
-        else if (!dadConvDone)
-        {
-            PlayerInfo.PlayerMood =  -20;
-        }
+       
 
         //Debug.Log(line);
         //Debug.Log(dadConv1Choice1);

@@ -9792,7 +9792,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1321580988}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1321580991
 Camera:
   m_ObjectHideFlags: 0
@@ -16640,7 +16640,7 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2131733545374396476, guid: 0bd841f491060a04cba508b54c5db53d,
+    - target: {fileID: 2131733544438250407, guid: 0bd841f491060a04cba508b54c5db53d,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
@@ -16710,7 +16710,7 @@ PrefabInstance:
       propertyPath: doorClosedAngle
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2131733544438250407, guid: 0bd841f491060a04cba508b54c5db53d,
+    - target: {fileID: 2131733545374396476, guid: 0bd841f491060a04cba508b54c5db53d,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
